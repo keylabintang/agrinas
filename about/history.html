@@ -125,7 +125,7 @@
 </div>
 </div>
 </header>
-<main class="pt-20">
+<main>
 <!-- Hero Section -->
 <section class="bg-surface py-20 md:py-32 overflow-hidden">
 <div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
@@ -149,23 +149,9 @@
 </div>
 </div>
 </section>
-<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row min-h-screen">
+<div class="max-w-screen-2xl mx-auto px-8 flex flex-col md:flex-row gap-12 py-12">
 <!-- SideNav / Sticky Sub-navigation -->
-<aside class="md:w-64 shrink-0">
-<div class="sticky top-24 bg-[#f5f4eb] dark:bg-[#1b1c17] rounded-xl overflow-hidden">
-<div class="p-6 bg-[#e4e3da] dark:bg-[#25261d]">
-<h2 class="font-headline font-extrabold text-[#143C38] uppercase tracking-tighter">About Us</h2>
-<p class="text-[10px] uppercase tracking-widest text-secondary font-bold">The Earth's Architect</p>
-</div>
-<nav class="flex flex-row overflow-x-auto md:flex-col items-start gap-4 p-6 w-full">
-<a class="font-manrope font-semibold text-sm text-[#143C38] dark:text-[#fbfaf0] pl-4 opacity-60 hover:bg-[#e4e3da] dark:hover:bg-[#2c2d24] transition-all duration-200 py-2 w-full block" href="./company-profile.html">Company Profile</a>
-<a class="font-manrope font-semibold text-sm text-[#775a00] font-bold border-l-4 border-[#775a00] pl-4 transition-all duration-200 py-2 w-full block" href="./history.html">History</a>
-<a class="font-manrope font-semibold text-sm text-[#143C38] dark:text-[#fbfaf0] pl-4 opacity-60 hover:bg-[#e4e3da] dark:hover:bg-[#2c2d24] transition-all duration-200 py-2 w-full block" href="./vision-mission.html">Vision &amp; Mission</a>
-<a class="font-manrope font-semibold text-sm text-[#143C38] dark:text-[#fbfaf0] pl-4 opacity-60 hover:bg-[#e4e3da] dark:hover:bg-[#2c2d24] transition-all duration-200 py-2 w-full block" href="./organizational-structure.html">Organizational Structure</a>
-<a class="font-manrope font-semibold text-sm text-[#143C38] dark:text-[#fbfaf0] pl-4 opacity-60 hover:bg-[#e4e3da] dark:hover:bg-[#2c2d24] transition-all duration-200 py-2 w-full block" href="./company-structure.html">Company Structure</a>
-</nav>
-</div>
-</aside>
+<aside class="md:w-64 shrink-0" id="about-sidebar-container"></aside>
 <!-- Main Content: History Timeline -->
 <div class="flex-1 bg-[#EEEDE4] p-8 md:p-16 lg:p-24">
 <div class="max-w-3xl mx-auto">
@@ -255,51 +241,7 @@
 </div>
 </section>
 </main>
-<!-- Footer -->
-<footer class="bg-primary text-surface py-20">
-<div class="max-w-screen-2xl mx-auto px-8">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-16">
-<div class="md:col-span-2">
-<div class="text-2xl font-extrabold tracking-tighter text-surface font-headline mb-6">
-                        PT Agrinas Pangan Nusantara
-                    </div>
-<p class="text-on-primary-container max-w-md text-sm leading-relaxed mb-8">
-                        The Earth's Architect. Integrating the precision of energy with the organic strength of agriculture to build a sustainable future for all.
-                    </p>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full border border-on-primary-container flex items-center justify-center hover:bg-secondary hover:border-secondary transition-all" href="#">
-<span class="material-symbols-outlined text-sm" data-icon="public">public</span>
-</a>
-<a class="w-10 h-10 rounded-full border border-on-primary-container flex items-center justify-center hover:bg-secondary hover:border-secondary transition-all" href="#">
-<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
-</a>
-</div>
-</div>
-<div>
-<h5 class="font-headline text-lg font-bold mb-6">Quick Links</h5>
-<ul class="space-y-4 font-label text-sm text-on-primary-container">
-<li><a class="hover:text-secondary transition-colors" href="#">Agricultural Portfolio</a></li>
-<li><a class="hover:text-secondary transition-colors" href="#">Sustainability Initiatives</a></li>
-<li><a class="hover:text-secondary transition-colors" href="#">Investor Relations</a></li>
-<li><a class="hover:text-secondary transition-colors" href="#">Regional Impact</a></li>
-</ul>
-</div>
-<div>
-<h5 class="font-headline text-lg font-bold mb-6">Headquarters</h5>
-<p class="font-label text-sm text-on-primary-container leading-relaxed">
-                        The Plaza Office Tower, 45th Floor<br/>
-                        Jl. M.H. Thamrin Kav. 28-30<br/>
-                        Jakarta 10350, Indonesia
-                    </p>
-</div>
-</div>
-<div class="pt-8 border-t border-on-primary-container/20 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-on-primary-container/60 uppercase tracking-widest">
-<p>© 2024 PT Agrinas Pangan Nusantara. All Rights Reserved.</p>
-<div class="flex gap-8">
-<a class="hover:text-surface" href="#">Privacy Policy</a>
-<a class="hover:text-surface" href="#">Terms of Service</a>
-</div>
-</div>
-</div>
-</footer>
+<div id="footer-container"></div>
+<script src="../includes/about-sidebar.js"></script>
+<script src="../includes/footer.js"></script>
 </body></html>

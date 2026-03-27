@@ -117,23 +117,10 @@
 </div>
 </div>
 </header>
-<main class="flex min-h-screen relative">
+<main class="max-w-screen-2xl mx-auto px-8 py-12 min-h-screen">
+<div class="flex flex-col md:flex-row gap-12">
 <!-- Sidebar Navigation -->
-<aside class="md:w-64 shrink-0">
-<div class="sticky top-24 bg-[#f5f4eb] dark:bg-[#1b1c17] rounded-xl overflow-hidden">
-<div class="p-6 bg-[#e4e3da] dark:bg-[#25261d]">
-<h2 class="font-headline font-extrabold text-[#143C38] uppercase tracking-tighter">About Us</h2>
-<p class="text-[10px] uppercase tracking-widest text-secondary font-bold">The Earth's Architect</p>
-</div>
-<nav class="flex flex-row overflow-x-auto md:flex-col items-start gap-4 p-6 w-full">
-<a class="font-manrope font-semibold text-sm text-[#775a00] font-bold border-l-4 border-[#775a00] pl-4 transition-all duration-200 py-2 w-full block" href="./company-profile.html">Company Profile</a>
-<a class="font-manrope font-semibold text-sm text-[#143C38] dark:text-[#fbfaf0] pl-4 opacity-60 hover:bg-[#e4e3da] dark:hover:bg-[#2c2d24] transition-all duration-200 py-2 w-full block" href="./history.html">History</a>
-<a class="font-manrope font-semibold text-sm text-[#143C38] dark:text-[#fbfaf0] pl-4 opacity-60 hover:bg-[#e4e3da] dark:hover:bg-[#2c2d24] transition-all duration-200 py-2 w-full block" href="./vision-mission.html">Vision &amp; Mission</a>
-<a class="font-manrope font-semibold text-sm text-[#143C38] dark:text-[#fbfaf0] pl-4 opacity-60 hover:bg-[#e4e3da] dark:hover:bg-[#2c2d24] transition-all duration-200 py-2 w-full block" href="./organizational-structure.html">Organizational Structure</a>
-<a class="font-manrope font-semibold text-sm text-[#143C38] dark:text-[#fbfaf0] pl-4 opacity-60 hover:bg-[#e4e3da] dark:hover:bg-[#2c2d24] transition-all duration-200 py-2 w-full block" href="./company-structure.html">Company Structure</a>
-</nav>
-</div>
-</aside>
+<aside class="md:w-64 shrink-0" id="about-sidebar-container"></aside>
 <!-- Main Content Area -->
 <div class="flex-1 overflow-x-hidden">
 <!-- Hero Section -->
@@ -397,68 +384,9 @@
 </div>
 </div>
 </section>
-<!-- Footer -->
-<footer class="bg-[#143C38] text-[#EEEDE4] pt-24 pb-12">
-<div class="max-w-screen-2xl mx-auto px-8">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 border-t border-[#c0c8c6]/20 pt-16">
-<div class="col-span-1">
-<div class="text-2xl font-black text-[#C49C34] mb-4 uppercase font-headline">
-                            Agrinas
-                        </div>
-<p class="text-xs font-normal opacity-80 leading-relaxed max-w-xs mb-8">
-                            Redefining the harmony between Indonesian agriculture and energy security through sophisticated technological integration.
-                        </p>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-[#C49C34] transition-colors" href="#">
-<span class="material-symbols-outlined text-sm">public</span>
-</a>
-<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-[#C49C34] transition-colors" href="#">
-<span class="material-symbols-outlined text-sm">mail</span>
-</a>
-<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-[#C49C34] transition-colors" href="#">
-<span class="material-symbols-outlined text-sm">call</span>
-</a>
-</div>
-</div>
-<div>
-<h6 class="text-sm font-bold text-white mb-6 uppercase tracking-wider">Company</h6>
-<ul class="space-y-4">
-<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">About Us</a></li>
-<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">Career</a></li>
-<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">Sustainability Report</a></li>
-<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">Governance</a></li>
-</ul>
-</div>
-<div>
-<h6 class="text-sm font-bold text-white mb-6 uppercase tracking-wider">Industries</h6>
-<ul class="space-y-4">
-<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">Precision Farming</a></li>
-<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">Bio-Energy</a></li>
-<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">Global Logistics</a></li>
-<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">Supply Chain</a></li>
-</ul>
-</div>
-<div>
-<h6 class="text-sm font-bold text-white mb-6 uppercase tracking-wider">Legal &amp; Contact</h6>
-<ul class="space-y-4">
-<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">Privacy Policy</a></li>
-<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">Terms of Service</a></li>
-<li class="pt-4">
-<p class="text-xs opacity-60">HQ Address:</p>
-<p class="text-xs text-white">Sudirman Central Business District, Jakarta, Indonesia</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="text-xs font-normal opacity-80">© 2024 PT Agrinas Pangan Nusantara. All rights reserved.</p>
-<div class="flex gap-8">
-<a class="text-xs text-[#e4e3da] opacity-80 hover:opacity-100 transition-opacity" href="#">Whistleblowing System</a>
-<a class="text-xs text-[#e4e3da] opacity-80 hover:opacity-100 transition-opacity" href="#">Quality Standards</a>
-</div>
-</div>
-</div>
-</footer>
+<div id="footer-container"></div>
+<script src="../includes/about-sidebar.js"></script>
+<script src="../includes/footer.js"></script>
 </div>
 </main>
 </body></html>
