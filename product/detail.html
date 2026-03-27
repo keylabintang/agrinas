@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Detail Produk | PT Agrinas Pangan Nusantara</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-container": "#2f3737",
+              "secondary-fixed-dim": "#ecc156",
+              "on-surface": "#1b1c17",
+              "on-secondary-container": "#765900",
+              "surface-container": "#efeee5",
+              "tertiary-fixed-dim": "#c0c8c8",
+              "secondary": "#775a00",
+              "surface-container-highest": "#e4e3da",
+              "on-surface-variant": "#414847",
+              "error-container": "#ffdad6",
+              "on-primary-container": "#7fa6a1",
+              "surface-container-lowest": "#ffffff",
+              "surface": "#fbfaf0",
+              "surface-container-high": "#e9e8e0",
+              "on-secondary": "#ffffff",
+              "on-tertiary-fixed": "#151d1d",
+              "on-error-container": "#93000a",
+              "error": "#ba1a1a",
+              "on-secondary-fixed": "#251a00",
+              "primary-container": "#143c38",
+              "primary-fixed": "#c1ebe4",
+              "on-background": "#1b1c17",
+              "surface-variant": "#e4e3da",
+              "on-primary-fixed-variant": "#274d49",
+              "secondary-fixed": "#ffdf99",
+              "on-tertiary-fixed-variant": "#404848",
+              "on-error": "#ffffff",
+              "outline-variant": "#c0c8c6",
+              "surface-tint": "#3f6560",
+              "surface-dim": "#dbdad2",
+              "on-primary": "#ffffff",
+              "on-tertiary-container": "#98a0a0",
+              "primary": "#002622",
+              "on-secondary-fixed-variant": "#5a4300",
+              "inverse-surface": "#30312b",
+              "inverse-primary": "#a6cfc8",
+              "surface-bright": "#fbfaf0",
+              "primary-fixed-dim": "#a6cfc8",
+              "on-tertiary": "#ffffff",
+              "tertiary-fixed": "#dce4e4",
+              "tertiary": "#1a2222",
+              "background": "#fbfaf0",
+              "surface-container-low": "#f5f4eb",
+              "outline": "#717977",
+              "on-primary-fixed": "#00201d",
+              "inverse-on-surface": "#f2f1e8",
+              "secondary-container": "#ffd264"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.125rem",
+              "lg": "0.25rem",
+              "xl": "0.5rem",
+              "full": "0.75rem"
+            }
+          }
+        }
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+      .signature-gradient {
+        background: linear-gradient(135deg, #002622 0%, #143c38 100%);
+      }
+      .soft-radial {
+        background:
+          radial-gradient(circle at top right, rgba(196, 156, 52, 0.18), transparent 30%),
+          radial-gradient(circle at bottom left, rgba(20, 60, 56, 0.12), transparent 28%);
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+<header class="w-full top-0 sticky z-50 bg-[#EEEDE4] dark:bg-[#143C38] shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center"><a href="../"><img alt="PT AGRINAS PANGAN NUSANTARA Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uiDH3M0X_scpS3mzIngRW5r7H_4bNRo6QSxOxq-PxAnpY8Sgzu_XUuxgCrskD8RP6kfi8M6m6Tl5qlDMMTlUFKi_gwnFFg52_ZQacA05mTMYt5J55f0FEDWcxMQBezt-R_iWBfCSXFS019Am8RuT0YJDncoiHUK4i0arNdk6rwU2oJ3JDppUmKXRbYLPpj3Zh1Mj15fB-17145TwCFZyXuC7fvw1D4epWKIheTswXNaQ8ycYvQ2I8HRlzdZGRqyw7DCHBk2uq_tKw"/></a></div>
+<nav class="hidden lg:flex items-center space-x-6">
+<a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] dark:text-[#EEEDE4] hover:text-[#C49C34] transition-colors" href="../">Home</a>
+<div class="group relative" style="--tw-space-y-reverse: 0; margin-bottom: calc(0px * calc(1 - var(--tw-space-y-reverse)))">
+<button class="flex items-center gap-1 font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] dark:text-[#EEEDE4] hover:text-[#C49C34] transition-colors pointer-events-auto" onmouseout="setTimeout(() => { if(!this.parentElement.matches(':hover')) this.parentElement.removeAttribute('data-open'); }, 200)" onmouseover="this.parentElement.setAttribute('data-open', 'true')" type="button">
+                    About Us
+                    <span class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="absolute top-full left-0 mt-0 pt-1 w-48 z-40 pointer-events-none group-hover:pointer-events-auto" onmouseout="this.parentElement.removeAttribute('data-open')" onmouseover="this.parentElement.setAttribute('data-open', 'true')">
+<div class="bg-white dark:bg-[#143C38] shadow-xl rounded-md py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-outline-variant/20 group-hover:pointer-events-auto" style="pointer-events: auto">
+<a class="block px-4 py-2 text-xs font-bold text-[#143C38] dark:text-[#EEEDE4] hover:bg-[#EEEDE4] dark:hover:bg-[#143C38] transition-colors" href="../about/company-profile.html">Company Profile</a>
+<a class="block px-4 py-2 text-xs font-bold text-[#143C38] dark:text-[#EEEDE4] hover:bg-[#EEEDE4] dark:hover:bg-[#143C38] transition-colors" href="../about/history.html">History</a>
+<a class="block px-4 py-2 text-xs font-bold text-[#143C38] dark:text-[#EEEDE4] hover:bg-[#EEEDE4] dark:hover:bg-[#143C38] transition-colors" href="../about/vision-mission.html">Vision &amp; Mission</a>
+<a class="block px-4 py-2 text-xs font-bold text-[#143C38] dark:text-[#EEEDE4] hover:bg-[#EEEDE4] dark:hover:bg-[#143C38] transition-colors" href="../about/organizational-structure.html">Organizational Structure</a>
+<a class="block px-4 py-2 text-xs font-bold text-[#143C38] dark:text-[#EEEDE4] hover:bg-[#EEEDE4] dark:hover:bg-[#143C38] transition-colors" href="../about/company-structure.html">Company Structure</a>
+</div>
+</div>
+</div>
+<a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#C49C34] dark:text-[#C49C34] border-b-2 border-[#C49C34] pb-1" href="./">Product</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] dark:text-[#EEEDE4] hover:text-[#C49C34] transition-colors" href="../news-gallery/">News &amp; Gallery</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] dark:text-[#EEEDE4] hover:text-[#C49C34] transition-colors" href="../public-documents/">Public Document</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] dark:text-[#EEEDE4] hover:text-[#C49C34] transition-colors" href="../contact/">Contact Us</a>
+</nav>
+<div class="flex items-center space-x-6">
+<div class="flex items-center gap-2 text-xs font-bold text-primary">
+<span class="opacity-40 cursor-pointer hover:opacity-100">ID</span>
+<span class="opacity-20">|</span>
+<span class="cursor-pointer">EN</span>
+</div>
+<button class="lg:hidden text-[#143C38] dark:text-[#EEEDE4]">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+
+<main class="pt-20">
+<section class="relative overflow-hidden">
+<div class="absolute inset-0 soft-radial"></div>
+<div class="max-w-7xl mx-auto px-8 py-16 md:py-24 relative z-10">
+<div class="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.22em] text-on-surface-variant font-semibold mb-8">
+<a class="hover:text-secondary transition-colors" href="../">Home</a>
+<span>/</span>
+<a class="hover:text-secondary transition-colors" href="./">Product</a>
+<span>/</span>
+<span class="text-secondary">Distribusi Beras Premium</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-12 items-center">
+<div>
+<span class="inline-flex items-center rounded-full bg-secondary-container/60 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.25em] text-on-secondary-container mb-6">Produk Unggulan</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold tracking-tight leading-[1.02] mb-6">
+                Distribusi <span class="text-secondary">Beras Premium</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-2xl mb-8">
+                Solusi distribusi beras berkualitas tinggi dengan standar seleksi bahan baku, proses penggilingan terkontrol, dan jaringan pasok yang menjaga konsistensi mutu dari sentra produksi hingga pasar akhir.
+            </p>
+<div class="flex flex-wrap gap-4">
+<a class="inline-flex items-center gap-2 px-8 py-4 signature-gradient text-on-primary rounded-md font-bold tracking-wide shadow-lg shadow-primary/10 hover:-translate-y-0.5 transition-all" href="../contact/">
+                    Konsultasi Produk
+                    <span class="material-symbols-outlined text-base">north_east</span>
+</a>
+<a class="inline-flex items-center gap-2 px-8 py-4 border border-outline-variant/40 text-secondary rounded-md font-bold tracking-wide hover:bg-secondary/5 transition-all" href="./">
+                    Kembali ke Produk
+                    <span class="material-symbols-outlined text-base">arrow_back</span>
+</a>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-8 -right-8 h-32 w-32 rounded-full bg-secondary/10 blur-3xl"></div>
+<div class="relative overflow-hidden rounded-[28px] bg-surface-container shadow-2xl">
+<img alt="Distribusi beras premium Agrinas" class="w-full h-[520px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDByGMJLMUXWlkZFPAgEOZGfmw6YUDYsjapQXEclzI1L7Kt-zD2UHSPdf-xrGdIUtHkNoL56BKEKcZWkmbH2zIuHgqqXRgzYn1QxCgJVKmOYkfBb037hmzLQ5QqLrJkyMXQmg0Lcpf7BSSQdjLFDxrvDIjbakfPtB99pTZisO6C1m5scv676kPashNJaHobmgGoF0X7zNVQfoKCsMwigofka4cunXeKc2fAOBFE52usN-5aycLIWwO7jYltjtx6OcShtjz2kS3Qx-7s"/>
+<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary/90 via-primary/55 to-transparent p-8">
+<div class="grid grid-cols-3 gap-4 text-on-primary">
+<div>
+<p class="text-[10px] uppercase tracking-[0.24em] text-secondary-fixed-dim mb-2">Grade</p>
+<p class="font-headline text-xl font-bold">Premium</p>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-[0.24em] text-secondary-fixed-dim mb-2">Pasar</p>
+<p class="font-headline text-xl font-bold">Retail &amp; B2B</p>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-[0.24em] text-secondary-fixed-dim mb-2">Distribusi</p>
+<p class="font-headline text-xl font-bold">Nasional</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="pb-8">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+<div class="bg-surface-container-low rounded-2xl p-7">
+<span class="material-symbols-outlined text-secondary text-3xl mb-5">workspace_premium</span>
+<h2 class="font-headline font-bold text-xl mb-3">Kualitas Konsisten</h2>
+<p class="text-sm leading-relaxed text-on-surface-variant">Seleksi gabah, pemrosesan, dan pengemasan dilakukan dengan parameter mutu yang seragam untuk menjaga rasa, warna, dan tekstur.</p>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-7">
+<span class="material-symbols-outlined text-secondary text-3xl mb-5">humidity_percentage</span>
+<h2 class="font-headline font-bold text-xl mb-3">Kadar Air Terkontrol</h2>
+<p class="text-sm leading-relaxed text-on-surface-variant">Menjaga stabilitas produk selama penyimpanan dan distribusi sehingga daya tahan dan kualitas tetap optimal saat diterima pelanggan.</p>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-7">
+<span class="material-symbols-outlined text-secondary text-3xl mb-5">local_shipping</span>
+<h2 class="font-headline font-bold text-xl mb-3">Jaringan Pasok Terintegrasi</h2>
+<p class="text-sm leading-relaxed text-on-surface-variant">Distribusi didukung koordinasi gudang, armada, dan mitra logistik untuk memastikan pengiriman efisien dan tepat waktu.</p>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-7">
+<span class="material-symbols-outlined text-secondary text-3xl mb-5">inventory_2</span>
+<h2 class="font-headline font-bold text-xl mb-3">Kemasan Fleksibel</h2>
+<p class="text-sm leading-relaxed text-on-surface-variant">Tersedia format kemasan untuk kebutuhan pasar modern, institusi, hingga distribusi grosir berskala besar.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-16 md:py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-[0.95fr_1.05fr] gap-10">
+<div class="bg-primary text-on-primary rounded-[28px] p-8 md:p-10">
+<span class="text-secondary-fixed-dim font-bold uppercase tracking-[0.28em] text-xs block mb-4">Product Overview</span>
+<h2 class="font-headline text-3xl md:text-4xl font-extrabold tracking-tight mb-6">Dirancang untuk stabilitas pasok dan mutu yang dapat diandalkan.</h2>
+<p class="text-on-primary/75 leading-relaxed mb-8">
+                Produk ini ditujukan untuk menjawab kebutuhan pasar akan beras premium yang konsisten, aman, dan siap didistribusikan dalam skala besar. Pendekatan Agrinas menggabungkan kontrol kualitas sejak hulu, pengolahan modern, dan tata kelola distribusi yang tertata.
+            </p>
+<div class="grid grid-cols-2 gap-5">
+<div class="rounded-2xl bg-white/8 p-5">
+<p class="text-[10px] uppercase tracking-[0.24em] text-secondary-fixed-dim mb-2">Target Channel</p>
+<p class="font-headline text-xl font-bold">Modern Trade</p>
+</div>
+<div class="rounded-2xl bg-white/8 p-5">
+<p class="text-[10px] uppercase tracking-[0.24em] text-secondary-fixed-dim mb-2">Supply Model</p>
+<p class="font-headline text-xl font-bold">End-to-End</p>
+</div>
+<div class="rounded-2xl bg-white/8 p-5">
+<p class="text-[10px] uppercase tracking-[0.24em] text-secondary-fixed-dim mb-2">Packaging</p>
+<p class="font-headline text-xl font-bold">5kg, 10kg, 25kg</p>
+</div>
+<div class="rounded-2xl bg-white/8 p-5">
+<p class="text-[10px] uppercase tracking-[0.24em] text-secondary-fixed-dim mb-2">Availability</p>
+<p class="font-headline text-xl font-bold">Sepanjang Tahun</p>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<div class="bg-surface-container-low rounded-[28px] p-8">
+<div class="flex items-start gap-4">
+<div class="h-12 w-12 rounded-2xl bg-secondary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary">tune</span>
+</div>
+<div>
+<h3 class="font-headline text-2xl font-bold mb-3">Spesifikasi Utama</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Parameter produk dapat disesuaikan dengan kebutuhan pasar dan segmen distribusi tanpa meninggalkan standar mutu inti.</p>
+<div class="grid sm:grid-cols-2 gap-4 text-sm">
+<div class="flex justify-between gap-4 rounded-xl bg-surface px-5 py-4">
+<span class="text-on-surface-variant">Tingkat Kepatahan</span>
+<span class="font-semibold text-primary">&lt; 15%</span>
+</div>
+<div class="flex justify-between gap-4 rounded-xl bg-surface px-5 py-4">
+<span class="text-on-surface-variant">Kadar Air</span>
+<span class="font-semibold text-primary">Maks. 14%</span>
+</div>
+<div class="flex justify-between gap-4 rounded-xl bg-surface px-5 py-4">
+<span class="text-on-surface-variant">Warna Butir</span>
+<span class="font-semibold text-primary">Putih Bersih</span>
+</div>
+<div class="flex justify-between gap-4 rounded-xl bg-surface px-5 py-4">
+<span class="text-on-surface-variant">Aroma</span>
+<span class="font-semibold text-primary">Segar Alami</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-[28px] p-8">
+<div class="flex items-start gap-4">
+<div class="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">hub</span>
+</div>
+<div>
+<h3 class="font-headline text-2xl font-bold mb-3">Alur Nilai Produk</h3>
+<div class="grid sm:grid-cols-3 gap-4 mt-6">
+<div class="rounded-2xl border border-outline-variant/40 bg-surface-container-lowest p-5">
+<p class="text-[10px] uppercase tracking-[0.24em] text-secondary font-bold mb-2">01</p>
+<h4 class="font-headline font-bold text-lg mb-2">Sourcing</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Bahan baku terpilih dari sentra produksi prioritas.</p>
+</div>
+<div class="rounded-2xl border border-outline-variant/40 bg-surface-container-lowest p-5">
+<p class="text-[10px] uppercase tracking-[0.24em] text-secondary font-bold mb-2">02</p>
+<h4 class="font-headline font-bold text-lg mb-2">Processing</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Sortasi, polishing, dan pengemasan dengan kontrol mutu.</p>
+</div>
+<div class="rounded-2xl border border-outline-variant/40 bg-surface-container-lowest p-5">
+<p class="text-[10px] uppercase tracking-[0.24em] text-secondary font-bold mb-2">03</p>
+<h4 class="font-headline font-bold text-lg mb-2">Distribution</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Pengiriman melalui jaringan gudang dan logistik terkoordinasi.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-16 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-12">
+<div>
+<span class="text-secondary font-semibold uppercase tracking-[0.28em] text-xs block mb-3">Use Cases</span>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight">Cocok untuk berbagai kebutuhan distribusi pangan.</h2>
+</div>
+<p class="max-w-2xl text-on-surface-variant leading-relaxed">Struktur produk dibuat agar relevan untuk kebutuhan retail modern, program institusi, dan rantai pasok skala besar yang membutuhkan mutu stabil dan pengiriman yang terjadwal.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<article class="rounded-[24px] bg-surface-container-lowest p-8 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">storefront</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Retail Modern</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">Kemasan siap jual dengan tampilan rapi, mutu seragam, dan nilai produk yang kuat untuk kebutuhan supermarket maupun toko bahan pangan premium.</p>
+</article>
+<article class="rounded-[24px] bg-surface-container-lowest p-8 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">apartment</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Kebutuhan Institusi</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">Mendukung pasokan untuk hotel, rumah makan, fasilitas layanan publik, dan pengadaan korporat dengan volume yang dapat direncanakan.</p>
+</article>
+<article class="rounded-[24px] bg-surface-container-lowest p-8 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">warehouse</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Distribusi Grosir</h3>
+<p class="text-on-surface-variant leading-relaxed text-sm">Dirancang untuk efisiensi gudang dan penyaluran antarwilayah dengan dukungan pengemasan serta dokumentasi distribusi yang tertata.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section class="py-16 md:py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-8 items-stretch">
+<div class="rounded-[30px] overflow-hidden min-h-[420px]">
+<img alt="Proses pengemasan beras premium" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEIYlox9h9vc9JbFsUe6oo1_MUV4BBGa9cAMCnenCxQ9nl98uHvhl1E-yzGFYDgiB605zkoPi2ofVe2dmrS4MIRyTji6AaoKhWkgsijX7-MqAjPxDkdUXHwdCaZ77f5S7gERO0KzFm1IbOSA3OIaLhRawliz7j0ypQttdqyUY2V1CH8FPg-TlCvr4HoAcrY5SWSSsciMyrEfPXKUpMdnYerogWys8-sHYdHdjf54GFTbXiPmfiQ6_5UfFYhBhV71VUfyBQzErCJNu8"/>
+</div>
+<div class="signature-gradient rounded-[30px] p-8 md:p-12 text-on-primary">
+<span class="text-secondary-fixed-dim uppercase tracking-[0.28em] text-xs font-bold block mb-4">Quality Promise</span>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Fokus pada mutu produk, keamanan penanganan, dan keberlanjutan suplai.</h2>
+<p class="text-on-primary/75 leading-relaxed mb-10">Pendekatan Agrinas tidak berhenti di produk akhir. Kami membangun sistem yang menyeimbangkan kualitas beras, efisiensi logistik, dan kesiapan pasok untuk menjawab kebutuhan pelanggan dengan standar operasional yang konsisten.</p>
+<div class="space-y-4">
+<div class="flex items-center justify-between gap-4 rounded-2xl bg-white/8 px-6 py-5">
+<span class="text-sm md:text-base">Kontrol mutu multi-tahap</span>
+<span class="font-headline text-2xl font-bold">01</span>
+</div>
+<div class="flex items-center justify-between gap-4 rounded-2xl bg-white/8 px-6 py-5">
+<span class="text-sm md:text-base">Standar penyimpanan dan handling</span>
+<span class="font-headline text-2xl font-bold">02</span>
+</div>
+<div class="flex items-center justify-between gap-4 rounded-2xl bg-white/8 px-6 py-5">
+<span class="text-sm md:text-base">Distribusi terencana lintas wilayah</span>
+<span class="font-headline text-2xl font-bold">03</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="pb-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="bg-surface-container rounded-[32px] p-8 md:p-12">
+<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+<div>
+<span class="text-secondary font-semibold uppercase tracking-[0.28em] text-xs block mb-3">Related Products</span>
+<h2 class="font-headline text-3xl md:text-4xl font-extrabold tracking-tight">Produk lain dalam ekosistem Agrinas</h2>
+</div>
+<a class="inline-flex items-center gap-2 text-secondary font-bold text-sm tracking-wide" href="./">
+                Lihat semua produk
+                <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<article class="group">
+<div class="overflow-hidden rounded-[24px] bg-surface-container-low mb-5">
+<img alt="Benih unggul" class="h-64 w-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLziNlPZcqhOjVPL-8Bd6tNZFyC-2y-L_6pSPQQKdjVjmKQ5U_Uq0hRCJ-S23R9J8Gp9EJjmGkpor3iN8ARTJdlWKE1xobwndKHSbK4EklqVFcNvTKAkRfXjH14hWGSClPRzD3ug29W2eIF-xgTaDOlng51kWawBVrR4kQ5e8BPP41-yMApuBLjEJLy7CvVzAvpiloRpBYmNpRM4yLIzbdC_cTunh72aF0EBZir8g6p_VUp961WoGQ7zIwd3tqnL1DxsHFeUusBurU"/>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-2">Benih Unggul</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-4">Mendukung produktivitas panen melalui varietas terpilih yang adaptif dan bernilai hasil tinggi.</p>
+<a class="inline-flex items-center gap-2 text-secondary font-bold text-sm tracking-wide" href="./detail.html">
+                    Lihat detail
+                    <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</article>
+<article class="group">
+<div class="overflow-hidden rounded-[24px] bg-surface-container-low mb-5">
+<img alt="Pupuk organik" class="h-64 w-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdKj-yHrIya6wnIdl1PQEjdtH1M9NXR6vVVlIpc6FZEe0sDqPbiNqGL2IcH9atxARH2Rl2ODuMbWCWvNeSkrjUkrhcNBn5HoU8-b3G32Axjkpwreb4ijV0lLQumbNdq_-wf-V2kGZ58ulYKL_sR9e8NDgw_bubF6G91KI5i8g3dcfTFE7Nyij9ZiP1nqfPlSc9u-z70VmsrVBl8k3WLth867GJedM0pFW5jTCUp7A3FUAcL4tMCJIlu0nh2kt-6zYtc65L-V5lx-uf"/>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-2">Pupuk Organik</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-4">Meningkatkan kesehatan tanah dan efisiensi nutrisi tanaman untuk budidaya berkelanjutan.</p>
+<a class="inline-flex items-center gap-2 text-secondary font-bold text-sm tracking-wide" href="./detail.html">
+                    Lihat detail
+                    <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</article>
+<article class="group">
+<div class="overflow-hidden rounded-[24px] bg-surface-container-low mb-5">
+<img alt="Logistik pascapanen" class="h-64 w-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvAy3TAJYNLDi1EsA58HNGcqzk3kDNWdF7-eBQGezGN1NJYQ2AQnYsqpUwj1_AIuVKvTBKTPhMrtUYxpm5yOhSZvMjcqmpk_ZoF_5wjkR8TN0O5fb8SqZ0wAVyA18F9jZzefvdhug19S0He0p7tgOlrlKQ60ilNGS38gq80U3wZcy-d1GaGTe9H760deedOTrKlKMCiBBOt-o6WDdMLJApzyyIRYaUDhU9DXDjYcl6U8p7O_9nyiP8A8T3a167k91fYPga4o3vPXU9"/>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-2">Logistik Pascapanen</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-4">Menjaga kualitas produk pangan melalui penyimpanan, handling, dan distribusi terintegrasi.</p>
+<a class="inline-flex items-center gap-2 text-secondary font-bold text-sm tracking-wide" href="./detail.html">
+                    Lihat detail
+                    <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</article>
+</div>
+</div>
+</div>
+</section>
+
+<section class="pb-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="signature-gradient rounded-[32px] p-10 md:p-16 text-center text-on-primary relative overflow-hidden">
+<div class="absolute -top-20 -right-20 h-52 w-52 rounded-full bg-secondary/10 blur-3xl"></div>
+<div class="absolute -bottom-20 -left-20 h-52 w-52 rounded-full bg-white/5 blur-3xl"></div>
+<div class="relative z-10 max-w-3xl mx-auto">
+<span class="text-secondary-fixed-dim font-bold uppercase tracking-[0.28em] text-xs block mb-4">Let's Work Together</span>
+<h2 class="font-headline text-3xl md:text-5xl font-extrabold mb-6">Butuh detail spesifikasi, kapasitas suplai, atau skema kerja sama?</h2>
+<p class="text-on-primary/75 text-lg leading-relaxed mb-10">Tim kami siap membantu kebutuhan produk dan distribusi sesuai skala bisnis, area pengiriman, dan standar mutu yang Anda perlukan.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<a class="px-8 py-4 bg-secondary text-on-secondary rounded-md font-bold tracking-wide hover:brightness-110 transition-all" href="../contact/">Hubungi Kami</a>
+<a class="px-8 py-4 border border-white/15 text-on-primary rounded-md font-bold tracking-wide hover:bg-white/10 transition-all" href="./">Eksplor Produk Lain</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+</body>
+</html>

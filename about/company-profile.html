@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Company Profile | PT Agrinas Pangan Nusantara</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "outline-variant": "#c0c8c6",
+              "on-background": "#1b1c17",
+              "tertiary-fixed-dim": "#c0c8c8",
+              "surface-container-highest": "#e4e3da",
+              "primary": "#143C38",
+              "on-primary-fixed": "#00201d",
+              "on-tertiary-fixed-variant": "#404848",
+              "on-tertiary": "#ffffff",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "secondary": "#C49C34",
+              "secondary-container": "#ffd264",
+              "on-error": "#ffffff",
+              "surface-container-low": "#EEEDE4",
+              "surface-tint": "#3f6560",
+              "surface-container-high": "#e9e8e0",
+              "surface-variant": "#e4e3da",
+              "primary-fixed": "#c1ebe4",
+              "on-secondary-fixed-variant": "#5a4300",
+              "tertiary-fixed": "#dce4e4",
+              "surface-dim": "#dbdad2",
+              "outline": "#717977",
+              "on-surface": "#1b1c17",
+              "surface-container-lowest": "#ffffff",
+              "tertiary": "#1a2222",
+              "on-primary-fixed-variant": "#274d49",
+              "on-secondary-container": "#765900",
+              "primary-fixed-dim": "#a6cfc8",
+              "on-surface-variant": "#414847",
+              "error": "#ba1a1a",
+              "surface": "#EEEDE4",
+              "inverse-on-surface": "#f2f1e8",
+              "inverse-surface": "#30312b",
+              "inverse-primary": "#a6cfc8",
+              "on-secondary-fixed": "#251a00",
+              "surface-container": "#efeee5",
+              "surface-bright": "#EEEDE4",
+              "secondary-fixed-dim": "#ecc156",
+              "primary-container": "#143C38",
+              "on-tertiary-container": "#98a0a0",
+              "on-primary-container": "#7fa6a1",
+              "on-tertiary-fixed": "#151d1d",
+              "on-primary": "#ffffff",
+              "background": "#EEEDE4",
+              "secondary-fixed": "#ffdf99",
+              "on-secondary": "#ffffff",
+              "tertiary-container": "#2f3737"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #EEEDE4; color: #1b1c17; }
+        .font-headline { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { background: rgba(238, 237, 228, 0.8); backdrop-filter: blur(20px); }
+    </style>
+</head>
+<body class="bg-surface bg-[#EEEDE4]" style="background-color: #EEEDE4;">
+<!-- Top Navigation Bar -->
+<header class="w-full top-0 sticky z-50 bg-[#EEEDE4] dark:bg-[#143C38] shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="flex items-center"><img alt="PT AGRINAS PANGAN NUSANTARA Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uiDH3M0X_scpS3mzIngRW5r7H_4bNRo6QSxOxq-PxAnpY8Sgzu_XUuxgCrskD8RP6kfi8M6m6Tl5qlDMMTlUFKi_gwnFFg52_ZQacA05mTMYt5J55f0FEDWcxMQBezt-R_iWBfCSXFS019Am8RuT0YJDncoiHUK4i0arNdk6rwU2oJ3JDppUmKXRbYLPpj3Zh1Mj15fB-17145TwCFZyXuC7fvw1D4epWKIheTswXNaQ8ycYvQ2I8HRlzdZGRqyw7DCHBk2uq_tKw"/></div>
+<nav class="hidden lg:flex items-center space-x-6">
+<a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] dark:text-[#EEEDE4] hover:text-[#C49C34] transition-colors" href="../../">Home</a>
+<div class="group relative" style="--tw-space-y-reverse: 0; margin-bottom: calc(0px * calc(1 - var(--tw-space-y-reverse)))">
+<button class="flex items-center gap-1 font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#C49C34] dark:text-[#C49C34] border-b-2 border-[#C49C34] pb-1 hover:text-[#8B6E2F] transition-colors pointer-events-auto" type="button" onmouseover="this.parentElement.setAttribute('data-open', 'true')" onmouseout="setTimeout(() => { if(!this.parentElement.matches(':hover')) this.parentElement.removeAttribute('data-open'); }, 200)">
+                    About Us
+                    <span class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="absolute top-full left-0 mt-0 pt-1 w-48 z-40 pointer-events-none group-hover:pointer-events-auto" onmouseover="this.parentElement.setAttribute('data-open', 'true')" onmouseout="this.parentElement.removeAttribute('data-open')">
+<div class="bg-white dark:bg-[#143C38] shadow-xl rounded-md py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-outline-variant/20 group-hover:pointer-events-auto" style="pointer-events: auto">
+<a class="block px-4 py-2 text-xs font-bold text-[#C49C34] bg-[#EEEDE4] dark:bg-[#143C38]" href="./company-profile.html">Company Profile</a>
+<a class="block px-4 py-2 text-xs font-bold text-[#143C38] dark:text-[#EEEDE4] hover:bg-[#EEEDE4] dark:hover:bg-[#143C38] transition-colors" href="./history.html">History</a>
+<a class="block px-4 py-2 text-xs font-bold text-[#143C38] dark:text-[#EEEDE4] hover:bg-[#EEEDE4] dark:hover:bg-[#143C38] transition-colors" href="./vision-mission.html">Vision &amp; Mission</a>
+<a class="block px-4 py-2 text-xs font-bold text-[#143C38] dark:text-[#EEEDE4] hover:bg-[#EEEDE4] dark:hover:bg-[#143C38] transition-colors" href="./organizational-structure.html">Organizational Structure</a>
+<a class="block px-4 py-2 text-xs font-bold text-[#143C38] dark:text-[#EEEDE4] hover:bg-[#EEEDE4] dark:hover:bg-[#143C38] transition-colors" href="./company-structure.html">Company Structure</a>
+</div>
+</div>
+</div>
+<a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] dark:text-[#EEEDE4] hover:text-[#C49C34] transition-colors" href="../../product/">Product</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] dark:text-[#EEEDE4] hover:text-[#C49C34] transition-colors" href="../../news-gallery/">News &amp; Gallery</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] dark:text-[#EEEDE4] hover:text-[#C49C34] transition-colors" href="../../public-documents/">Public Document</a>
+<a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] dark:text-[#EEEDE4] hover:text-[#C49C34] transition-colors" href="../../contact/">Contact Us</a>
+</nav>
+<div class="flex items-center space-x-6">
+<div class="flex items-center gap-2 text-xs font-bold text-primary">
+<span class="opacity-40 cursor-pointer hover:opacity-100">ID</span>
+<span class="opacity-20">|</span>
+<span class="cursor-pointer">EN</span>
+</div>
+<button class="lg:hidden text-[#143C38] dark:text-[#EEEDE4]">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex min-h-screen relative">
+<!-- Sidebar Navigation -->
+<aside class="md:w-64 shrink-0">
+<div class="sticky top-24 bg-[#f5f4eb] dark:bg-[#1b1c17] rounded-xl overflow-hidden">
+<div class="p-6 bg-[#e4e3da] dark:bg-[#25261d]">
+<h2 class="font-headline font-extrabold text-[#143C38] uppercase tracking-tighter">About Us</h2>
+<p class="text-[10px] uppercase tracking-widest text-secondary font-bold">The Earth's Architect</p>
+</div>
+<nav class="flex flex-row overflow-x-auto md:flex-col items-start gap-4 p-6 w-full">
+<a class="font-manrope font-semibold text-sm text-[#775a00] font-bold border-l-4 border-[#775a00] pl-4 transition-all duration-200 py-2 w-full block" href="./company-profile.html">Company Profile</a>
+<a class="font-manrope font-semibold text-sm text-[#143C38] dark:text-[#fbfaf0] pl-4 opacity-60 hover:bg-[#e4e3da] dark:hover:bg-[#2c2d24] transition-all duration-200 py-2 w-full block" href="./history.html">History</a>
+<a class="font-manrope font-semibold text-sm text-[#143C38] dark:text-[#fbfaf0] pl-4 opacity-60 hover:bg-[#e4e3da] dark:hover:bg-[#2c2d24] transition-all duration-200 py-2 w-full block" href="./vision-mission.html">Vision &amp; Mission</a>
+<a class="font-manrope font-semibold text-sm text-[#143C38] dark:text-[#fbfaf0] pl-4 opacity-60 hover:bg-[#e4e3da] dark:hover:bg-[#2c2d24] transition-all duration-200 py-2 w-full block" href="./organizational-structure.html">Organizational Structure</a>
+<a class="font-manrope font-semibold text-sm text-[#143C38] dark:text-[#fbfaf0] pl-4 opacity-60 hover:bg-[#e4e3da] dark:hover:bg-[#2c2d24] transition-all duration-200 py-2 w-full block" href="./company-structure.html">Company Structure</a>
+</nav>
+</div>
+</aside>
+<!-- Main Content Area -->
+<div class="flex-1 overflow-x-hidden">
+<!-- Hero Section -->
+<section class="relative bg-[#EEEDE4] p-8 md:p-16 overflow-hidden">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2 z-10">
+<span class="label-md uppercase tracking-[0.3em] text-secondary font-bold mb-4 block">Foundational Excellence</span>
+<div class="flex gap-6 items-start">
+<div class="w-1.5 h-32 bg-secondary flex-shrink-0"></div>
+<h1 class="text-5xl md:text-7xl font-extrabold font-headline leading-[1.1] text-[#143C38] tracking-tight">
+                            Architects of Sustainable <span class="text-primary italic">Bounty.</span>
+</h1>
+</div>
+<p class="mt-8 text-lg text-[#414847] max-w-md leading-relaxed">
+                        Pioneering the intersection of advanced agricultural science and renewable energy solutions to feed and power the future.
+                    </p>
+</div>
+<div class="md:w-1/2 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Professional architectural and agricultural concept" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbCtD-LWYxD8H5q4vnYgSnEoLG0__FBmIx4RNy3theoEpS_7PFZ0Ngz5gad-BUkpDJZmG6o2xUKX2-OMsynSoc_-X2oDLIuGUpAet4bA87LN78y_VDNWl-s2JY--ysubnfYZTClVvGLUxf4k0vzVu3D6WZninIX1Oi3Cou7RENxxtHwV5mp36qhDUYS9Ah5dV4YNuXBe-dj0dqvqomrIR2wel2kg9AwAPZ6tRa5isxvCI6afv1cSW8tEOwEw6n3HGUA_slNKX7jOOJ"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-[#C49C34] p-8 rounded-lg shadow-xl max-w-xs">
+<p class="font-headline font-extrabold text-2xl text-[#143C38] leading-tight">Harvesting Innovation, Distilling Energy.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- New Profile Stats Section (from IMAGE_18) -->
+<section class="bg-[#EEEDE4] py-12 px-8 md:px-16">
+<div class="max-w-6xl mx-auto">
+<div class="flex flex-col md:flex-row bg-white overflow-hidden rounded-xl shadow-lg border border-outline-variant/10">
+<!-- Left Content -->
+<div class="md:w-2/3 p-10 md:p-14 flex flex-col justify-center">
+<h2 class="text-3xl font-headline font-extrabold text-[#143C38] mb-6">Company Profile</h2>
+<p class="text-on-surface-variant leading-relaxed text-lg mb-10">
+                            Established with a vision to catalyze national food security and energy independence, PT Agrinas Pangan Nusantara operates at the intersection of vital industries. We manage strategic value chains that ensure sustainable growth, from soil to socket. Our commitment lies in creating a resilient ecosystem where productivity meets environmental stewardship.
+                        </p>
+<a class="inline-flex items-center gap-2 text-[#C49C34] font-bold text-xs uppercase tracking-widest hover:opacity-80 transition-opacity" href="#">
+                            Download Corporate Deck
+                            <span class="material-symbols-outlined text-sm">download</span>
+</a>
+</div>
+<!-- Right Stats (Gable Green) -->
+<div class="md:w-1/3 bg-[#143C38] p-10 md:p-14 flex flex-col justify-center space-y-12">
+<div>
+<div class="text-[#C49C34] text-4xl font-black font-headline mb-1">24/7</div>
+<div class="text-[#EEEDE4] text-[10px] font-bold tracking-[0.2em] uppercase opacity-70">Operational Excellence</div>
+</div>
+<div>
+<div class="text-[#C49C34] text-4xl font-black font-headline mb-1">15+</div>
+<div class="text-[#EEEDE4] text-[10px] font-bold tracking-[0.2em] uppercase opacity-70">Strategic Locations</div>
+</div>
+<div>
+<div class="text-[#C49C34] text-4xl font-black font-headline mb-1">100k+</div>
+<div class="text-[#EEEDE4] text-[10px] font-bold tracking-[0.2em] uppercase opacity-70">Hectares Managed</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Explore Our Journey Section -->
+<section class="bg-[#EEEDE4] py-20 px-8 md:px-16 border-y border-outline-variant/10">
+<div class="max-w-6xl mx-auto">
+<div class="mb-12">
+<span class="text-xs font-bold tracking-[0.3em] text-secondary uppercase mb-2 block">Deep Dive</span>
+<h2 class="text-4xl font-headline font-extrabold text-primary">Explore Our Journey</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Company History -->
+<div class="group bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full border border-outline-variant/20">
+<div class="h-48 relative overflow-hidden">
+<img alt="Historical agricultural beginnings" class="w-full h-full object-cover grayscale transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQyjs4sj8PG-272ryMRH1LJUYqQebhsXA-WorUAZHGzX3icz9vBCFJT8M7_jMqa6_CvK9m-OSuUzagxOSWnx0z9DyeGhm0nj0rWOJavKJJH0jDIaC5GTDDpHPoQxsP0EdytA7UFyP6FUBpfQaL8poY9h4apgApXMLCuUPMIPo7vEgJIxbbcQk-_T9_2Fk3QT500Cw_ziXu5IpEmHvrCOjkkgT6_YP817qHA6qui4WXlB5uHrt2hpslkq-Ca52PVxI0G_fcOQMUxVLM"/>
+<div class="absolute inset-0 bg-primary/20"></div>
+</div>
+<div class="p-8 flex flex-col flex-1">
+<h3 class="text-xl font-headline font-bold text-primary mb-4">Company History</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-8 flex-1">
+                                Established in 1998, our story began with a singular focus on rural agricultural empowerment, evolving over decades into a global leader in food security.
+                            </p>
+<a class="flex items-center gap-2 text-secondary font-bold text-xs uppercase tracking-widest hover:gap-4 transition-all group/link" href="#">
+                                View Timeline
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Vision & Mission -->
+<div class="group bg-primary text-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full relative">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-8xl">format_quote</span>
+</div>
+<div class="p-8 flex flex-col h-full relative z-10">
+<h3 class="text-xl font-headline font-bold text-[#C49C34] mb-4">Vision &amp; Mission</h3>
+<blockquote class="text-lg font-light italic leading-relaxed mb-8 flex-1 border-l-2 border-[#C49C34] pl-6 py-2">
+                                "To architect a world where Indonesian abundance powers the global future through sustainable precision."
+                            </blockquote>
+<a class="inline-flex items-center justify-center py-3 px-6 bg-[#C49C34] text-primary font-bold text-xs uppercase tracking-widest rounded transition-colors hover:bg-white" href="#">
+                                Our Purpose
+                            </a>
+</div>
+</div>
+<!-- Group Structure -->
+<div class="group bg-surface rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full border border-outline-variant/20">
+<div class="h-48 relative overflow-hidden">
+<img alt="Corporate Ecosystem Overview" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP_SFYXbXiK2FqQNc9nVeyqN_8izevDb5c5TZRozzEdCBEBSm2idTQkclqbAck0u2z6ZlhxMB4cBRWrpWSlKX_IIM-xKg-xRjVGzgLY5yIB0H7K_Zqng9GPbctzXm3ehraGY8AdA-VxCSZIOeNEbolb-x1-ONffLoZM9hl-hpw2Jl3KGmhn9NjzxAhza2GdRIlt-OhFoQ4vGUM3TQ7gMVPN8wHgUDmXNc0fdCTi8kZz385VHKOwMgICp5q1pHtvmn0la-sYrZmAnUz"/>
+<div class="absolute inset-0 bg-secondary/10"></div>
+</div>
+<div class="p-8 flex flex-col flex-1">
+<h3 class="text-xl font-headline font-bold text-primary mb-4">Group Structure</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-8 flex-1">
+                                A integrated corporate ecosystem spanning across specialized agricultural, energy, and logistical subsidiaries working in perfect synergy.
+                            </p>
+<a class="flex items-center gap-2 text-secondary font-bold text-xs uppercase tracking-widest hover:gap-4 transition-all group/link" href="#">
+                                View Subsidiaries
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Official Identity -->
+<section class="py-24 px-8 md:px-16 bg-[#EEEDE4]">
+<div class="max-w-6xl mx-auto">
+<div class="grid md:grid-cols-2 gap-20 items-center">
+<div class="space-y-8">
+<div class="inline-block px-4 py-1 border border-secondary/20 rounded-full">
+<span class="text-xs font-bold tracking-widest text-secondary uppercase">Corporate Profile</span>
+</div>
+<h2 class="text-4xl font-headline font-bold text-primary">A Legacy Built on the Earth's Potential</h2>
+<p class="text-on-surface-variant leading-relaxed text-lg">
+                            PT Agrinas Pangan Nusantara operates as a strategic vehicle for national food security and energy independence. We leverage cutting-edge precision technologies to optimize yields while minimizing environmental impact, creating a circular ecosystem that benefits stakeholders and the planet alike.
+                        </p>
+<div class="grid grid-cols-2 gap-y-8 gap-x-4">
+<div class="border-l border-outline-variant/30 pl-4">
+<p class="text-xs uppercase tracking-tighter text-on-surface-variant font-medium">Legal Status</p>
+<p class="text-lg font-bold text-primary">Perseroan Terbatas</p>
+</div>
+<div class="border-l border-outline-variant/30 pl-4">
+<p class="text-xs uppercase tracking-tighter text-on-surface-variant font-medium">Headquarters</p>
+<p class="text-lg font-bold text-primary">Jakarta, Indonesia</p>
+</div>
+<div class="border-l border-outline-variant/30 pl-4">
+<p class="text-xs uppercase tracking-tighter text-on-surface-variant font-medium">Primary Sectors</p>
+<p class="text-lg font-bold text-primary">Agriculture &amp; Energy</p>
+</div>
+<div class="border-l border-outline-variant/30 pl-4">
+<p class="text-xs uppercase tracking-tighter text-on-surface-variant font-medium">Established</p>
+<p class="text-lg font-bold text-primary">2020</p>
+</div>
+</div>
+</div>
+<div class="relative group">
+<img alt="Modern agricultural setting with crops and solar panels" class="w-full h-[500px] object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQoAjIK3VVctIJ04w5eXsmsWdFDVBqhtl2pE1Rpqndj6idSeeOPlykfLYFR3xJYDSWv1I3wZsX3nNRxaX6CUorqVvpvvHj9KV4Mm8Og8vhjK8mwFMS_whQX-ww6rAHXh19hfuX7FgQ_CCr4xhv8JbPq41Mh4jD5FC3v2LgXeSq_qnuML4_4YDsWq1Df5K1hBfeup1u0th3Dz7mPpsZOLriw4PP-5EVW8-Dqd812xdoX_W8FB7YaUbursCGqCg5om_ZogsILDc_ueAd"/>
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors rounded-xl"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Integrated Excellence -->
+<section class="py-24 px-8 md:px-16 bg-[#EEEDE4]">
+<div class="max-w-6xl mx-auto">
+<div class="relative rounded-2xl overflow-hidden min-h-[500px] flex items-center">
+<img alt="High-quality precision farming background" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf5nRffMXEpRX7obM_Kppz8aesWxtJxen7ygmVCrNie4-RWzCZ8jcsa7TxVzDX6lWCJs_hVg5i5P3p5RpIFqYpBDLAT-gGBEnm2-yKTTTQq5wU4fjvPNDj02hME6mROyjwZxEW2s3IhKq6qqzZP6A6maP5jGsWkHdvZo23xBLm4ii5A6Qtlugjhr8wZFgzWJZWG9k4NL8HC5w1MBPi3kmnW5ux0SSp4y1aH7RVZE2atCB-uuDym6GtwDkup96wLLSVRgyWoeW5YQ31"/>
+<div class="absolute inset-0 bg-primary/60"></div>
+<div class="relative z-10 grid md:grid-cols-2 gap-12 px-12">
+<div class="bg-[#EEEDE4] p-12 shadow-2xl flex flex-col justify-center transform -translate-y-4">
+<h3 class="text-3xl font-headline font-extrabold text-[#143C38] leading-tight mb-4">25+ Years of Precision Agricultural Innovation</h3>
+<div class="w-16 h-1 bg-[#C49C34] mb-6"></div>
+<p class="text-on-surface-variant leading-relaxed">
+                                Our methodology integrates heritage expertise with future-tech. From satellite crop monitoring to bio-energy reclamation, we manage resources with unmatched precision.
+                            </p>
+</div>
+<div class="flex items-center">
+<p class="text-[#EEEDE4] text-xl font-light italic leading-relaxed border-l-4 border-[#C49C34] pl-8">
+                                "We don't just farm the land; we engineer the cycle. Every gram of waste is a joule of energy waiting to be reclaimed."
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Strategic Business Scope (Bento Grid) -->
+<section class="py-24 px-8 md:px-16 bg-[#EEEDE4]">
+<div class="max-w-6xl mx-auto">
+<div class="mb-16">
+<span class="label-md uppercase tracking-widest text-secondary font-bold">Operational Pillars</span>
+<h2 class="text-4xl font-headline font-bold text-on-background mt-2">Strategic Business Scope</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Precision Agriculture -->
+<div class="md:col-span-2 group relative overflow-hidden rounded-xl h-80">
+<img alt="Precision Agriculture" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-lOp-Mcs9S1Cs-ZnBuciMqH57ON-CQOZDHN04TmJLP2jmnyll7Nr_Kw0thNZ6rvJoZMvd3l5-4xtcr_3p8UJRoBtCEI_uScvwZqvL2objiRFs6MD8TvCAOL79TQYzxRaDFHyoX0rjieWi-Gr0PSFeOt23ToVeVVEz3DilGZ6qckAJ0Anu4jrYpDZCqyeU-YOMNdSjWgtV6-YrsXgzqipLP7_ytazl6nQSikZYDtasT1AkrqhFiMif8rubDnWAlOvSofRbuL5g7vVv"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent p-8 flex flex-col justify-end">
+<h4 class="text-2xl font-headline font-bold text-[#EEEDE4] mb-2">Precision Agriculture</h4>
+<p class="text-[#EEEDE4]/80 text-sm max-w-xs">Data-driven crop management to maximize efficiency and nutritional density.</p>
+</div>
+</div>
+<!-- Strategic Energy -->
+<div class="group relative overflow-hidden rounded-xl h-80">
+<img alt="Strategic Energy" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbJqZXineTERSRC_61WwqiLHCUqH4Ce4xyfnR63WeYdn82F8-svgYu9hp4nyvdgdiOw6HCAT6diuVgDNkxcGumkLr32Bo3ssUCJnIPeWV4R8CffHza5rJFMtvD4ptSHUGeEl_K5I60TY7IQUBRAQ6wpW3qzaRGRsOs3oKW1sy-eDgc0bVs4oYap5ehbGuVywlwUGB-Gln4UbqdXPATFmIs9pzmxj0oibhZ_cHp5OUqPFR6Wg79puy2M5YLYASpaO4FTHQIHAxXRLYh"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent p-8 flex flex-col justify-end">
+<h4 class="text-xl font-headline font-bold text-[#EEEDE4] mb-2">Strategic Energy</h4>
+<p class="text-[#EEEDE4]/80 text-xs">Pioneering biofuel production and clean energy storage solutions.</p>
+</div>
+</div>
+<!-- Smart Logistics -->
+<div class="group relative overflow-hidden rounded-xl h-80">
+<img alt="Smart Logistics" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC94u6Kz-HIkeFQyBl56g-bKeYwMSn_0a07E2W1VcyywYTZuqEth_sTH_g6hgVVa3b2CWC11eH_TKuvgdPkQhPfV4hKz2Plz8JShWH44udeaDseNaMCuXO_zfG_Xuo2doPmOwWzizZd0n_Zy3WHRFOt4OvfZ2z_UpxxS8Vldz0ojFS1snn2zDJ3LfiJtfDE1CJ13EeLGnLME_QcjClE5gqH0mvl8H5IOHPReu0qsqpW8_ivEbkEfmQOkfbXydKQQNvqchHUmTdsS42P"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent p-8 flex flex-col justify-end">
+<h4 class="text-xl font-headline font-bold text-[#EEEDE4] mb-2">Smart Logistics</h4>
+<p class="text-[#EEEDE4]/80 text-xs">Optimized supply chain routes ensuring peak freshness and minimal carbon footprint.</p>
+</div>
+</div>
+<!-- Sustainable Export -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl h-64">
+<img alt="Sustainable Export" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGIVi0wRr4i_1kmVn5gRH0n65OODyrrXEEbZGP5QMSWG9MJsD4kn1Jc5SE_V5gWjistpgBoHTtbC1k-X1l5ibIPe9SxN1afMUY1pVFZVaNwsazVriW3MPBdQ8eZS6h2gRU1qfCZfVXThlaaJRtdZ88s88evhQLetw1G8ugiWNFFiAzF79TtoD0STwwDpaZtQRgBxsuqniQeXGJ-r_JGyfW5cpvh9g4ONNetnz0Q8G6rLdCHZkP0bO8hZnHMbw-dQcLpbc_YTbFPxne"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/40 to-transparent p-12 flex flex-col justify-center">
+<h4 class="text-3xl font-headline font-bold text-[#EEEDE4] mb-4">Sustainable Export</h4>
+<p class="text-[#EEEDE4]/80 text-lg max-w-xl">Connecting Indonesian abundance to global markets through ethical and transparent trading frameworks.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our DNA / Core Values -->
+<section class="py-24 px-8 md:px-16 bg-[#EEEDE4]">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-20">
+<span class="label-md uppercase tracking-widest text-secondary font-bold">The Core Ethos</span>
+<h2 class="text-4xl font-headline font-bold text-primary mt-4">The DNA of Our Growth</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="text-center group">
+<div class="w-20 h-20 bg-surface-container-high rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#C49C34] transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl text-[#C49C34] group-hover:text-white" data-icon="verified_user">verified_user</span>
+</div>
+<h5 class="text-xl font-bold mb-3 font-headline text-primary">Integrity</h5>
+<p class="text-sm text-on-surface-variant leading-relaxed">Upholding the highest ethical standards in every transaction and community interaction.</p>
+</div>
+<div class="text-center group">
+<div class="w-20 h-20 bg-surface-container-high rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#C49C34] transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl text-[#C49C34] group-hover:text-white" data-icon="lightbulb">lightbulb</span>
+</div>
+<h5 class="text-xl font-bold mb-3 font-headline text-primary">Innovation</h5>
+<p class="text-sm text-on-surface-variant leading-relaxed">Relentlessly pursuing technological breakthroughs that redefine industry benchmarks.</p>
+</div>
+<div class="text-center group">
+<div class="w-20 h-20 bg-surface-container-high rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#C49C34] transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl text-[#C49C34] group-hover:text-white" data-icon="eco">eco</span>
+</div>
+<h5 class="text-xl font-bold mb-3 font-headline text-primary">Sustainability</h5>
+<p class="text-sm text-on-surface-variant leading-relaxed">Ensuring every action strengthens the environment for generations to come.</p>
+</div>
+<div class="text-center group">
+<div class="w-20 h-20 bg-surface-container-high rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#C49C34] transition-colors duration-300">
+<span class="material-symbols-outlined text-4xl text-[#C49C34] group-hover:text-white" data-icon="handshake">handshake</span>
+</div>
+<h5 class="text-xl font-bold mb-3 font-headline text-primary">Collaboration</h5>
+<p class="text-sm text-on-surface-variant leading-relaxed">Partnering with global leaders to foster a resilient and diverse global ecosystem.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#143C38] text-[#EEEDE4] pt-24 pb-12">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 border-t border-[#c0c8c6]/20 pt-16">
+<div class="col-span-1">
+<div class="text-2xl font-black text-[#C49C34] mb-4 uppercase font-headline">
+                            Agrinas
+                        </div>
+<p class="text-xs font-normal opacity-80 leading-relaxed max-w-xs mb-8">
+                            Redefining the harmony between Indonesian agriculture and energy security through sophisticated technological integration.
+                        </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-[#C49C34] transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-[#C49C34] transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">mail</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-[#C49C34] transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">call</span>
+</a>
+</div>
+</div>
+<div>
+<h6 class="text-sm font-bold text-white mb-6 uppercase tracking-wider">Company</h6>
+<ul class="space-y-4">
+<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">About Us</a></li>
+<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">Career</a></li>
+<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">Sustainability Report</a></li>
+<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">Governance</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-sm font-bold text-white mb-6 uppercase tracking-wider">Industries</h6>
+<ul class="space-y-4">
+<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">Precision Farming</a></li>
+<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">Bio-Energy</a></li>
+<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">Global Logistics</a></li>
+<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">Supply Chain</a></li>
+</ul>
+</div>
+<div>
+<h6 class="text-sm font-bold text-white mb-6 uppercase tracking-wider">Legal &amp; Contact</h6>
+<ul class="space-y-4">
+<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">Privacy Policy</a></li>
+<li><a class="text-xs text-[#e4e3da] hover:text-[#C49C34] transition-all underline-offset-4 hover:underline" href="#">Terms of Service</a></li>
+<li class="pt-4">
+<p class="text-xs opacity-60">HQ Address:</p>
+<p class="text-xs text-white">Sudirman Central Business District, Jakarta, Indonesia</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs font-normal opacity-80">© 2024 PT Agrinas Pangan Nusantara. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="text-xs text-[#e4e3da] opacity-80 hover:opacity-100 transition-opacity" href="#">Whistleblowing System</a>
+<a class="text-xs text-[#e4e3da] opacity-80 hover:opacity-100 transition-opacity" href="#">Quality Standards</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</main>
+</body></html>
