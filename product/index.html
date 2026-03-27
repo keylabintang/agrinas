@@ -149,21 +149,21 @@
 <section class="bg-surface-container-low py-12">
 <div class="max-w-7xl mx-auto px-8">
 <div class="flex flex-wrap gap-4 items-center justify-center md:justify-start">
-<button class="px-8 py-3 bg-primary text-on-primary rounded-md font-medium text-sm transition-all">Semua Produk</button>
-<button class="px-8 py-3 text-on-surface-variant hover:bg-surface-container-high rounded-md font-medium text-sm transition-all">Distribusi Pangan</button>
-<button class="px-8 py-3 text-on-surface-variant hover:bg-surface-container-high rounded-md font-medium text-sm transition-all">Pertanian</button>
-<button class="px-8 py-3 text-on-surface-variant hover:bg-surface-container-high rounded-md font-medium text-sm transition-all">Hortikultura</button>
-<button class="px-8 py-3 text-on-surface-variant hover:bg-surface-container-high rounded-md font-medium text-sm transition-all">Peternakan</button>
-<button class="px-8 py-3 text-on-surface-variant hover:bg-surface-container-high rounded-md font-medium text-sm transition-all">Pupuk Organik</button>
+<button class="product-filter-btn px-8 py-3 bg-primary text-on-primary rounded-md font-medium text-sm transition-all" data-filter="all">Semua Produk</button>
+<button class="product-filter-btn px-8 py-3 text-on-surface-variant hover:bg-surface-container-high rounded-md font-medium text-sm transition-all" data-filter="distribusi-pangan">Distribusi Pangan</button>
+<button class="product-filter-btn px-8 py-3 text-on-surface-variant hover:bg-surface-container-high rounded-md font-medium text-sm transition-all" data-filter="pertanian">Pertanian</button>
+<button class="product-filter-btn px-8 py-3 text-on-surface-variant hover:bg-surface-container-high rounded-md font-medium text-sm transition-all" data-filter="hortikultura">Hortikultura</button>
+<button class="product-filter-btn px-8 py-3 text-on-surface-variant hover:bg-surface-container-high rounded-md font-medium text-sm transition-all" data-filter="peternakan">Peternakan</button>
+<button class="product-filter-btn px-8 py-3 text-on-surface-variant hover:bg-surface-container-high rounded-md font-medium text-sm transition-all" data-filter="pupuk-organik">Pupuk Organik</button>
 </div>
 </div>
 </section>
 <!-- Listing Produk (Grid) -->
 <section class="py-24">
 <div class="max-w-7xl mx-auto px-8">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16" id="product-grid">
 <!-- Card 1 -->
-<div class="group">
+<div class="group product-card" data-category="pertanian">
 <div class="relative overflow-hidden rounded-xl mb-6 bg-surface-container">
 <img alt="High-Yield Seeds" class="w-full h-[300px] object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100" data-alt="Close-up of high-quality agricultural seeds in wooden bowls with natural sunlight filtering through green leaves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLziNlPZcqhOjVPL-8Bd6tNZFyC-2y-L_6pSPQQKdjVjmKQ5U_Uq0hRCJ-S23R9J8Gp9EJjmGkpor3iN8ARTJdlWKE1xobwndKHSbK4EklqVFcNvTKAkRfXjH14hWGSClPRzD3ug29W2eIF-xgTaDOlng51kWawBVrR4kQ5e8BPP41-yMApuBLjEJLy7CvVzAvpiloRpBYmNpRM4yLIzbdC_cTunh72aF0EBZir8g6p_VUp961WoGQ7zIwd3tqnL1DxsHFeUusBurU"/>
 </div>
@@ -175,7 +175,7 @@
 </a>
 </div>
 <!-- Card 2 -->
-<div class="group">
+<div class="group product-card" data-category="pupuk-organik">
 <div class="relative overflow-hidden rounded-xl mb-6 bg-surface-container">
 <img alt="Organic Fertilizers" class="w-full h-[300px] object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100" data-alt="Rich dark organic fertilizer being spread on young green plant shoots in a sunlit modern greenhouse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdKj-yHrIya6wnIdl1PQEjdtH1M9NXR6vVVlIpc6FZEe0sDqPbiNqGL2IcH9atxARH2Rl2ODuMbWCWvNeSkrjUkrhcNBn5HoU8-b3G32Axjkpwreb4ijV0lLQumbNdq_-wf-V2kGZ58ulYKL_sR9e8NDgw_bubF6G91KI5i8g3dcfTFE7Nyij9ZiP1nqfPlSc9u-z70VmsrVBl8k3WLth867GJedM0pFW5jTCUp7A3FUAcL4tMCJIlu0nh2kt-6zYtc65L-V5lx-uf"/>
 </div>
@@ -187,7 +187,7 @@
 </a>
 </div>
 <!-- Card 3 -->
-<div class="group">
+<div class="group product-card" data-category="hortikultura">
 <div class="relative overflow-hidden rounded-xl mb-6 bg-surface-container">
 <img alt="Premium Rice Husk" class="w-full h-[300px] object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100" data-alt="Sun-dried golden premium rice husks piled in a traditional basket in a rural Indonesian farm setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAr_yCEnqbIXvdgnQWtPxwkwKrN3dfe5mrvrYWMHLEJlfkVx2WXltgSM-P3k_3_6T3hMrQkhG87foySQ-nmPUfoKc27uRT1nebhUTLUhm84DYNygAIOc1N8FXM7R1bd_kyf1x4IOjV3hND2FtbARJ92T8z8Sym95Fu4y-tel5qW1vtG84YbusZJc5Wei-Y_O8ReHzuUx6whOFqdwgZTGdfh1pRUtQJ0ylNkR2FP7UbY3LiMHEbBEQuo1ws2O5X5FzAlxetVasFCiFO-"/>
 </div>
@@ -199,7 +199,7 @@
 </a>
 </div>
 <!-- Card 4 -->
-<div class="group">
+<div class="group product-card" data-category="peternakan">
 <div class="relative overflow-hidden rounded-xl mb-6 bg-surface-container">
 <img alt="Livestock Feed" class="w-full h-[300px] object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100" data-alt="Nutrient-rich livestock feed pellets in a minimalist container with soft morning light and a farm backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuwiFmarfSiomC3-CGLEsmmL7_4e4zOIK8kJ5eVE4Wpa2Dq28lrYoUqThar5fp8hQGPIaxQ6SeJWwTyn0T2etPAKMCM_UH2WGTfTslIr5MZ3WYZuR_VrPV92J18Rez8vK9YY2j9eb3unbdbeHxY-VbSndA-jSk_P6-YxyoI3wT1DR4I3UfeekP20bo-deQeINbd4CwIZC5CP8tIB9_nFt5OHffO2jYkXjAQ0MIEFY5e54IIUu5XWps8Zcnen5r6hlmC2mTxtsJbPRW"/>
 </div>
@@ -211,7 +211,7 @@
 </a>
 </div>
 <!-- Card 5 -->
-<div class="group">
+<div class="group product-card" data-category="pertanian">
 <div class="relative overflow-hidden rounded-xl mb-6 bg-surface-container">
 <img alt="Precision Farm Tools" class="w-full h-[300px] object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100" data-alt="Modern high-tech agricultural equipment and precision sensors used in smart farming displayed against a clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNIjVS4813BYhKybjGLiH-IlhIgKb1bjmE_ISlKvoEtMQPNAwnF1XXMgTiH80PtzR8ukuoB5rW3-yQWtxDII9OINOfzvU9B2WbpNTSYmLlefQN1BXIuu-rvo9uyMf-e4BuPW-nZbHZ5xfniwfvtpOUtSYjiE3JM_TTz0dGSX8EFd9aF1E-Wa1bdrEdQaaXaSNUgnoHw-fDhHgNNMjuA2T40m3u2yBfnmVdPVGEJG6TCxG2RkItvs3f4oPPvULpngSIc_lgsbAlzvhg"/>
 </div>
@@ -223,7 +223,7 @@
 </a>
 </div>
 <!-- Card 6 -->
-<div class="group">
+<div class="group product-card" data-category="distribusi-pangan">
 <div class="relative overflow-hidden rounded-xl mb-6 bg-surface-container">
 <img alt="Post-Harvest Logistics" class="w-full h-[300px] object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100" data-alt="Industrial cold storage facility with organized pallets of fresh produce and soft artificial interior lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvAy3TAJYNLDi1EsA58HNGcqzk3kDNWdF7-eBQGezGN1NJYQ2AQnYsqpUwj1_AIuVKvTBKTPhMrtUYxpm5yOhSZvMjcqmpk_ZoF_5wjkR8TN0O5fb8SqZ0wAVyA18F9jZzefvdhug19S0He0p7tgOlrlKQ60ilNGS38gq80U3wZcy-d1GaGTe9H760deedOTrKlKMCiBBOt-o6WDdMLJApzyyIRYaUDhU9DXDjYcl6U8p7O_9nyiP8A8T3a167k91fYPga4o3vPXU9"/>
 </div>
@@ -248,9 +248,9 @@
                         Kami siap membantu kebutuhan agribisnis dan distribusi pangan Anda dengan standar kualitas internasional.
                     </p>
 <div class="flex flex-col sm:flex-row gap-4">
-<button class="px-10 py-4 signature-gradient text-on-primary rounded-md font-bold tracking-wide transition-transform active:scale-95 shadow-lg shadow-primary/10">
+<a class="px-10 py-4 signature-gradient text-on-primary rounded-md font-bold tracking-wide transition-transform active:scale-95 shadow-lg shadow-primary/10 inline-flex items-center justify-center" href="../contact/">
                             Hubungi Perusahaan
-                        </button>
+                        </a>
 <button class="px-10 py-4 border border-outline-variant/30 text-secondary hover:bg-secondary/5 rounded-md font-bold tracking-wide transition-all">
                             Lihat Katalog Digital
                         </button>
@@ -261,4 +261,34 @@
 </main>
 <div id="footer-container"></div>
 <script src="../includes/footer.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.product-filter-btn');
+    const cards = document.querySelectorAll('.product-card');
+
+    if (!buttons.length || !cards.length) return;
+
+    const activeClasses = ['bg-primary', 'text-on-primary'];
+    const inactiveClasses = ['text-on-surface-variant'];
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', function () {
+        const filter = this.dataset.filter;
+
+        buttons.forEach((btn) => {
+          btn.classList.remove(...activeClasses);
+          btn.classList.add(...inactiveClasses);
+        });
+
+        this.classList.add(...activeClasses);
+        this.classList.remove(...inactiveClasses);
+
+        cards.forEach((card) => {
+          const matches = filter === 'all' || card.dataset.category === filter;
+          card.style.display = matches ? '' : 'none';
+        });
+      });
+    });
+  });
+</script>
 </body></html>
