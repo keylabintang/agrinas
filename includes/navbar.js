@@ -57,17 +57,19 @@ function generateNavbar() {
     </div>
     <nav class="hidden lg:flex items-center space-x-6">
         <a class="${getNavLinkClass(isHomePage)}" href="${upPath}">Home</a>
-        <div class="group relative">
-            <button class="flex items-center gap-1 font-['Manrope'] font-bold tracking-tight text-xs uppercase ${isAboutPage ? 'text-[#C49C34] border-b-2 border-[#C49C34] pb-1' : 'text-[#143C38] dark:text-[#EEEDE4] hover:text-[#C49C34]'} transition-colors">
+        <div class="group relative" onmouseover="this.setAttribute('data-open', 'true')" onmouseout="this.removeAttribute('data-open')">
+            <button class="flex items-center gap-1 font-['Manrope'] font-bold tracking-tight text-xs uppercase ${isAboutPage ? 'text-[#C49C34] border-b-2 border-[#C49C34] pb-1' : 'text-[#143C38] dark:text-[#EEEDE4] hover:text-[#C49C34]'} transition-colors pointer-events-auto" type="button">
                 About Us
                 <span class="material-symbols-outlined text-sm">expand_more</span>
             </button>
-            <div class="absolute top-full left-0 mt-2 w-48 bg-white dark:bg-[#143C38] shadow-xl rounded-md py-2 hidden group-hover:block border border-outline-variant/20 z-50">
+            <div class="absolute top-full left-0 mt-0 pt-1 w-48 z-50 pointer-events-none group-hover:pointer-events-auto" onmouseover="this.parentElement.setAttribute('data-open', 'true')" onmouseout="this.parentElement.removeAttribute('data-open')">
+                <div class="bg-white dark:bg-[#143C38] shadow-xl rounded-md py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-outline-variant/20 pointer-events-auto group-data-[open=true]:opacity-100 group-data-[open=true]:visible">
                 <a class="block px-4 py-2 text-xs font-bold ${activeAboutPage === 'company-profile.html' ? 'text-[#C49C34] bg-[#EEEDE4] dark:bg-[#143C38]' : 'text-[#143C38] dark:text-[#EEEDE4] hover:bg-[#EEEDE4] dark:hover:bg-[#143C38]'} transition-colors" href="${aboutPath}company-profile.html">Company Profile</a>
                 <a class="block px-4 py-2 text-xs font-bold ${activeAboutPage === 'history.html' ? 'text-[#C49C34] bg-[#EEEDE4] dark:bg-[#143C38]' : 'text-[#143C38] dark:text-[#EEEDE4] hover:bg-[#EEEDE4] dark:hover:bg-[#143C38]'} transition-colors" href="${aboutPath}history.html">History</a>
                 <a class="block px-4 py-2 text-xs font-bold ${activeAboutPage === 'vision-mission.html' ? 'text-[#C49C34] bg-[#EEEDE4] dark:bg-[#143C38]' : 'text-[#143C38] dark:text-[#EEEDE4] hover:bg-[#EEEDE4] dark:hover:bg-[#143C38]'} transition-colors" href="${aboutPath}vision-mission.html">Vision &amp; Mission</a>
                 <a class="block px-4 py-2 text-xs font-bold ${activeAboutPage === 'organizational-structure.html' ? 'text-[#C49C34] bg-[#EEEDE4] dark:bg-[#143C38]' : 'text-[#143C38] dark:text-[#EEEDE4] hover:bg-[#EEEDE4] dark:hover:bg-[#143C38]'} transition-colors" href="${aboutPath}organizational-structure.html">Organizational Structure</a>
                 <a class="block px-4 py-2 text-xs font-bold ${activeAboutPage === 'company-structure.html' ? 'text-[#C49C34] bg-[#EEEDE4] dark:bg-[#143C38]' : 'text-[#143C38] dark:text-[#EEEDE4] hover:bg-[#EEEDE4] dark:hover:bg-[#143C38]'} transition-colors" href="${aboutPath}company-structure.html">Company Structure</a>
+                </div>
             </div>
         </div>
         <a class="${getNavLinkClass(isProductPage)}" href="${basePath}product/">Product</a>

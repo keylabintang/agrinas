@@ -79,44 +79,8 @@
     </style>
 </head>
 <body class="bg-surface bg-[#EEEDE4]" style="background-color: #EEEDE4;">
-<!-- Top Navigation Bar -->
-<header class="w-full top-0 sticky z-50 bg-[#EEEDE4] dark:bg-[#143C38] shadow-sm">
-<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
-<div class="flex items-center"><a href="../"><img alt="PT AGRINAS PANGAN NUSANTARA Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uiDH3M0X_scpS3mzIngRW5r7H_4bNRo6QSxOxq-PxAnpY8Sgzu_XUuxgCrskD8RP6kfi8M6m6Tl5qlDMMTlUFKi_gwnFFg52_ZQacA05mTMYt5J55f0FEDWcxMQBezt-R_iWBfCSXFS019Am8RuT0YJDncoiHUK4i0arNdk6rwU2oJ3JDppUmKXRbYLPpj3Zh1Mj15fB-17145TwCFZyXuC7fvw1D4epWKIheTswXNaQ8ycYvQ2I8HRlzdZGRqyw7DCHBk2uq_tKw"/></a></div>
-<nav class="hidden lg:flex items-center space-x-6">
-<a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] dark:text-[#EEEDE4] hover:text-[#C49C34] transition-colors" href="../">Home</a>
-<div class="group relative" style="--tw-space-y-reverse: 0; margin-bottom: calc(0px * calc(1 - var(--tw-space-y-reverse)))">
-<button class="flex items-center gap-1 font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#C49C34] dark:text-[#C49C34] border-b-2 border-[#C49C34] pb-1 hover:text-[#8B6E2F] transition-colors pointer-events-auto" type="button" onmouseover="this.parentElement.setAttribute('data-open', 'true')" onmouseout="setTimeout(() => { if(!this.parentElement.matches(':hover')) this.parentElement.removeAttribute('data-open'); }, 200)">
-                    About Us
-                    <span class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
-</button>
-<div class="absolute top-full left-0 mt-0 pt-1 w-48 z-40 pointer-events-none group-hover:pointer-events-auto" onmouseover="this.parentElement.setAttribute('data-open', 'true')" onmouseout="this.parentElement.removeAttribute('data-open')">
-<div class="bg-white dark:bg-[#143C38] shadow-xl rounded-md py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 border border-outline-variant/20 group-hover:pointer-events-auto" style="pointer-events: auto">
-<a class="block px-4 py-2 text-xs font-bold text-[#C49C34] bg-[#EEEDE4] dark:bg-[#143C38]" href="./company-profile.html">Company Profile</a>
-<a class="block px-4 py-2 text-xs font-bold text-[#143C38] dark:text-[#EEEDE4] hover:bg-[#EEEDE4] dark:hover:bg-[#143C38] transition-colors" href="./history.html">History</a>
-<a class="block px-4 py-2 text-xs font-bold text-[#143C38] dark:text-[#EEEDE4] hover:bg-[#EEEDE4] dark:hover:bg-[#143C38] transition-colors" href="./vision-mission.html">Vision &amp; Mission</a>
-<a class="block px-4 py-2 text-xs font-bold text-[#143C38] dark:text-[#EEEDE4] hover:bg-[#EEEDE4] dark:hover:bg-[#143C38] transition-colors" href="./organizational-structure.html">Organizational Structure</a>
-<a class="block px-4 py-2 text-xs font-bold text-[#143C38] dark:text-[#EEEDE4] hover:bg-[#EEEDE4] dark:hover:bg-[#143C38] transition-colors" href="./company-structure.html">Company Structure</a>
-</div>
-</div>
-</div>
-<a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] dark:text-[#EEEDE4] hover:text-[#C49C34] transition-colors" href="../product/">Product</a>
-<a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] dark:text-[#EEEDE4] hover:text-[#C49C34] transition-colors" href="../news-gallery/">News &amp; Gallery</a>
-<a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] dark:text-[#EEEDE4] hover:text-[#C49C34] transition-colors" href="../public-documents/">Public Document</a>
-<a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] dark:text-[#EEEDE4] hover:text-[#C49C34] transition-colors" href="../contact/">Contact Us</a>
-</nav>
-<div class="flex items-center space-x-6">
-<div class="flex items-center gap-2 text-xs font-bold text-primary">
-<span class="opacity-40 cursor-pointer hover:opacity-100">ID</span>
-<span class="opacity-20">|</span>
-<span class="cursor-pointer">EN</span>
-</div>
-<button class="lg:hidden text-[#143C38] dark:text-[#EEEDE4]">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</div>
-</header>
+<div id="navbar-container"></div>
+<script src="../includes/navbar.js"></script>
 <main class="max-w-screen-2xl mx-auto px-8 py-12 min-h-screen">
 <div class="flex flex-col md:flex-row gap-12">
 <!-- Sidebar Navigation -->
