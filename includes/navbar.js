@@ -1,31 +1,28 @@
-// Get current page path relative to root
-function getCurrentPageLevel() {
-    const path = window.location.pathname;
-    const segments = path.split('/').filter(p => p);
-    return segments.length; // Number of segments in path
-}
-
 // Generate navbar with correct routing
 function generateNavbar() {
-    const level = getCurrentPageLevel();
-    
-    // Determine the base path for links
-    let basePath = '';
-    let upPath = '';
-    let aboutPath = '';
-    let currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const path = window.location.pathname;
-    
-    if (level === 1) {
-        // Root level pages (index.html, contact/index.html, etc)
-        basePath = './';
-        upPath = './';
-        aboutPath = './about/';
-    } else if (level === 2) {
-        // Subdirectory pages (about/company-profile.html)
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+    const isAboutSection = path.includes('/about/');
+    const isSubSectionPage =
+        isAboutSection ||
+        path.includes('/product/') ||
+        path.includes('/news-gallery/') ||
+        path.includes('/public-documents/') ||
+        path.includes('/contact/');
+
+    let basePath = './';
+    let upPath = './';
+    let aboutPath = './about/';
+
+    if (isAboutSection) {
         basePath = '../';
         upPath = '../';
         aboutPath = './';
+    } else if (isSubSectionPage) {
+        basePath = '../';
+        upPath = '../';
+        aboutPath = '../about/';
     }
     
     // Determine active page for About dropdown
