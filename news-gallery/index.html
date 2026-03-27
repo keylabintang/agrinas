@@ -140,8 +140,8 @@
 </header>
 <main class="max-w-7xl mx-auto px-8 -mt-20 relative z-20 pb-24">
 <!-- Featured News -->
-<section class="mb-24">
-<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-2xl flex flex-col lg:flex-row group transition-all duration-500">
+<section class="mb-24" id="featured-news-section">
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-2xl flex flex-col lg:flex-row group transition-all duration-500 news-card" data-category="distribusi" data-search="Transformasi Digital Distribusi Pangan Nasional rantai pasok logistik distribusi AI">
 <div class="lg:w-2/3 overflow-hidden relative">
 <img alt="Dokumentasi rapat perusahaan Agrinas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="dokumentasi rapat perusahaan Agrinas" src="../asset/meeting.jpg"/>
 <div class="absolute top-6 left-6 bg-secondary text-white px-4 py-1.5 text-xs font-bold uppercase tracking-widest rounded-full">
@@ -166,21 +166,21 @@
 <div class="bg-surface-container-low p-4 rounded-xl flex flex-col md:flex-row gap-6 items-center">
 <div class="relative w-full md:w-1/3 group">
 <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
-<input class="w-full bg-surface-container-lowest border-none focus:ring-1 focus:ring-secondary rounded-lg pl-12 pr-4 py-3 text-sm transition-all placeholder:text-outline/60" placeholder="Cari berita atau kegiatan..." type="text"/>
+<input class="w-full bg-surface-container-lowest border-none focus:ring-1 focus:ring-secondary rounded-lg pl-12 pr-4 py-3 text-sm transition-all placeholder:text-outline/60" id="news-search-input" placeholder="Cari berita atau kegiatan..." type="text"/>
 </div>
 <div class="flex flex-wrap gap-2 w-full md:w-2/3 justify-start md:justify-end">
-<button class="px-5 py-2 rounded-full bg-primary text-white text-xs font-bold uppercase tracking-wider transition-colors">Semua</button>
-<button class="px-5 py-2 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-secondary hover:text-white text-xs font-bold uppercase tracking-wider transition-all">Distribusi</button>
-<button class="px-5 py-2 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-secondary hover:text-white text-xs font-bold uppercase tracking-wider transition-all">Pertanian</button>
-<button class="px-5 py-2 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-secondary hover:text-white text-xs font-bold uppercase tracking-wider transition-all">CSR</button>
-<button class="px-5 py-2 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-secondary hover:text-white text-xs font-bold uppercase tracking-wider transition-all">Lainnya</button>
+<button class="news-filter-btn px-5 py-2 rounded-full bg-primary text-white text-xs font-bold uppercase tracking-wider transition-colors" data-filter="all">Semua</button>
+<button class="news-filter-btn px-5 py-2 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-secondary hover:text-white text-xs font-bold uppercase tracking-wider transition-all" data-filter="distribusi">Distribusi</button>
+<button class="news-filter-btn px-5 py-2 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-secondary hover:text-white text-xs font-bold uppercase tracking-wider transition-all" data-filter="pertanian">Pertanian</button>
+<button class="news-filter-btn px-5 py-2 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-secondary hover:text-white text-xs font-bold uppercase tracking-wider transition-all" data-filter="csr">CSR</button>
+<button class="news-filter-btn px-5 py-2 rounded-full bg-surface-container-highest text-on-surface-variant hover:bg-secondary hover:text-white text-xs font-bold uppercase tracking-wider transition-all" data-filter="lainnya">Lainnya</button>
 </div>
 </div>
 </section>
 <!-- News Grid -->
-<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 mb-20">
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16 mb-20" id="news-grid">
 <!-- News Item 1 -->
-<article class="group">
+<article class="group news-card" data-category="pertanian" data-search="Pemberdayaan Petani Milenial di Wilayah Indonesia Timur Program edukasi teknologi modern bagi petani muda">
 <div class="overflow-hidden rounded-xl mb-6 aspect-[4/3] bg-surface-container">
 <img alt="News 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="vibrant rice field cultivation in Indonesia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBol1enooKAwDdgodJgB7Z6IMcPSKaTddrF7BHJwwydT79TaCBBJHHKIeu81rl7IipuWldD3_pyD7hbpIsReezXFCm_FdR_ML48reDbyQw_I_NH3ADmzIyrLC8BdL10xQjX6xMfYxaY3KZyg-CVrPvwj_hNPMl_YdyVzYseZKIALo1cUcX7T6UMNsuqOiCum6NnunUSnFsVOSjvsEKgVw8gIAb5Q4jz9Yyl-P25MSiJigBwYZ2hhAWZrUnKCnMqyT3E6WjNPe8QURIO"/>
 </div>
@@ -197,7 +197,7 @@
 </div>
 </article>
 <!-- News Item 2 -->
-<article class="group">
+<article class="group news-card" data-category="distribusi" data-search="Optimasi Rute Logistik Menurunkan Biaya Pangan 15 Distribusi logistik pergudangan transportasi">
 <div class="overflow-hidden rounded-xl mb-6 aspect-[4/3] bg-surface-container">
 <img alt="News 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="large scale food distribution warehouse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDByGMJLMUXWlkZFPAgEOZGfmw6YUDYsjapQXEclzI1L7Kt-zD2UHSPdf-xrGdIUtHkNoL56BKEKcZWkmbH2zIuHgqqXRgzYn1QxCgJVKmOYkfBb037hmzLQ5QqLrJkyMXQmg0Lcpf7BSSQdjLFDxrvDIjbakfPtB99pTZisO6C1m5scv676kPashNJaHobmgGoF0X7zNVQfoKCsMwigofka4cunXeKc2fAOBFE52usN-5aycLIWwO7jYltjtx6OcShtjz2kS3Qx-7s"/>
 </div>
@@ -214,7 +214,7 @@
 </div>
 </article>
 <!-- News Item 3 -->
-<article class="group">
+<article class="group news-card" data-category="lainnya" data-search="Inisiasi Energi Surya untuk Irigasi Pertanian Modern energi baru panel surya irigasi">
 <div class="overflow-hidden rounded-xl mb-6 aspect-[4/3] bg-surface-container">
 <img alt="News 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="renewable energy solar panels in agricultural field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVZ363vmbw0WuVd8FhZvy_UutmlZQBx-WiMZ4g0RWGWxBEM8A8cyRW7yr6A6s7H2trBcMYe058mRSd1nt2TbYwJ6Ivz362ncmPIU8PILegmKPHGRGo7LDar45Z0EFnV7zRinfdy0VON9yA0QRsEIH2zfKzPPG8GbMogFuib4L7QapNlOB41yjTuFFgRaswnPzgba0tJTiclOUTYWzWKejfEuiSz3Oy8KMpjomOjUR2cOBgVeIEKxc1Lw9Werg7W3fKZcU3ihoPCVG4"/>
 </div>
@@ -231,7 +231,7 @@
 </div>
 </article>
 <!-- News Item 4 -->
-<article class="group">
+<article class="group news-card" data-category="pertanian" data-search="Panen Raya Sayur Organik di Lahan Percontohan pertanian sayur organik pupuk presisi">
 <div class="overflow-hidden rounded-xl mb-6 aspect-[4/3] bg-surface-container">
 <img alt="News 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="healthy green vegetable plantation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfLI1J7a6EjXnivT2s-VCKaADfJoEAn3cuhD_oQfy-BbdbLr2iHdLKN48SNU6jhCBqmPm8hh1JQgxE12x7Vxdma4wAvQ_CzeMQ-o34AQo8yMf25RPwmNYjwkGfS5U-E9ndCmOZPl--lx1WeMDvM09O1gafR7IccSPbqZEAo5db_rdV5GXGNwgS2V10qFjLQHvxf3SuWwuSxiNAYuxDzGhb9oxc9Nu0AorHtyRbxz0sOPvlwrvk1OVdULcWYSpbxF2N0SvKTi_MpuYs"/>
 </div>
@@ -248,7 +248,7 @@
 </div>
 </article>
 <!-- News Item 5 -->
-<article class="group">
+<article class="group news-card" data-category="csr" data-search="Kesehatan dan Keselamatan Kerja Menjadi Prioritas Utama internal penghargaan zero accident">
 <div class="overflow-hidden rounded-xl mb-6 aspect-[4/3] bg-surface-container">
 <img alt="News 5" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="workers in food production facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEIYlox9h9vc9JbFsUe6oo1_MUV4BBGa9cAMCnenCxQ9nl98uHvhl1E-yzGFYDgiB605zkoPi2ofVe2dmrS4MIRyTji6AaoKhWkgsijX7-MqAjPxDkdUXHwdCaZ77f5S7gERO0KzFm1IbOSA3OIaLhRawliz7j0ypQttdqyUY2V1CH8FPg-TlCvr4HoAcrY5SWSSsciMyrEfPXKUpMdnYerogWys8-sHYdHdjf54GFTbXiPmfiQ6_5UfFYhBhV71VUfyBQzErCJNu8"/>
 </div>
@@ -265,7 +265,7 @@
 </div>
 </article>
 <!-- News Item 6 -->
-<article class="group">
+<article class="group news-card" data-category="lainnya" data-search="Aplikasi Agrinas Connect Resmi Diluncurkan untuk Petani teknologi aplikasi petani">
 <div class="overflow-hidden rounded-xl mb-6 aspect-[4/3] bg-surface-container">
 <img alt="News 6" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="smart farming app on smartphone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPDJ_j9tenE6nMDHRmJVUti59TPCc_YYoBwi8mv6kQitCn1maBJDl38pXbK3aNwnAIyjZCOFUvA1TqCu3-N-cGqN_4kJs2d_tMdC5gPDh6XmzzqJGflUcbc3m80YrhR1zqpsTQhc2vhvNJUFgznqV3y9BmY0k0z_2cuCY96zieXNVjtqt4NREp_2yvvOfx5QFgW_hotS4lb-QQNN1TV-k8I0lqdjFqg2kFrn0RxxT2lIgexU6wU8yR_geep4jFHHDYQTGelhupF0V1"/>
 </div>
@@ -281,10 +281,61 @@
 </a>
 </div>
 </article>
+<!-- News Item 7 -->
+<article class="group news-card hidden" data-category="distribusi" data-extra="true" data-search="Penguatan cold chain nasional untuk distribusi pangan segar gudang dingin logistik">
+<div class="overflow-hidden rounded-xl mb-6 aspect-[4/3] bg-surface-container">
+<img alt="News 7" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="cold chain distribution facility for fresh food products" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvAy3TAJYNLDi1EsA58HNGcqzk3kDNWdF7-eBQGezGN1NJYQ2AQnYsqpUwj1_AIuVKvTBKTPhMrtUYxpm5yOhSZvMjcqmpk_ZoF_5wjkR8TN0O5fb8SqZ0wAVyA18F9jZzefvdhug19S0He0p7tgOlrlKQ60ilNGS38gq80U3wZcy-d1GaGTe9H760deedOTrKlKMCiBBOt-o6WDdMLJApzyyIRYaUDhU9DXDjYcl6U8p7O_9nyiP8A8T3a167k91fYPga4o3vPXU9"/>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-secondary font-bold text-[10px] uppercase tracking-[0.2em]">Distribusi</span>
+<span class="text-outline text-xs">20 Sep 2023</span>
+</div>
+<h3 class="text-on-surface font-headline font-bold text-xl group-hover:text-primary transition-colors line-clamp-2">Penguatan Cold Chain Nasional untuk Produk Pangan Segar</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed line-clamp-3">Pengembangan jaringan gudang dingin baru dilakukan untuk menjaga kualitas komoditas segar hingga sampai ke pasar akhir.</p>
+<a class="inline-flex items-center text-primary font-bold text-xs uppercase tracking-wider gap-1 pt-2 group-hover:gap-2 transition-all" href="./detail.html">
+                        Baca Selengkapnya <span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+</article>
+<!-- News Item 8 -->
+<article class="group news-card hidden" data-category="csr" data-extra="true" data-search="Program pemberdayaan kelompok tani perempuan CSR pelatihan wirausaha pangan">
+<div class="overflow-hidden rounded-xl mb-6 aspect-[4/3] bg-surface-container">
+<img alt="News 8" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="community empowerment program with women farmers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfxDsCbnTuUGKeEp0K6vMbcZey48Pvwqvnb3Cn4qKjJPjiacVibySf4FJhU-xHYXxGUdG7jK0GJiNAdK4wvvlMvM7DLsG-tqggfI0OKQGsrkpUryE4Wzn7Bq7rDhi2nqqBVbpq8kWFrjEHvoJ30SwnKyKJA2sbWrb3_xJFVEN7WB4iOSj0A-52Db3FUi6bUZ8JlJFVn5UWfS3xSlc1W9RbBUXnXeEOWHzJo1dYOFGurl5N9uVvE8vmHcDnd0S_wcRVlW8iulWTbNc9"/>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-secondary font-bold text-[10px] uppercase tracking-[0.2em]">CSR</span>
+<span class="text-outline text-xs">17 Sep 2023</span>
+</div>
+<h3 class="text-on-surface font-headline font-bold text-xl group-hover:text-primary transition-colors line-clamp-2">Pemberdayaan Kelompok Tani Perempuan Berbasis Produk Olahan</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed line-clamp-3">Agrinas memperluas pelatihan kewirausahaan pangan lokal untuk meningkatkan nilai tambah hasil pertanian keluarga.</p>
+<a class="inline-flex items-center text-primary font-bold text-xs uppercase tracking-wider gap-1 pt-2 group-hover:gap-2 transition-all" href="./detail.html">
+                        Baca Selengkapnya <span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+</article>
+<!-- News Item 9 -->
+<article class="group news-card hidden" data-category="pertanian" data-extra="true" data-search="uji coba varietas padi adaptif perubahan iklim pertanian riset lahan">
+<div class="overflow-hidden rounded-xl mb-6 aspect-[4/3] bg-surface-container">
+<img alt="News 9" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="trial field for climate adaptive rice varieties" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-eWEuLQt5ludsNZFEzJHTCqEiLkEwhTROCaEfy7EFWQs7ddZcs3F_csXLNog2MI1CAcEucRopOD3KmWq7exSMzu19BmoXgTAmmc02FON82RXcxxMOnOF-cpkpz-IWEjPPMHEIMB34HNGSzUaYt5d1k9jdl7aVdfxB0bCnYhV9zLQHM64h3RqdALlJaLDKaZuU167H4uFSy-qkmaqMt_NoRuAl8-fGZ2YWyRoDDW74EhFq-TL-mR--v7N9BQvXREhnceG4CP74mHVP"/>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="text-secondary font-bold text-[10px] uppercase tracking-[0.2em]">Pertanian</span>
+<span class="text-outline text-xs">14 Sep 2023</span>
+</div>
+<h3 class="text-on-surface font-headline font-bold text-xl group-hover:text-primary transition-colors line-clamp-2">Uji Coba Varietas Padi Adaptif terhadap Perubahan Iklim</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed line-clamp-3">Tim lapangan Agrinas melakukan pengujian varietas baru yang lebih tahan cekaman cuaca dan efisien dalam penggunaan air.</p>
+<a class="inline-flex items-center text-primary font-bold text-xs uppercase tracking-wider gap-1 pt-2 group-hover:gap-2 transition-all" href="./detail.html">
+                        Baca Selengkapnya <span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+</article>
 </section>
 <!-- Load More -->
 <div class="flex justify-center mb-32">
-<button class="px-10 py-4 bg-surface-container-high border border-outline/10 text-on-surface font-headline font-bold uppercase tracking-widest text-xs hover:bg-primary hover:text-white transition-all duration-300">
+<button class="px-10 py-4 bg-surface-container-high border border-outline/10 text-on-surface font-headline font-bold uppercase tracking-widest text-xs hover:bg-primary hover:text-white transition-all duration-300" id="load-more-news">
                 Muat Lebih Banyak
             </button>
 </div>
@@ -297,17 +348,17 @@
 </div>
 <!-- Gallery Filters -->
 <div class="flex flex-wrap justify-center gap-3 mb-12">
-<button class="px-6 py-2.5 rounded-full bg-secondary text-white text-xs font-bold uppercase tracking-widest shadow-lg shadow-secondary/20">Semua</button>
-<button class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-highest transition-all text-xs font-bold uppercase tracking-widest">Foto</button>
-<button class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-highest transition-all text-xs font-bold uppercase tracking-widest">Video</button>
-<button class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-highest transition-all text-xs font-bold uppercase tracking-widest">Panen</button>
-<button class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-highest transition-all text-xs font-bold uppercase tracking-widest">CSR</button>
-<button class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-highest transition-all text-xs font-bold uppercase tracking-widest">Operasional</button>
+<button class="gallery-filter-btn px-6 py-2.5 rounded-full bg-secondary text-white text-xs font-bold uppercase tracking-widest shadow-lg shadow-secondary/20" data-filter="all">Semua</button>
+<button class="gallery-filter-btn px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-highest transition-all text-xs font-bold uppercase tracking-widest" data-filter="foto">Foto</button>
+<button class="gallery-filter-btn px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-highest transition-all text-xs font-bold uppercase tracking-widest" data-filter="video">Video</button>
+<button class="gallery-filter-btn px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-highest transition-all text-xs font-bold uppercase tracking-widest" data-filter="panen">Panen</button>
+<button class="gallery-filter-btn px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-highest transition-all text-xs font-bold uppercase tracking-widest" data-filter="csr">CSR</button>
+<button class="gallery-filter-btn px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-highest transition-all text-xs font-bold uppercase tracking-widest" data-filter="operasional">Operasional</button>
 </div>
 <!-- Masonry Gallery -->
 <div class="masonry-grid gap-6">
 <!-- Item 1 -->
-<div class="masonry-item group relative overflow-hidden rounded-xl">
+<div class="masonry-item group relative overflow-hidden rounded-xl gallery-item" data-category="panen foto">
 <img alt="Gallery 1" class="w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="modern combine harvester at sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfSdl6q1fcCduME2pCc6rv13vEr12dtrFgheucvqp_F58zt-vtsG_Whd_X6Bf7iLaehaVGRVwicSiPMiFdbVAyJfQUimD4dohwrbnQ5YeNK50oaeJi4PMrpXOKW6-pefSm445Y-XXG1VWPFuJ96_KvGQ8CcIoO6l-e_C6q-ts9aF7L2ZHQHKtNVEU4Syv03j1cwgYlR5_tPz4joW2dAVgUr-clTt9OCWIHkskt5y_LUifHeLiR_9wP7WZDXTlIdElai0MwlPKnzk6N"/>
 <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
 <span class="text-secondary font-bold text-[10px] uppercase tracking-widest mb-2">Panen</span>
@@ -315,7 +366,7 @@
 </div>
 </div>
 <!-- Item 2 -->
-<div class="masonry-item group relative overflow-hidden rounded-xl">
+<div class="masonry-item group relative overflow-hidden rounded-xl gallery-item" data-category="foto">
 <img alt="Gallery 2" class="w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="fresh red tomatoes in high tech greenhouse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4fiGKaDqkY-QHXp6Sq2U_VuHR-1076rcn12tMZK_C6k74QRvcNDc0cCB2ZoKUF5SibYBUnCSGnmq0xK58SsnSSH3NJ_SW0k5oL3pt7L-mH8AHlD20NElrpxuLoV_D4vGc5z0yYWSSe4wfjhREfLCv6alF9uRoNrEz_IDw5iFnhuXiD180oXfvrSgsL-ahfZa9J2JyU3KLuRMlcELM5E3MVkAiLDCWv7D-WRjjVxTs019G6glARtkDh0QsXk4ijQZXbNLAIAgHq9cM"/>
 <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
 <span class="text-secondary font-bold text-[10px] uppercase tracking-widest mb-2">Produk</span>
@@ -323,7 +374,7 @@
 </div>
 </div>
 <!-- Item 3 -->
-<div class="masonry-item group relative overflow-hidden rounded-xl">
+<div class="masonry-item group relative overflow-hidden rounded-xl gallery-item" data-category="operasional foto">
 <img alt="Gallery 3" class="w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="modern logistics warehouse interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-aVgdR9pfDIbAUa6De67pcjDwC0htsXhh7SwO0mTFNpjJUVrLdSc6IQWAI9gZOGoHJ2OU3uJ1i9bTp_fX1P2wsyXmKcuY4S9hYQF11w14JUxKk5BjWd9imzRh0d1WkfNhgxVj0ioU9fAvIP-Q7K0OKTAxlPrDuq0iik-kG5kAuPTvbuyQOCO1OpDMavM3nWXjTTdXGgXakO-WvrRqCUzBmFq7GjARc2S_L9TtvnEgJ0kd8Xj-Yy10RKs4kT6Y7jn8V1ZzPwq_Ib8k"/>
 <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
 <span class="text-secondary font-bold text-[10px] uppercase tracking-widest mb-2">Operasional</span>
@@ -331,7 +382,7 @@
 </div>
 </div>
 <!-- Item 4 -->
-<div class="masonry-item group relative overflow-hidden rounded-xl">
+<div class="masonry-item group relative overflow-hidden rounded-xl gallery-item" data-category="foto">
 <img alt="Gallery 4" class="w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="solar energy fields in rural landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApnRi6UPu-ugGcuKiyRftDTSR1lem2dfW8TqpSnMg6zEYU7G3Vc4h9lgbxoofkTxqADrKwe3u2cc-WXEVHf1MnnENFlA7OAEgPobpdBomKy7yVzI1nUDRZ-jOimIS3botm39wOgxeJVK3ABr9Ws904gGdViIUrETI_F3lv76SHS_xa0d97SCO5M60BVI4kwLizakUfVbjkccARI9d3PSX7fubfFxG9qdw9XBniViIll71Y27s6XdC4A7JgP-HkIDmgcAGgKxCt_KRN"/>
 <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
 <span class="text-secondary font-bold text-[10px] uppercase tracking-widest mb-2">Energi</span>
@@ -339,7 +390,7 @@
 </div>
 </div>
 <!-- Item 5 -->
-<div class="masonry-item group relative overflow-hidden rounded-xl">
+<div class="masonry-item group relative overflow-hidden rounded-xl gallery-item" data-category="csr foto">
 <img alt="Gallery 5" class="w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="sustainable water resource management" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRLQdm10y_eivSJX34fIFoU__zQrfDnCSPsEmHPwyxM8_CZEfok_MRUN3epdDDE3I-dkOLbNszgSXmt1E1duj-fbbahe9WIfjMkbyA1EvMm62tjYD-Se0RbByE7mRBQJD-r7A4tIIVBuQRBA7VEaW8wrfyFwq1mNRC2YCTHfII46f8dO4xn3J1EmF6-8i2teD5UwjOYkb71h1TJC_v-VMXv0U9GKB9t-LjwYIVgRtUg33hZdy4fDpvh5p6xb7-6Obza9e55wGFaKzk"/>
 <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
 <span class="text-secondary font-bold text-[10px] uppercase tracking-widest mb-2">Lingkungan</span>
@@ -347,7 +398,7 @@
 </div>
 </div>
 <!-- Item 6 -->
-<div class="masonry-item group relative overflow-hidden rounded-xl">
+<div class="masonry-item group relative overflow-hidden rounded-xl gallery-item" data-category="foto">
 <img alt="Gallery 6" class="w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="processed agricultural grains" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt50zyjmazaCxc5TDpe5VnQs73UY7IieD-nADPSTI8cJ94PnvhgeDMJFXIpJX_A-42T51EiNgcfE2jqSKgu_TbTw5Th8sOdvP0THKgEer31ARRpA8re8T47pck3UvyywJFB_C9X9nk-uRBDYMfmhTBn4W3GgS2Y8CEmA9q56sv-oPDCqomhdO98eCWlBN0KMy_PMFhAV8L43tRbZGZEUJ6gIATTZvU-EiBp1R1-SC-iHfYbld4kBHhyOO8W_hc90V40XWmGN-Yxo4R"/>
 <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
 <span class="text-secondary font-bold text-[10px] uppercase tracking-widest mb-2">Produk</span>
@@ -355,7 +406,7 @@
 </div>
 </div>
 <!-- Item 7 -->
-<div class="masonry-item group relative overflow-hidden rounded-xl">
+<div class="masonry-item group relative overflow-hidden rounded-xl gallery-item" data-category="operasional foto">
 <img alt="Gallery 7" class="w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="corporate meeting on sustainable development" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCP21FQGI4hKXec5riTjzqQhjMz4m8W3I6gGNQP_8nE2R_-SsXX88zHdSZnCZZ_vdzcuvw-6Hbi7IKs4hB2n-JbQPlGIGVBVVHSRymfB0ksIFTn2HZf3w6vEYBHDv3SbcgabwTmFxj2ZtBxelu39T6wl2oT6AKWkknF9uThd9DXT1RDz6Y-UgEzHw1vAo6vmfA5Wu_AhLMU8DzyQM_ylOBoBPZi9PfkeUMspBrR84ofBDIf-JMY-p9qI_5pDU3Tz4OuxvyQE-A9bgS"/>
 <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
 <span class="text-secondary font-bold text-[10px] uppercase tracking-widest mb-2">Corporate</span>
@@ -363,7 +414,7 @@
 </div>
 </div>
 <!-- Item 8 -->
-<div class="masonry-item group relative overflow-hidden rounded-xl">
+<div class="masonry-item group relative overflow-hidden rounded-xl gallery-item" data-category="csr foto">
 <img alt="Gallery 8" class="w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="farmers using tablet for precision agriculture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHt5uI8M3wZWSACruCRSHELcYVFKw438v7ZuHkiXhgTRvfpjn9LQ-2JUNNN5CztsltvMO2-zPMaeh5WClAAyKb3ay1nQOueVB4_Fy7lrm4l0BcVfbLdkVBaEzzipE44cEwdSHTlr9mVenqQ-zig7ANx5tNjiimLG9398jH6cm-zsx_7cfhaRqlMDq5w5dEs5OTWC5bz7RkC3ErvG39OqHXPmlIrPwQO9gfEKNm7u6uPFIQzzcW30RQuzQlOraVRULv8fC9oXybNB7w"/>
 <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
 <span class="text-secondary font-bold text-[10px] uppercase tracking-widest mb-2">Edukasi</span>
@@ -371,7 +422,7 @@
 </div>
 </div>
 <!-- Item 9 -->
-<div class="masonry-item group relative overflow-hidden rounded-xl">
+<div class="masonry-item group relative overflow-hidden rounded-xl gallery-item" data-category="video">
 <img alt="Gallery 9" class="w-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="drone flying over agricultural field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMHuPW2jJyLde4S_yWeNifWr12j_qhgbwhKxZXo2p4mRV2oba2Uuc4zZNhtEPasB47ty-KS6iyd_neF39JNT3TmHpFZxBLqFcT9l10_WbrBrAAORBMfUYWa9IJjHm_xRKnsSU8FLGzrbhr3Wsqzx8U9kZmNpaEvfyTtb_dYDab0LlbziTLITkRlh1_cQqVC1M3Z8fD4Pstk4QZjdpSnNcclkV8A6AWDfHzzgqvOXo3zv7RrTF_UiWYi08pJAPrjkHx_rSveAiaTM38"/>
 <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
 <span class="text-secondary font-bold text-[10px] uppercase tracking-widest mb-2">Video</span>
@@ -383,4 +434,94 @@
 </main>
 <div id="footer-container"></div>
 <script src="../includes/footer.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const newsButtons = document.querySelectorAll('.news-filter-btn');
+    const newsCards = document.querySelectorAll('.news-card');
+    const searchInput = document.getElementById('news-search-input');
+    const loadMoreButton = document.getElementById('load-more-news');
+    const galleryButtons = document.querySelectorAll('.gallery-filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    let activeNewsFilter = 'all';
+    let activeGalleryFilter = 'all';
+    let extraNewsVisible = false;
+
+    function applyNewsFilter() {
+      const query = (searchInput?.value || '').trim().toLowerCase();
+
+      newsCards.forEach((card) => {
+        const category = card.dataset.category || '';
+        const searchText = (card.dataset.search || '').toLowerCase();
+        const isExtra = card.dataset.extra === 'true';
+        const matchesFilter = activeNewsFilter === 'all' || category === activeNewsFilter;
+        const matchesSearch = !query || searchText.includes(query);
+        const matchesLoadState = extraNewsVisible || !isExtra;
+
+        const shouldShow = matchesFilter && matchesSearch && matchesLoadState;
+        card.classList.toggle('hidden', !shouldShow);
+      });
+    }
+
+    function applyGalleryFilter() {
+      galleryItems.forEach((item) => {
+        const categories = (item.dataset.category || '').split(' ');
+        const shouldShow = activeGalleryFilter === 'all' || categories.includes(activeGalleryFilter);
+        item.classList.toggle('hidden', !shouldShow);
+      });
+    }
+
+    newsButtons.forEach((button) => {
+      button.addEventListener('click', function () {
+        activeNewsFilter = this.dataset.filter;
+
+        newsButtons.forEach((btn) => {
+          btn.classList.remove('bg-primary', 'text-white');
+          btn.classList.add('bg-surface-container-highest', 'text-on-surface-variant');
+        });
+
+        this.classList.add('bg-primary', 'text-white');
+        this.classList.remove('bg-surface-container-highest', 'text-on-surface-variant');
+
+        applyNewsFilter();
+      });
+    });
+
+    galleryButtons.forEach((button) => {
+      button.addEventListener('click', function () {
+        activeGalleryFilter = this.dataset.filter;
+
+        galleryButtons.forEach((btn) => {
+          btn.classList.remove('bg-secondary', 'text-white', 'shadow-lg', 'shadow-secondary/20');
+          btn.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+
+        this.classList.add('bg-secondary', 'text-white', 'shadow-lg', 'shadow-secondary/20');
+        this.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+
+        applyGalleryFilter();
+      });
+    });
+
+    if (searchInput) {
+      searchInput.addEventListener('input', applyNewsFilter);
+    }
+
+    if (loadMoreButton) {
+      loadMoreButton.addEventListener('click', function () {
+        extraNewsVisible = true;
+        applyNewsFilter();
+        this.style.display = 'none';
+      });
+    }
+
+    if (newsButtons.length && newsCards.length) {
+      applyNewsFilter();
+    }
+
+    if (galleryButtons.length && galleryItems.length) {
+      applyGalleryFilter();
+    }
+  });
+</script>
 </body></html>
