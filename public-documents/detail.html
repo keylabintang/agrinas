@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html class="light" lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Preview Dokumen | PT Agrinas Pangan Nusantara</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-secondary": "#ffffff",
+            "secondary": "#775a00",
+            "secondary-fixed-dim": "#ecc156",
+            "primary-container": "#143c38",
+            "on-primary-container": "#7fa6a1",
+            "on-surface": "#1b1c17",
+            "surface-container-lowest": "#ffffff",
+            "on-surface-variant": "#414847",
+            "surface-container-high": "#e9e8e0",
+            "surface-container-highest": "#e4e3da",
+            "surface-container-low": "#f5f4eb",
+            "surface": "#fbfaf0",
+            "outline": "#717977",
+            "outline-variant": "#c0c8c6",
+            "background": "#fbfaf0",
+            "primary": "#002622"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          boxShadow: {
+            "paper": "0 24px 70px rgba(20, 60, 56, 0.12)"
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+    .pdf-page {
+      background:
+        linear-gradient(to bottom, rgba(119, 90, 0, 0.08), rgba(119, 90, 0, 0)) 0 0 / 100% 88px no-repeat,
+        #ffffff;
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-secondary-fixed-dim/40 selection:text-primary">
+  <header class="w-full top-0 sticky z-50 bg-[#EEEDE4] shadow-sm">
+    <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+      <div class="flex items-center">
+        <a href="../"><img alt="PT AGRINAS PANGAN NUSANTARA Logo" class="h-12 w-auto object-contain" src="../asset/agrinas.png"/></a>
+      </div>
+      <nav class="hidden lg:flex items-center space-x-6">
+        <a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] hover:text-[#C49C34] transition-colors" href="../">Home</a>
+        <div class="group relative">
+          <button class="flex items-center gap-1 font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] hover:text-[#C49C34] transition-colors pointer-events-auto" onmouseout="setTimeout(() => { if(!this.parentElement.matches(':hover')) this.parentElement.removeAttribute('data-open'); }, 200)" onmouseover="this.parentElement.setAttribute('data-open', 'true')" type="button">
+            About Us
+            <span class="material-symbols-outlined text-sm group-hover:rotate-180 transition-transform">expand_more</span>
+          </button>
+          <div class="absolute top-full left-0 mt-0 pt-1 w-48 z-40 pointer-events-none group-hover:pointer-events-auto" onmouseout="this.parentElement.removeAttribute('data-open')" onmouseover="this.parentElement.setAttribute('data-open', 'true')">
+            <div class="bg-white shadow-xl rounded-md py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-outline-variant/20" style="pointer-events: auto">
+              <a class="block px-4 py-2 text-xs font-bold text-[#143C38] hover:bg-[#EEEDE4] transition-colors" href="../about/company-profile.html">Company Profile</a>
+              <a class="block px-4 py-2 text-xs font-bold text-[#143C38] hover:bg-[#EEEDE4] transition-colors" href="../about/history.html">History</a>
+              <a class="block px-4 py-2 text-xs font-bold text-[#143C38] hover:bg-[#EEEDE4] transition-colors" href="../about/vision-mission.html">Vision &amp; Mission</a>
+              <a class="block px-4 py-2 text-xs font-bold text-[#143C38] hover:bg-[#EEEDE4] transition-colors" href="../about/organizational-structure.html">Organizational Structure</a>
+              <a class="block px-4 py-2 text-xs font-bold text-[#143C38] hover:bg-[#EEEDE4] transition-colors" href="../about/company-structure.html">Company Structure</a>
+            </div>
+          </div>
+        </div>
+        <a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] hover:text-[#C49C34] transition-colors" href="../product/">Product</a>
+        <a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] hover:text-[#C49C34] transition-colors" href="../news-gallery/">News &amp; Gallery</a>
+        <a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#C49C34] border-b-2 border-[#C49C34] pb-1" href="../public-documents/">Public Document</a>
+        <a class="font-['Manrope'] font-bold tracking-tight text-xs uppercase text-[#143C38] hover:text-[#C49C34] transition-colors" href="../contact/">Contact Us</a>
+      </nav>
+      <div class="flex items-center gap-6">
+        <div class="flex items-center gap-2 text-xs font-bold text-primary">
+          <span class="opacity-40">ID</span>
+          <span class="opacity-20">|</span>
+          <span>EN</span>
+        </div>
+        <button class="lg:hidden text-[#143C38]">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="min-h-screen">
+    <section class="px-6 md:px-12 py-12 max-w-[1680px] mx-auto">
+      <div class="flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.22em] text-on-surface-variant mb-6">
+        <a class="hover:text-secondary transition-colors" href="../public-documents/">Public Document</a>
+        <span>/</span>
+        <span class="text-secondary">Preview Dokumen</span>
+      </div>
+
+      <div class="grid grid-cols-1 xl:grid-cols-[360px_minmax(0,1fr)] gap-8 items-start">
+        <aside class="space-y-6 xl:sticky xl:top-28">
+          <div class="bg-surface-container-low rounded-[28px] p-8 border border-outline-variant/25">
+            <span class="inline-flex px-3 py-1 bg-secondary/10 text-secondary text-[10px] font-bold uppercase tracking-[0.24em] rounded-full mb-5">PDF Preview</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-primary-container leading-[1.05] mb-4">Laporan Tahunan 2023</h1>
+            <p class="text-base text-on-surface-variant leading-relaxed mb-6">
+              Dokumen ringkasan performa bisnis, strategi ketahanan pangan, investasi operasional, dan agenda keberlanjutan PT Agrinas Pangan Nusantara.
+            </p>
+            <div class="grid grid-cols-2 gap-4 text-sm">
+              <div class="bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/20">
+                <span class="text-on-surface-variant text-xs uppercase tracking-[0.16em] block mb-2">Format</span>
+                <strong class="text-primary-container">PDF</strong>
+              </div>
+              <div class="bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/20">
+                <span class="text-on-surface-variant text-xs uppercase tracking-[0.16em] block mb-2">Ukuran</span>
+                <strong class="text-primary-container">4.2 MB</strong>
+              </div>
+              <div class="bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/20">
+                <span class="text-on-surface-variant text-xs uppercase tracking-[0.16em] block mb-2">Halaman</span>
+                <strong class="text-primary-container">18 Hal.</strong>
+              </div>
+              <div class="bg-surface-container-lowest rounded-2xl p-4 border border-outline-variant/20">
+                <span class="text-on-surface-variant text-xs uppercase tracking-[0.16em] block mb-2">Terbit</span>
+                <strong class="text-primary-container">15 Mar 2024</strong>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row xl:flex-col gap-3 mt-6">
+              <a class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-primary-container text-white font-bold hover:bg-primary transition-colors" href="../public-documents/">
+                <span class="material-symbols-outlined text-lg">arrow_back</span>
+                Kembali ke Dokumen
+              </a>
+              <button class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl border border-outline-variant/30 text-primary-container font-bold hover:bg-surface-container-high transition-colors" type="button">
+                <span class="material-symbols-outlined text-lg">download</span>
+                Unduh PDF
+              </button>
+            </div>
+          </div>
+
+          <div class="bg-primary-container text-white rounded-[28px] p-8 overflow-hidden relative">
+            <span class="text-secondary-fixed-dim uppercase tracking-[0.24em] text-xs font-bold block mb-4">Ringkasan Isi</span>
+            <ul class="space-y-4 text-sm leading-relaxed relative z-10">
+              <li>Ikhtisar perusahaan dan arah strategis 2023</li>
+              <li>Kinerja distribusi pangan dan produktivitas operasional</li>
+              <li>Program transformasi digital dan kemitraan petani</li>
+              <li>Komitmen keberlanjutan, tata kelola, dan prospek 2024</li>
+            </ul>
+            <div class="absolute -right-10 -bottom-10 h-36 w-36 rounded-[999px] bg-white/10"></div>
+          </div>
+        </aside>
+
+        <section class="space-y-6">
+          <div class="bg-surface-container-low rounded-[28px] border border-outline-variant/25 overflow-hidden">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 px-6 py-5 border-b border-outline-variant/20">
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary">picture_as_pdf</span>
+                <div>
+                  <p class="font-bold text-primary-container">Preview Dokumen</p>
+                  <p class="text-sm text-on-surface-variant">Tampilan simulasi viewer PDF untuk halaman dokumen publik.</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3 text-sm">
+                <button class="viewer-thumb px-4 py-2 rounded-xl bg-primary-container text-white font-semibold" data-page="1" type="button">Hal. 1</button>
+                <button class="viewer-thumb px-4 py-2 rounded-xl bg-surface-container-highest text-on-surface-variant font-semibold hover:bg-surface-container-high transition-colors" data-page="2" type="button">Hal. 2</button>
+                <button class="viewer-thumb px-4 py-2 rounded-xl bg-surface-container-highest text-on-surface-variant font-semibold hover:bg-surface-container-high transition-colors" data-page="3" type="button">Hal. 3</button>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-[180px_minmax(0,1fr)] gap-0">
+              <div class="bg-surface-container-high/60 border-r border-outline-variant/20 p-5 space-y-4">
+                <button class="thumb-card viewer-thumb w-full text-left rounded-2xl bg-primary-container/10 border border-primary-container/15 p-3 transition-all" data-page="1" type="button">
+                  <div class="aspect-[3/4] bg-white rounded-xl shadow-sm border border-outline-variant/15 mb-3 flex items-center justify-center overflow-hidden">
+                    <img alt="Thumbnail cover laporan tahunan" class="h-full w-full object-cover" src="../asset/meeting.jpg"/>
+                  </div>
+                  <span class="text-xs font-bold tracking-[0.16em] uppercase text-primary-container">Cover</span>
+                </button>
+                <button class="thumb-card viewer-thumb w-full text-left rounded-2xl bg-white border border-outline-variant/20 p-3 hover:bg-surface-container-high transition-all" data-page="2" type="button">
+                  <div class="aspect-[3/4] bg-white rounded-xl shadow-sm border border-outline-variant/15 mb-3 p-3">
+                    <div class="h-2 bg-surface-container-high rounded-full mb-2"></div>
+                    <div class="h-2 bg-surface-container-high rounded-full mb-2 w-5/6"></div>
+                    <div class="grid grid-cols-2 gap-2 mt-4">
+                      <div class="h-16 rounded-lg bg-secondary/15"></div>
+                      <div class="h-16 rounded-lg bg-primary-container/10"></div>
+                    </div>
+                  </div>
+                  <span class="text-xs font-bold tracking-[0.16em] uppercase text-primary-container">Kinerja</span>
+                </button>
+                <button class="thumb-card viewer-thumb w-full text-left rounded-2xl bg-white border border-outline-variant/20 p-3 hover:bg-surface-container-high transition-all" data-page="3" type="button">
+                  <div class="aspect-[3/4] bg-white rounded-xl shadow-sm border border-outline-variant/15 mb-3 p-3">
+                    <div class="h-20 rounded-xl bg-primary-container"></div>
+                    <div class="h-2 bg-surface-container-high rounded-full mt-4 mb-2"></div>
+                    <div class="h-2 bg-surface-container-high rounded-full w-4/5"></div>
+                  </div>
+                  <span class="text-xs font-bold tracking-[0.16em] uppercase text-primary-container">Prospek</span>
+                </button>
+              </div>
+
+              <div class="p-4 md:p-8 bg-[#efece2]">
+                <div class="pdf-viewer-page space-y-6" data-page-content="1">
+                  <article class="pdf-page max-w-[860px] mx-auto rounded-[28px] shadow-paper border border-outline-variant/15 overflow-hidden">
+                    <div class="relative min-h-[1100px] px-8 md:px-14 py-12">
+                      <div class="absolute top-0 left-0 w-full h-[480px] md:h-[560px] bg-gradient-to-br from-primary-container via-primary-container to-[#285651]"></div>
+                      <div class="relative z-10 pt-10 md:pt-14">
+                        <span class="inline-flex px-4 py-2 rounded-full bg-white/10 border border-white/10 text-white text-xs font-bold uppercase tracking-[0.22em] mb-8">Annual Report 2023</span>
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-white leading-[0.95] max-w-[620px] mb-6">Inovasi dan Keberlanjutan Pangan</h2>
+                        <p class="text-white/85 max-w-[560px] leading-relaxed mb-12">Laporan tahunan PT Agrinas Pangan Nusantara mengenai strategi pertumbuhan, ketahanan distribusi, dan transformasi operasional sepanjang tahun 2023.</p>
+                        <div class="grid md:grid-cols-2 gap-6 mt-20 md:mt-24">
+                          <div class="bg-surface/95 rounded-[24px] p-8 border border-outline-variant/20">
+                            <span class="text-secondary uppercase tracking-[0.2em] text-xs font-bold block mb-4">Highlight</span>
+                            <ul class="space-y-4 text-sm text-on-surface-variant">
+                              <li>Peningkatan cakupan distribusi ke 42 hub logistik pangan.</li>
+                              <li>Penguatan program kemitraan petani dan efisiensi pascapanen.</li>
+                              <li>Investasi bertahap pada monitoring rantai pasok berbasis data.</li>
+                            </ul>
+                          </div>
+                          <div class="rounded-[24px] overflow-hidden min-h-[320px] md:min-h-[360px]">
+                            <img alt="Visual cover laporan tahunan" class="h-full w-full object-cover" src="../asset/meeting.jpg"/>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="pdf-viewer-page hidden space-y-6" data-page-content="2">
+                  <article class="pdf-page max-w-[860px] mx-auto rounded-[28px] shadow-paper border border-outline-variant/15 overflow-hidden p-8 md:p-14 min-h-[1100px]">
+                    <div class="flex items-start justify-between gap-6 mb-10">
+                      <div>
+                        <span class="text-secondary uppercase tracking-[0.2em] text-xs font-bold block mb-3">Ringkasan Kinerja</span>
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-primary-container leading-tight">Distribusi, Produksi, dan Efisiensi Operasi</h2>
+                      </div>
+                      <span class="text-sm font-semibold text-on-surface-variant">Halaman 02</span>
+                    </div>
+                    <div class="grid md:grid-cols-3 gap-4 mb-10">
+                      <div class="rounded-[24px] bg-surface-container-low p-6 border border-outline-variant/20">
+                        <span class="text-xs uppercase tracking-[0.16em] text-on-surface-variant block mb-3">Hub Distribusi</span>
+                        <strong class="text-4xl font-extrabold text-primary-container">42</strong>
+                      </div>
+                      <div class="rounded-[24px] bg-surface-container-low p-6 border border-outline-variant/20">
+                        <span class="text-xs uppercase tracking-[0.16em] text-on-surface-variant block mb-3">Kemitraan Petani</span>
+                        <strong class="text-4xl font-extrabold text-primary-container">1.280</strong>
+                      </div>
+                      <div class="rounded-[24px] bg-surface-container-low p-6 border border-outline-variant/20">
+                        <span class="text-xs uppercase tracking-[0.16em] text-on-surface-variant block mb-3">Efisiensi Biaya</span>
+                        <strong class="text-4xl font-extrabold text-primary-container">18%</strong>
+                      </div>
+                    </div>
+                    <div class="grid md:grid-cols-[1.35fr_0.9fr] gap-8">
+                      <div class="rounded-[24px] border border-outline-variant/20 p-8">
+                        <div class="flex items-end gap-3 mb-6">
+                          <div class="w-16 h-36 bg-primary-container rounded-t-2xl"></div>
+                          <div class="w-16 h-48 bg-secondary rounded-t-2xl"></div>
+                          <div class="w-16 h-28 bg-primary-container/60 rounded-t-2xl"></div>
+                          <div class="w-16 h-56 bg-primary-container rounded-t-2xl"></div>
+                        </div>
+                        <p class="text-sm text-on-surface-variant leading-relaxed">Pertumbuhan distribusi didorong oleh penataan rute yang lebih efisien, sinergi gudang regional, dan penguatan kontrol kualitas di titik pascapanen.</p>
+                      </div>
+                      <div class="rounded-[24px] bg-surface-container-low p-8 border border-outline-variant/20">
+                        <h3 class="text-xl font-extrabold text-primary-container mb-4">Catatan Utama</h3>
+                        <ul class="space-y-4 text-sm text-on-surface-variant leading-relaxed">
+                          <li>Distribusi pangan strategis tumbuh stabil di wilayah prioritas.</li>
+                          <li>Digitalisasi pemantauan stok mempercepat keputusan operasional.</li>
+                          <li>Penguatan sarana pascapanen menurunkan potensi kehilangan hasil.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+
+                <div class="pdf-viewer-page hidden space-y-6" data-page-content="3">
+                  <article class="pdf-page max-w-[860px] mx-auto rounded-[28px] shadow-paper border border-outline-variant/15 overflow-hidden p-8 md:p-14 min-h-[1100px]">
+                    <div class="rounded-[28px] bg-primary-container text-white p-10 mb-10 relative overflow-hidden">
+                      <span class="text-secondary-fixed-dim uppercase tracking-[0.2em] text-xs font-bold block mb-4">Prospek 2024</span>
+                      <h2 class="text-3xl md:text-5xl font-extrabold max-w-2xl mb-4">Menumbuhkan Ekosistem Pangan yang Lebih Tangguh dan Terintegrasi</h2>
+                      <p class="text-white/80 max-w-2xl leading-relaxed">Fokus perusahaan diarahkan pada percepatan modernisasi distribusi, perluasan kemitraan produksi, serta tata kelola yang semakin adaptif terhadap kebutuhan pangan nasional.</p>
+                      <div class="absolute -right-8 -bottom-10 h-40 w-40 rounded-[999px] bg-white/10"></div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                      <div class="rounded-[24px] border border-outline-variant/20 p-8">
+                        <h3 class="text-xl font-extrabold text-primary-container mb-4">Agenda Strategis</h3>
+                        <ul class="space-y-4 text-sm text-on-surface-variant leading-relaxed">
+                          <li>Modernisasi titik distribusi berbasis data dan prediksi kebutuhan.</li>
+                          <li>Perluasan kerja sama dengan sentra produksi pangan regional.</li>
+                          <li>Penguatan pelaporan ESG dan evaluasi program keberlanjutan.</li>
+                        </ul>
+                      </div>
+                      <div class="rounded-[24px] bg-surface-container-low p-8 border border-outline-variant/20">
+                        <h3 class="text-xl font-extrabold text-primary-container mb-4">Penutup</h3>
+                        <p class="text-sm text-on-surface-variant leading-relaxed mb-6">Dokumen ini menegaskan arah Agrinas untuk tumbuh sebagai perusahaan pangan yang adaptif, transparan, dan relevan bagi ketahanan pangan Indonesia.</p>
+                        <div class="h-40 rounded-[24px] overflow-hidden">
+                          <img alt="Agrinas operational meeting" class="h-full w-full object-cover" src="../asset/meeting.jpg"/>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-container"></div>
+  <script src="../includes/footer.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const pageButtons = document.querySelectorAll('.viewer-thumb');
+      const pageContents = document.querySelectorAll('.pdf-viewer-page');
+
+      if (!pageButtons.length || !pageContents.length) return;
+
+      function showPage(page) {
+        pageContents.forEach((content) => {
+          content.classList.toggle('hidden', content.dataset.pageContent !== page);
+        });
+
+        pageButtons.forEach((button) => {
+          const isActive = button.dataset.page === page;
+
+          if (button.classList.contains('thumb-card')) {
+            button.classList.toggle('bg-primary-container/10', isActive);
+            button.classList.toggle('border-primary-container/15', isActive);
+            button.classList.toggle('bg-white', !isActive);
+            button.classList.toggle('border-outline-variant/20', !isActive);
+          } else {
+            button.classList.toggle('bg-primary-container', isActive);
+            button.classList.toggle('text-white', isActive);
+            button.classList.toggle('bg-surface-container-highest', !isActive);
+            button.classList.toggle('text-on-surface-variant', !isActive);
+          }
+        });
+      }
+
+      pageButtons.forEach((button) => {
+        button.addEventListener('click', function () {
+          showPage(this.dataset.page);
+        });
+      });
+
+      showPage('1');
+    });
+  </script>
+</body>
+</html>

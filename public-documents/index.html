@@ -151,14 +151,14 @@
 <div class="w-full md:max-w-xl">
 <label class="block text-xs font-bold uppercase tracking-widest text-secondary mb-3">Cari Dokumen</label>
 <div class="relative group">
-<input class="w-full bg-transparent border-b border-outline-variant py-4 pr-12 text-lg focus:outline-none focus:border-secondary transition-all placeholder:text-outline-variant/50" placeholder="Masukkan kata kunci (misal: Laporan 2023)" type="text"/>
+<input class="w-full bg-transparent border-b border-outline-variant py-4 pr-12 text-lg focus:outline-none focus:border-secondary transition-all placeholder:text-outline-variant/50" id="public-document-search" placeholder="Masukkan kata kunci (misal: Laporan 2023)" type="text"/>
 <span class="material-symbols-outlined absolute right-2 top-4 text-outline group-focus-within:text-secondary">search</span>
 </div>
 </div>
 <div class="flex gap-4 overflow-x-auto hide-scrollbar pb-2">
-<button class="px-8 py-3 bg-primary-container text-white text-sm font-bold rounded-md hover:shadow-xl transition-all">Semua</button>
-<button class="px-8 py-3 border border-outline-variant/30 text-on-surface-variant text-sm font-bold rounded-md hover:bg-surface-container-highest transition-all">Terbaru</button>
-<button class="px-8 py-3 border border-outline-variant/30 text-on-surface-variant text-sm font-bold rounded-md hover:bg-surface-container-highest transition-all">Terpopuler</button>
+<button class="public-filter-btn px-8 py-3 bg-primary-container text-white text-sm font-bold rounded-md hover:shadow-xl transition-all" data-filter="all">Semua</button>
+<button class="public-filter-btn px-8 py-3 border border-outline-variant/30 text-on-surface-variant text-sm font-bold rounded-md hover:bg-surface-container-highest transition-all" data-filter="latest">Terbaru</button>
+<button class="public-filter-btn px-8 py-3 border border-outline-variant/30 text-on-surface-variant text-sm font-bold rounded-md hover:bg-surface-container-highest transition-all" data-filter="popular">Terpopuler</button>
 </div>
 </div>
 </section>
@@ -174,7 +174,7 @@
 <div class="w-full h-px bg-outline-variant opacity-20 mb-12"></div>
 <div class="flex gap-6 overflow-x-auto hide-scrollbar pb-4 px-1 md:px-2 snap-x snap-mandatory">
 <!-- Card 1 -->
-<div class="group min-w-[260px] md:min-w-[300px] max-w-[300px] bg-surface-container-low rounded-xl overflow-hidden hover:bg-surface-container-high transition-all duration-500 snap-start">
+<div class="public-doc-item group min-w-[260px] md:min-w-[300px] max-w-[300px] bg-surface-container-low rounded-xl overflow-hidden hover:bg-surface-container-high transition-all duration-500 snap-start" data-tags="latest popular annual-report" data-search="laporan tahunan 2023 inovasi keberlanjutan pangan">
 <div class="aspect-[4/5] overflow-hidden relative">
 <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="close up of a professional business annual report cover with minimalist design and corporate typography on high quality paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkUdYeNOpxazI74NlNKXRimviqmcFxb2n43VpWvTtdDQprR1LyFEvfOf7hafuRsSzoi0x7xkjM03q4e_3K_GYdUBCnD_3CXpiOgMpAQNwF02IBnUj3AI4U4UGjgJu9aqyPl5UTEU78QfD6qypgpDgPZ0b4S-EDYmsY48QyAmhiTqI2HYT5FZln-RlPigyG6T2xOa-G-8lMty7ZoVLq-jojYBL-oetkEVvwJnm0NCAiawRpq94YPWGDeCQph9KBrHxKulsd8fLzYpbz"/>
 <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-all"></div>
@@ -187,7 +187,7 @@
 <h3 class="text-lg font-bold text-primary-container mb-2 leading-tight">Laporan Tahunan 2023: Inovasi &amp; Keberlanjutan Pangan</h3>
 <p class="text-sm text-on-surface-variant mb-5">Dipublikasikan pada 15 Maret 2024</p>
 <div class="flex justify-between items-center">
-<a class="text-secondary font-bold text-sm flex items-center gap-2 group/link" href="#">
+<a class="text-secondary font-bold text-sm flex items-center gap-2 group/link" href="./detail.html">
                                 Baca Selengkapnya 
                                 <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
 </a>
@@ -198,7 +198,7 @@
 </div>
 </div>
 <!-- Card 2 -->
-<div class="group min-w-[260px] md:min-w-[300px] max-w-[300px] bg-surface-container-low rounded-xl overflow-hidden hover:bg-surface-container-high transition-all duration-500 snap-start">
+<div class="public-doc-item group min-w-[260px] md:min-w-[300px] max-w-[300px] bg-surface-container-low rounded-xl overflow-hidden hover:bg-surface-container-high transition-all duration-500 snap-start" data-tags="latest annual-report" data-search="laporan tahunan 2022 ketahanan nasional">
 <div class="aspect-[4/5] overflow-hidden relative">
 <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="professional workspace with documents and modern office aesthetic with soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBC8tev9sWwcCcwOapI86Zz2m9Y7Be1htRvCp2aS2HVj89x4bVU1aWD73OOrBZ0hS4htEOMt5yt0462gh0QbCwZewhwYpIaGTil9hg6icV-AIfkCR74xk73GrMYb9egraPCHo-9rtG3DgVL9qjIqkKGj2gK5pC34FCMhgSarDd38czng8Y22LqQTAbgeqjSK0Gjss0D76KrT4DRu0loHiC8z7Lz_x-rJL63RvHb08QJUwH8G6B-BlnxmJVeSGSk6TtqLshWsynWx2oW"/>
 <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-all"></div>
@@ -211,7 +211,7 @@
 <h3 class="text-lg font-bold text-primary-container mb-2 leading-tight">Laporan Tahunan 2022: Ketahanan Nasional</h3>
 <p class="text-sm text-on-surface-variant mb-5">Dipublikasikan pada 20 Maret 2023</p>
 <div class="flex justify-between items-center">
-<a class="text-secondary font-bold text-sm flex items-center gap-2 group/link" href="#">
+<a class="text-secondary font-bold text-sm flex items-center gap-2 group/link" href="./detail.html">
                                 Baca Selengkapnya 
                                 <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
 </a>
@@ -222,7 +222,7 @@
 </div>
 </div>
 <!-- Card 3 -->
-<div class="group min-w-[260px] md:min-w-[300px] max-w-[300px] bg-surface-container-low rounded-xl overflow-hidden hover:bg-surface-container-high transition-all duration-500 snap-start">
+<div class="public-doc-item group min-w-[260px] md:min-w-[300px] max-w-[300px] bg-surface-container-low rounded-xl overflow-hidden hover:bg-surface-container-high transition-all duration-500 snap-start" data-tags="popular annual-report" data-search="laporan tahunan 2021 fondasi masa depan">
 <div class="aspect-[4/5] overflow-hidden relative">
 <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="close up of printed business statistics and charts on a desk in a bright airy office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFfa7sVHZUFywBiW5gbGMdYI4SIXXMC28f3i07TIeSjLDFmqvqh62wfCa6HPb62Zc51Mw2io8OJgQD4fq--YB1MikwoUb_nb5_mk2EfXz3HrXsvEekruCtVKiItRgXEo-cg17sbJcBFJG3U7I68S6CrmBb9zD5e-RMznA0SUmQ_HrYygSanYrzfLho7gVXyQyKweqEfPCGRfjjlviWSt0aFCZDZEorku2jAgqOQQUW9IatFlsp71NPUo4CusXVUxAJg77J8haJ-fzc"/>
 <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-all"></div>
@@ -235,7 +235,7 @@
 <h3 class="text-lg font-bold text-primary-container mb-2 leading-tight">Laporan Tahunan 2021: Fondasi Masa Depan</h3>
 <p class="text-sm text-on-surface-variant mb-5">Dipublikasikan pada 10 April 2022</p>
 <div class="flex justify-between items-center">
-<a class="text-secondary font-bold text-sm flex items-center gap-2 group/link" href="#">
+<a class="text-secondary font-bold text-sm flex items-center gap-2 group/link" href="./detail.html">
                                 Baca Selengkapnya 
                                 <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
 </a>
@@ -246,7 +246,7 @@
 </div>
 </div>
 <!-- Card 4 -->
-<div class="group min-w-[260px] md:min-w-[300px] max-w-[300px] bg-surface-container-low rounded-xl overflow-hidden hover:bg-surface-container-high transition-all duration-500 snap-start">
+<div class="public-doc-item group min-w-[260px] md:min-w-[300px] max-w-[300px] bg-surface-container-low rounded-xl overflow-hidden hover:bg-surface-container-high transition-all duration-500 snap-start" data-tags="annual-report" data-search="laporan tahunan 2020 akselerasi dan adaptasi">
 <div class="aspect-[4/5] overflow-hidden relative">
 <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="dokumen laporan tahunan perusahaan dengan layout modern dan visual data korporat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9qcqOdi3-IwiUX-jWJyZ9O6WD823qgPu_rnsZ7zhj1pm0nxxS4jrvVApcjkQrTYaKdMyK5REIM0Lh68Nz1GwYeaP46J0p3DkKpxZpdAYJCZhS-c2VajgpKPe9GTN0ARr5YTCMjq075_ctIz54hwq-4RwRmMZ2iWcP72AhlBoQ3IsEdEdPtplcpZE0t1N4rVJLpE-fAZklszDMRodq1XTppndXFL5kgWlGzMk4pGz-0Sq7KMw127dQTDbyxNaOnC98pzKOrfrAjUuH"/>
 <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-all"></div>
@@ -259,7 +259,7 @@
 <h3 class="text-lg font-bold text-primary-container mb-2 leading-tight">Laporan Tahunan 2020: Akselerasi dan Adaptasi</h3>
 <p class="text-sm text-on-surface-variant mb-5">Dipublikasikan pada 18 Maret 2021</p>
 <div class="flex justify-between items-center">
-<a class="text-secondary font-bold text-sm flex items-center gap-2 group/link" href="#">
+<a class="text-secondary font-bold text-sm flex items-center gap-2 group/link" href="./detail.html">
                                 Baca Selengkapnya 
                                 <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
 </a>
@@ -270,7 +270,7 @@
 </div>
 </div>
 <!-- Card 5 -->
-<div class="group min-w-[260px] md:min-w-[300px] max-w-[300px] bg-surface-container-low rounded-xl overflow-hidden hover:bg-surface-container-high transition-all duration-500 snap-start">
+<div class="public-doc-item group min-w-[260px] md:min-w-[300px] max-w-[300px] bg-surface-container-low rounded-xl overflow-hidden hover:bg-surface-container-high transition-all duration-500 snap-start" data-tags="annual-report popular" data-search="laporan tahunan 2019 membangun pondasi pertumbuhan">
 <div class="aspect-[4/5] overflow-hidden relative">
 <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="laporan korporat profesional dengan grafik dan tabel finansial pada meja kerja modern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkRHy-Xx7WMVMpqt-rQZUUXonI2PIYIUt5_u4b4U7DxIWD7WMN26X2YwQoWb20ICUAtpmqhFzjzwJfbpFF0vZWDZwGbqJA0w-TlpPrjsDk5cl-zsiBAk7aZuGj-9hMFXfHMyrHe5FrOyUy-w_52e1Gf_53kar-xW22thPDoSvYME8hcauZH84m3bf-Ut83_OWh5BLD9-HntRLhp5EDKqKIR-5_OJbDS384PJhsGoFShF4dfkaMAQxhS6AuofxkbVFl7jk_LQI78SZP"/>
 <div class="absolute inset-0 bg-primary/20 group-hover:bg-primary/0 transition-all"></div>
@@ -283,7 +283,7 @@
 <h3 class="text-lg font-bold text-primary-container mb-2 leading-tight">Laporan Tahunan 2019: Membangun Pondasi Pertumbuhan</h3>
 <p class="text-sm text-on-surface-variant mb-5">Dipublikasikan pada 12 Maret 2020</p>
 <div class="flex justify-between items-center">
-<a class="text-secondary font-bold text-sm flex items-center gap-2 group/link" href="#">
+<a class="text-secondary font-bold text-sm flex items-center gap-2 group/link" href="./detail.html">
                                 Baca Selengkapnya 
                                 <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
 </a>
@@ -308,7 +308,7 @@
 <div class="w-full h-px bg-outline-variant opacity-20 mb-12"></div>
 <div class="flex gap-8 overflow-x-auto hide-scrollbar pb-10 px-1 md:px-2">
 <!-- Newsletter Items -->
-<div class="min-w-[320px] md:min-w-[400px] group">
+<div class="public-doc-item min-w-[320px] md:min-w-[400px] group" data-tags="latest popular newsletter" data-search="agrinas insights teknologi hidroponik skala besar april 2024">
 <div class="aspect-video bg-surface-container-high rounded-xl mb-6 overflow-hidden">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="modern magazine layout with architectural and nature photography, clean high-end aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkRHy-Xx7WMVMpqt-rQZUUXonI2PIYIUt5_u4b4U7DxIWD7WMN26X2YwQoWb20ICUAtpmqhFzjzwJfbpFF0vZWDZwGbqJA0w-TlpPrjsDk5cl-zsiBAk7aZuGj-9hMFXfHMyrHe5FrOyUy-w_52e1Gf_53kar-xW22thPDoSvYME8hcauZH84m3bf-Ut83_OWh5BLD9-HntRLhp5EDKqKIR-5_OJbDS384PJhsGoFShF4dfkaMAQxhS6AuofxkbVFl7jk_LQI78SZP"/>
 </div>
@@ -317,10 +317,10 @@
 <div class="flex items-center gap-4 text-xs font-medium text-outline">
 <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">description</span> PDF</span>
 <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">database</span> 1.2 MB</span>
-<a class="ml-auto text-primary-container font-bold hover:underline" href="#">Download</a>
+<a class="ml-auto text-primary-container font-bold hover:underline" href="./detail.html">Download</a>
 </div>
 </div>
-<div class="min-w-[320px] md:min-w-[400px] group">
+<div class="public-doc-item min-w-[320px] md:min-w-[400px] group" data-tags="latest newsletter" data-search="newsletter ekspansi wilayah kerja jawa barat maret 2024">
 <div class="aspect-video bg-surface-container-high rounded-xl mb-6 overflow-hidden">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="close up of high quality print newspapers stacked on a table in a library setting with warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9qcqOdi3-IwiUX-jWJyZ9O6WD823qgPu_rnsZ7zhj1pm0nxxS4jrvVApcjkQrTYaKdMyK5REIM0Lh68Nz1GwYeaP46J0p3DkKpxZpdAYJCZhS-c2VajgpKPe9GTN0ARr5YTCMjq075_ctIz54hwq-4RwRmMZ2iWcP72AhlBoQ3IsEdEdPtplcpZE0t1N4rVJLpE-fAZklszDMRodq1XTppndXFL5kgWlGzMk4pGz-0Sq7KMw127dQTDbyxNaOnC98pzKOrfrAjUuH"/>
 </div>
@@ -329,10 +329,10 @@
 <div class="flex items-center gap-4 text-xs font-medium text-outline">
 <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">description</span> PDF</span>
 <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">database</span> 0.9 MB</span>
-<a class="ml-auto text-primary-container font-bold hover:underline" href="#">Download</a>
+<a class="ml-auto text-primary-container font-bold hover:underline" href="./detail.html">Download</a>
 </div>
 </div>
-<div class="min-w-[320px] md:min-w-[400px] group">
+<div class="public-doc-item min-w-[320px] md:min-w-[400px] group" data-tags="popular newsletter" data-search="kilas berita pencapaian target produksi q1 februari 2024">
 <div class="aspect-video bg-surface-container-high rounded-xl mb-6 overflow-hidden">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="creative overhead shot of professional magazine pages open on a wooden table with soft focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWyCycDwqGQ43phcAOyHXFlfVaCiYKDy9VlhfDeeiq4JjaHT7HqoTvlp4VlJWW7EhnaZuBGZJmCyMTnn-7Lcs-I7wBWfDZRwwVkRlQo0Yqxg_7jhwgfrcCC015wgkYCPrmURqoeLxW0OtCZsGK2pD28HZSRNywk4ShA7785X6GQG8nuOeeqikSVaJQmMWsqvHgfGEUt_B9GC9YM4jNeLXFyY6awZh0ySR8ZmnA308qHVnJ-fHeAE90mjECb079S1s1dljf2xT0GUQ4"/>
 </div>
@@ -341,10 +341,10 @@
 <div class="flex items-center gap-4 text-xs font-medium text-outline">
 <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">description</span> PDF</span>
 <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">database</span> 1.5 MB</span>
-<a class="ml-auto text-primary-container font-bold hover:underline" href="#">Download</a>
+<a class="ml-auto text-primary-container font-bold hover:underline" href="./detail.html">Download</a>
 </div>
 </div>
-<div class="min-w-[320px] md:min-w-[400px] group">
+<div class="public-doc-item min-w-[320px] md:min-w-[400px] group" data-tags="newsletter" data-search="kaleidoskop 2023 perjalanan agrinas januari 2024">
 <div class="aspect-video bg-surface-container-high rounded-xl mb-6 overflow-hidden">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="detailed macro shot of paper texture and ink on a corporate brochure document" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl4OTvmMzh-WY5BvFq40Rp30XAw6KKehbgB6gE7aD60sAX0lx8RJW4PbWQ8Ga7dHpnG66WzIBnNAxfqCzxzBLK4tq61tLFnnG7OeNe09-ZRKLbzwS9qSx0QgiMrE9G5jBbUEHkSUHTD8NvIufT2sV4jNBRz1zOA-xqSQC3wDZQ5I7QFnPY3FGThN4JF10ZtRHmODzQu8Q7UV41o5rzXQTK3N7EeBdNLvkW0PmGz-goW1o3_R3Enk2FSGngBahbBytUt-4ICwsTyWuf"/>
 </div>
@@ -353,7 +353,7 @@
 <div class="flex items-center gap-4 text-xs font-medium text-outline">
 <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">description</span> PDF</span>
 <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">database</span> 2.1 MB</span>
-<a class="ml-auto text-primary-container font-bold hover:underline" href="#">Download</a>
+<a class="ml-auto text-primary-container font-bold hover:underline" href="./detail.html">Download</a>
 </div>
 </div>
 </div>
@@ -370,7 +370,7 @@
 </div>
 <div class="w-full h-px bg-outline-variant opacity-20 mb-8"></div>
 <div class="space-y-4">
-<div class="flex items-center justify-between p-6 bg-surface-container-low rounded hover:bg-surface-container-high transition-colors group">
+<div class="public-doc-item flex items-center justify-between p-6 bg-surface-container-low rounded hover:bg-surface-container-high transition-colors group" data-tags="latest popular gcg" data-search="pedoman etika bisnis code of conduct januari 2024">
 <div class="flex items-center gap-6">
 <span class="material-symbols-outlined text-secondary">gavel</span>
 <div>
@@ -380,7 +380,7 @@
 </div>
 <button class="material-symbols-outlined text-outline group-hover:text-primary-container">download</button>
 </div>
-<div class="flex items-center justify-between p-6 bg-surface-container-low rounded hover:bg-surface-container-high transition-colors group">
+<div class="public-doc-item flex items-center justify-between p-6 bg-surface-container-low rounded hover:bg-surface-container-high transition-colors group" data-tags="latest gcg" data-search="kebijakan anti korupsi suap desember 2023">
 <div class="flex items-center gap-6">
 <span class="material-symbols-outlined text-secondary">security</span>
 <div>
@@ -390,7 +390,7 @@
 </div>
 <button class="material-symbols-outlined text-outline group-hover:text-primary-container">download</button>
 </div>
-<div class="flex items-center justify-between p-6 bg-surface-container-low rounded hover:bg-surface-container-high transition-colors group">
+<div class="public-doc-item flex items-center justify-between p-6 bg-surface-container-low rounded hover:bg-surface-container-high transition-colors group" data-tags="gcg popular" data-search="piagam dewan komisaris direksi maret 2023">
 <div class="flex items-center gap-6">
 <span class="material-symbols-outlined text-secondary">groups</span>
 <div>
@@ -409,17 +409,17 @@
 <span class="text-secondary font-bold text-sm italic">Terbaru</span>
 </div>
 <div class="w-full h-px bg-outline-variant opacity-20 mb-8"></div>
-<div class="relative rounded-xl overflow-hidden bg-primary-container p-12 text-white h-full flex flex-col justify-between">
+<div class="public-doc-item relative rounded-xl overflow-hidden bg-primary-container p-12 text-white h-full flex flex-col justify-between" data-tags="latest popular sustainability">
 <div class="relative z-10">
 <span class="px-3 py-1 bg-secondary text-white text-[10px] font-bold uppercase tracking-widest rounded mb-6 inline-block">Sustainability Report 2023</span>
 <h3 class="text-3xl font-headline font-extrabold mb-4 leading-tight">Menanam Masa Depan, Menuai Keberlanjutan</h3>
 <p class="text-on-primary-container text-sm leading-relaxed max-w-sm mb-8">
                                 Laporan komprehensif mengenai kontribusi lingkungan, sosial, dan tata kelola PT Agrinas Pangan Nusantara.
                             </p>
-<button class="flex items-center gap-3 px-8 py-4 bg-white text-primary-container font-bold rounded hover:bg-secondary hover:text-white transition-all">
+<a class="flex items-center gap-3 px-8 py-4 bg-white text-primary-container font-bold rounded hover:bg-secondary hover:text-white transition-all w-fit" href="./detail.html">
                                 Unduh Laporan Lengkap
                                 <span class="material-symbols-outlined">download</span>
-</button>
+</a>
 </div>
 <div class="absolute right-[-10%] bottom-[-10%] opacity-10">
 <span class="material-symbols-outlined text-[300px]" style="font-variation-settings: 'FILL' 1;">eco</span>
@@ -442,4 +442,49 @@
 </main>
 <div id="footer-container"></div>
 <script src="../includes/footer.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const filterButtons = document.querySelectorAll('.public-filter-btn');
+    const documentItems = document.querySelectorAll('.public-doc-item');
+    const searchInput = document.getElementById('public-document-search');
+
+    if (!filterButtons.length || !documentItems.length) return;
+
+    let activeFilter = 'all';
+
+    function applyDocumentFilter() {
+      const query = (searchInput?.value || '').trim().toLowerCase();
+
+      documentItems.forEach((item) => {
+        const tags = (item.dataset.tags || '').split(' ');
+        const searchText = (item.dataset.search || '').toLowerCase();
+        const matchesFilter = activeFilter === 'all' || tags.includes(activeFilter);
+        const matchesSearch = !query || searchText.includes(query);
+        item.classList.toggle('hidden', !(matchesFilter && matchesSearch));
+      });
+    }
+
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', function () {
+        activeFilter = this.dataset.filter;
+
+        filterButtons.forEach((btn) => {
+          btn.classList.remove('bg-primary-container', 'text-white');
+          btn.classList.add('border', 'border-outline-variant/30', 'text-on-surface-variant');
+        });
+
+        this.classList.add('bg-primary-container', 'text-white');
+        this.classList.remove('border', 'border-outline-variant/30', 'text-on-surface-variant');
+
+        applyDocumentFilter();
+      });
+    });
+
+    if (searchInput) {
+      searchInput.addEventListener('input', applyDocumentFilter);
+    }
+
+    applyDocumentFilter();
+  });
+</script>
 </body></html>
