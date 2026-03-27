@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Organizational Structure | PT Agrinas Pangan Nusantara</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Organizational Structure | PT Agrinas Pangan Nusantara</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -67,22 +75,25 @@
                         "body": ["Inter"],
                         "label": ["Inter"]
                     },
-                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
                 },
             },
         }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
         .signature-gradient {
             background: linear-gradient(135deg, #002622 0%, #143c38 100%);
         }
+
         .glass-nav {
             background: rgba(228, 227, 218, 0.8);
             backdrop-filter: blur(20px);
         }
+
         .org-line {
             position: absolute;
             background: #c0c8c6;
@@ -90,119 +101,208 @@
         }
     </style>
 </head>
-<body class="bg-surface font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
-<div id="navbar-container"></div>
-<script src="../includes/navbar.js?v=2"></script>
-<main class="min-h-screen">
-<!-- Hero Section -->
-<section class="relative h-[409px] flex items-end overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover grayscale brightness-50" data-alt="Modern corporate office interior with glass walls and minimalist architectural lines under soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfz6lXu3c4VFrV_Ly0XBfmBLxQZk3xyVSW5g86e54lTIoPZSMoei5KjIyMjPcQN2mAAKkVmmWPkPzkWVP1qb6utCL6_C98fG_l5ocSRn-VRYD4xr1RRYPxBfGVGb-OKlzG2wreX8j2kEUuyQUGG0df8joBgV_tD-CkM6aZqI3zHqKTbw4mOMALKSYI3zHCf3h5UMjyZVYznJGYCZTey6oHck11fpBNZBHRXD8nxnNWmmhvlLF4danYxQMVnYZDbrj4HDxKyDz4of1-"/>
-<div class="absolute inset-0 bg-primary/40 mix-blend-multiply"></div>
-</div>
-<div class="relative z-10 w-full max-w-screen-2xl mx-auto px-8 pb-16">
-<span class="inline-block px-3 py-1 bg-secondary text-on-primary font-headline text-[10px] font-extrabold uppercase tracking-[0.2em] mb-4">Governance</span>
-<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-white tracking-tighter leading-none max-w-4xl">
-                    Organizational <br/><span class="text-secondary-fixed-dim">Structure</span>
-</h1>
-</div>
-</section>
-<div class="max-w-screen-2xl mx-auto px-8 flex flex-col md:flex-row gap-12 py-12">
-<!-- SideNavBar (Sticky Sub-nav) -->
-<aside class="md:w-64 shrink-0" id="about-sidebar-container"></aside>
-<!-- Main Content Area -->
-<div class="flex-1 space-y-24">
-<!-- Introductory Text -->
-<section class="max-w-3xl">
-<div class="flex items-center gap-4 mb-6">
-<div class="h-px w-12 bg-secondary/30"></div>
-<span class="text-secondary font-headline text-xs font-bold uppercase tracking-widest">Efficiency through Precision</span>
-</div>
-<p class="text-xl md:text-xl text-on-surface/80 leading-relaxed font-light font-body">
-                        Kepemimpinan perusahaan kami dibangun melalui struktur yang jelas antara <span class="text-primary font-bold">Direksi</span> sebagai pengelola operasional dan strategi bisnis, serta <span class="text-secondary font-bold">Komisaris</span> sebagai pengawas penerapan tata kelola perusahaan. Format ini memudahkan publik memahami susunan pimpinan utama perusahaan secara langsung.
+
+<body
+    class="bg-surface font-body text-on-surface selection:bg-secondary-container selection:text-on-secondary-container">
+    <div id="navbar-container"></div>
+    <script src="../includes/navbar.js?v=2"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const path = window.location.pathname;
+            const segments = path.split('/').filter(Boolean);
+            const knownRoots = ['about', 'product', 'news-gallery', 'public-documents', 'contact', 'index.html'];
+            const rootIndex = segments.findIndex((segment) => knownRoots.includes(segment));
+            const prefixSegments = rootIndex === -1 ? [] : segments.slice(0, rootIndex);
+            const sitePrefix = prefixSegments.length ? `/${prefixSegments.join('/')}/` : '/';
+            const navLinks = document.querySelectorAll('#navbar-container nav > a');
+
+            if (navLinks.length >= 5) {
+                navLinks[0].href = sitePrefix;
+                navLinks[1].href = `${sitePrefix}product/`;
+                navLinks[2].href = `${sitePrefix}news-gallery/`;
+                navLinks[3].href = `${sitePrefix}public-documents/`;
+                navLinks[4].href = `${sitePrefix}contact/`;
+            }
+        });
+    </script>
+    <main class="min-h-screen">
+        <!-- Hero Section -->
+        <section class="relative h-[409px] flex items-end overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover grayscale brightness-50"
+                    data-alt="Modern corporate office interior with glass walls and minimalist architectural lines under soft morning light"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfz6lXu3c4VFrV_Ly0XBfmBLxQZk3xyVSW5g86e54lTIoPZSMoei5KjIyMjPcQN2mAAKkVmmWPkPzkWVP1qb6utCL6_C98fG_l5ocSRn-VRYD4xr1RRYPxBfGVGb-OKlzG2wreX8j2kEUuyQUGG0df8joBgV_tD-CkM6aZqI3zHqKTbw4mOMALKSYI3zHCf3h5UMjyZVYznJGYCZTey6oHck11fpBNZBHRXD8nxnNWmmhvlLF4danYxQMVnYZDbrj4HDxKyDz4of1-" />
+                <div class="absolute inset-0 bg-primary/40 mix-blend-multiply"></div>
+            </div>
+            <div class="relative z-10 w-full max-w-screen-2xl mx-auto px-8 pb-16">
+                <span
+                    class="inline-block px-3 py-1 bg-secondary text-on-primary font-headline text-[10px] font-extrabold uppercase tracking-[0.2em] mb-4">Governance</span>
+                <h1
+                    class="font-headline text-5xl md:text-7xl font-extrabold text-white tracking-tighter leading-none max-w-4xl">
+                    Organizational <br /><span class="text-secondary-fixed-dim">Structure</span>
+                </h1>
+            </div>
+        </section>
+        <div class="max-w-screen-2xl mx-auto px-8 flex flex-col md:flex-row gap-12 py-12">
+            <!-- SideNavBar (Sticky Sub-nav) -->
+            <aside class="md:w-64 shrink-0" id="about-sidebar-container"></aside>
+            <!-- Main Content Area -->
+            <div class="flex-1 space-y-24">
+                <!-- Introductory Text -->
+                <section class="max-w-3xl">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="h-px w-12 bg-secondary/30"></div>
+                        <span
+                            class="text-secondary font-headline text-xs font-bold uppercase tracking-widest">Efficiency
+                            through Precision</span>
+                    </div>
+                    <p class="text-xl md:text-xl text-on-surface/80 leading-relaxed font-light font-body">
+                        Kepemimpinan perusahaan kami dibangun melalui struktur yang jelas antara <span
+                            class="text-primary font-bold">Direksi</span> sebagai pengelola operasional dan strategi
+                        bisnis, serta <span class="text-secondary font-bold">Komisaris</span> sebagai pengawas penerapan
+                        tata kelola perusahaan. Format ini memudahkan publik memahami susunan pimpinan utama perusahaan
+                        secara langsung.
                     </p>
-</section>
-<!-- Leadership Roster -->
-<section class="space-y-12 pb-24">
-<div class="bg-surface-container-low rounded-[28px] p-8 md:p-10 border border-outline-variant/20">
-<div class="flex items-center gap-4 mb-8">
-<div class="h-px w-14 bg-secondary/40"></div>
-<span class="text-secondary font-headline text-xs font-bold uppercase tracking-widest">Leadership Structure</span>
-</div>
-<div class="space-y-14">
-<div>
-<h2 class="font-headline text-2xl md:text-3xl font-extrabold tracking-tight text-primary mb-8">Direksi</h2>
-<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-8 gap-y-12">
-<div class="group text-center rounded-[24px] px-4 py-4 transition-transform duration-300 hover:-translate-y-1">
-<div class="mx-auto mb-5 h-40 w-40 rounded-[999px] bg-[radial-gradient(circle_at_30%_30%,#ffffff_0%,#f2f0e6_42%,#d7d8d3_100%)] shadow-[0_14px_30px_rgba(0,38,34,0.10)] flex items-center justify-center overflow-hidden border border-white/70 transition-all duration-400 group-hover:shadow-[0_18px_36px_rgba(0,38,34,0.14)]">
-<img alt="Ahmad Yani" class="h-full w-full rounded-[999px] object-cover transition-transform duration-400 group-hover:scale-[1.04]" src="../asset/profile1.jpg"/>
-</div>
-<h3 class="font-headline text-lg md:text-xl font-extrabold text-on-surface transition-colors duration-300 group-hover:text-[#143C38]">Ahmad Yani</h3>
-<p class="mt-2 text-base md:text-lg text-on-surface-variant">Direktur Utama</p>
-</div>
-<div class="group text-center rounded-[24px] px-4 py-4 transition-transform duration-300 hover:-translate-y-1">
-<div class="mx-auto mb-5 h-40 w-40 rounded-[999px] bg-[radial-gradient(circle_at_30%_30%,#ffffff_0%,#f2f0e6_42%,#d7d8d3_100%)] shadow-[0_14px_30px_rgba(0,38,34,0.10)] flex items-center justify-center overflow-hidden border border-white/70 transition-all duration-400 group-hover:shadow-[0_18px_36px_rgba(0,38,34,0.14)]">
-<img alt="Edwil Suzandi" class="h-full w-full rounded-[999px] object-cover transition-transform duration-400 group-hover:scale-[1.04]" src="../asset/profile2.jpg"/>
-</div>
-<h3 class="font-headline text-lg md:text-xl font-extrabold text-on-surface transition-colors duration-300 group-hover:text-[#143C38]">Edwil Suzandi</h3>
-<p class="mt-2 text-base md:text-lg text-on-surface-variant">Direktur Eksplorasi &amp; Pengembangan</p>
-</div>
-<div class="group text-center rounded-[24px] px-4 py-4 transition-transform duration-300 hover:-translate-y-1">
-<div class="mx-auto mb-5 h-40 w-40 rounded-[999px] bg-[radial-gradient(circle_at_30%_30%,#ffffff_0%,#f2f0e6_42%,#d7d8d3_100%)] shadow-[0_14px_30px_rgba(0,38,34,0.10)] flex items-center justify-center overflow-hidden border border-white/70 transition-all duration-400 group-hover:shadow-[0_18px_36px_rgba(0,38,34,0.14)]">
-<img alt="Andi Joko Nugroho" class="h-full w-full rounded-[999px] object-cover transition-transform duration-400 group-hover:scale-[1.04]" src="../asset/profile3.jpg"/>
-</div>
-<h3 class="font-headline text-lg md:text-xl font-extrabold text-on-surface transition-colors duration-300 group-hover:text-[#143C38]">Andi Joko Nugroho</h3>
-<p class="mt-2 text-base md:text-lg text-on-surface-variant">Direktur Operasi</p>
-</div>
-<div class="group text-center rounded-[24px] px-4 py-4 transition-transform duration-300 hover:-translate-y-1">
-<div class="mx-auto mb-5 h-40 w-40 rounded-[999px] bg-[radial-gradient(circle_at_30%_30%,#ffffff_0%,#f2f0e6_42%,#d7d8d3_100%)] shadow-[0_14px_30px_rgba(0,38,34,0.10)] flex items-center justify-center overflow-hidden border border-white/70 transition-all duration-400 group-hover:shadow-[0_18px_36px_rgba(0,38,34,0.14)]">
-<img alt="Yurizki Rio" class="h-full w-full rounded-[999px] object-cover transition-transform duration-400 group-hover:scale-[1.04]" src="../asset/profile4.jpg"/>
-</div>
-<h3 class="font-headline text-lg md:text-xl font-extrabold text-on-surface transition-colors duration-300 group-hover:text-[#143C38]">Yurizki Rio</h3>
-<p class="mt-2 text-base md:text-lg text-on-surface-variant">Direktur Keuangan</p>
-</div>
-</div>
-</div>
-<div>
-<h2 class="font-headline text-2xl md:text-3xl font-extrabold tracking-tight text-primary mb-8">Komisaris</h2>
-<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-8 gap-y-12">
-<div class="group text-center rounded-[24px] px-4 py-4 transition-transform duration-300 hover:-translate-y-1">
-<div class="mx-auto mb-5 h-40 w-40 rounded-[999px] bg-[radial-gradient(circle_at_30%_30%,#ffffff_0%,#f2f0e6_42%,#d7d8d3_100%)] shadow-[0_14px_30px_rgba(0,38,34,0.10)] flex items-center justify-center overflow-hidden border border-white/70 transition-all duration-400 group-hover:shadow-[0_18px_36px_rgba(0,38,34,0.14)]">
-<img alt="Gigih Udi Atmo" class="h-full w-full rounded-[999px] object-cover transition-transform duration-400 group-hover:scale-[1.04]" src="../asset/profile5.jpg"/>
-</div>
-<h3 class="font-headline text-lg md:text-xl font-extrabold text-on-surface transition-colors duration-300 group-hover:text-[#143C38]">Gigih Udi Atmo</h3>
-<p class="mt-2 text-base md:text-lg text-on-surface-variant">Komisaris Utama</p>
-</div>
-<div class="group text-center rounded-[24px] px-4 py-4 transition-transform duration-300 hover:-translate-y-1">
-<div class="mx-auto mb-5 h-40 w-40 rounded-[999px] bg-[radial-gradient(circle_at_30%_30%,#ffffff_0%,#f2f0e6_42%,#d7d8d3_100%)] shadow-[0_14px_30px_rgba(0,38,34,0.10)] flex items-center justify-center overflow-hidden border border-white/70 transition-all duration-400 group-hover:shadow-[0_18px_36px_rgba(0,38,34,0.14)]">
-<img alt="John Anis" class="h-full w-full rounded-[999px] object-cover transition-transform duration-400 group-hover:scale-[1.04]" src="../asset/profile6.jpg"/>
-</div>
-<h3 class="font-headline text-lg md:text-xl font-extrabold text-on-surface transition-colors duration-300 group-hover:text-[#143C38]">John Anis</h3>
-<p class="mt-2 text-base md:text-lg text-on-surface-variant">Komisaris</p>
-</div>
-<div class="group text-center rounded-[24px] px-4 py-4 transition-transform duration-300 hover:-translate-y-1">
-<div class="mx-auto mb-5 h-40 w-40 rounded-[999px] bg-[radial-gradient(circle_at_30%_30%,#ffffff_0%,#f2f0e6_42%,#d7d8d3_100%)] shadow-[0_14px_30px_rgba(0,38,34,0.10)] flex items-center justify-center overflow-hidden border border-white/70 transition-all duration-400 group-hover:shadow-[0_18px_36px_rgba(0,38,34,0.14)]">
-<span class="font-headline text-4xl font-extrabold text-primary transition-transform duration-400 group-hover:scale-[1.04]">AZ</span>
-</div>
-<h3 class="font-headline text-lg md:text-xl font-extrabold text-on-surface transition-colors duration-300 group-hover:text-[#143C38]">Abdulla Zayed</h3>
-<p class="mt-2 text-base md:text-lg text-on-surface-variant">Komisaris</p>
-</div>
-<div class="group text-center rounded-[24px] px-4 py-4 transition-transform duration-300 hover:-translate-y-1">
-<div class="mx-auto mb-5 h-40 w-40 rounded-[999px] bg-[radial-gradient(circle_at_30%_30%,#ffffff_0%,#f2f0e6_42%,#d7d8d3_100%)] shadow-[0_14px_30px_rgba(0,38,34,0.10)] flex items-center justify-center overflow-hidden border border-white/70 transition-all duration-400 group-hover:shadow-[0_18px_36px_rgba(0,38,34,0.14)]">
-<span class="font-headline text-4xl font-extrabold text-primary transition-transform duration-400 group-hover:scale-[1.04]">AM</span>
-</div>
-<h3 class="font-headline text-lg md:text-xl font-extrabold text-on-surface transition-colors duration-300 group-hover:text-[#143C38]">Abdul Musawir Yahya</h3>
-<p class="mt-2 text-base md:text-lg text-on-surface-variant">Komisaris Independen</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</div>
-</div>
-</main>
-<div id="footer-container"></div>
-<script src="../includes/about-sidebar.js"></script>
-<script src="../includes/footer.js"></script>
-</body></html>
+                </section>
+                <!-- Leadership Roster -->
+                <section class="space-y-12 pb-24">
+                    <div class="bg-surface-container-low rounded-[28px] p-8 md:p-10 border border-outline-variant/20">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="h-px w-14 bg-secondary/40"></div>
+                            <span
+                                class="text-secondary font-headline text-xs font-bold uppercase tracking-widest">Leadership
+                                Structure</span>
+                        </div>
+                        <div class="space-y-14">
+                            <div>
+                                <h2
+                                    class="font-headline text-2xl md:text-3xl font-extrabold tracking-tight text-primary mb-8">
+                                    Direksi</h2>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-8 gap-y-12">
+                                    <div
+                                        class="group text-center rounded-[24px] px-4 py-4 transition-transform duration-300 hover:-translate-y-1">
+                                        <div
+                                            class="mx-auto mb-5 h-40 w-40 rounded-[999px] bg-[radial-gradient(circle_at_30%_30%,#ffffff_0%,#f2f0e6_42%,#d7d8d3_100%)] shadow-[0_14px_30px_rgba(0,38,34,0.10)] flex items-center justify-center overflow-hidden border border-white/70 transition-all duration-400 group-hover:shadow-[0_18px_36px_rgba(0,38,34,0.14)]">
+                                            <img alt="Ahmad Yani"
+                                                class="h-full w-full rounded-[999px] object-cover transition-transform duration-400 group-hover:scale-[1.04]"
+                                                src="../asset/profile1.jpg" />
+                                        </div>
+                                        <h3
+                                            class="font-headline text-lg md:text-xl font-extrabold text-on-surface transition-colors duration-300 group-hover:text-[#143C38]">
+                                            Ahmad Yani</h3>
+                                        <p class="mt-2 text-base md:text-lg text-on-surface-variant">Direktur Utama</p>
+                                    </div>
+                                    <div
+                                        class="group text-center rounded-[24px] px-4 py-4 transition-transform duration-300 hover:-translate-y-1">
+                                        <div
+                                            class="mx-auto mb-5 h-40 w-40 rounded-[999px] bg-[radial-gradient(circle_at_30%_30%,#ffffff_0%,#f2f0e6_42%,#d7d8d3_100%)] shadow-[0_14px_30px_rgba(0,38,34,0.10)] flex items-center justify-center overflow-hidden border border-white/70 transition-all duration-400 group-hover:shadow-[0_18px_36px_rgba(0,38,34,0.14)]">
+                                            <img alt="Edwil Suzandi"
+                                                class="h-full w-full rounded-[999px] object-cover transition-transform duration-400 group-hover:scale-[1.04]"
+                                                src="../asset/profile2.jpg" />
+                                        </div>
+                                        <h3
+                                            class="font-headline text-lg md:text-xl font-extrabold text-on-surface transition-colors duration-300 group-hover:text-[#143C38]">
+                                            Edwil Suzandi</h3>
+                                        <p class="mt-2 text-base md:text-lg text-on-surface-variant">Direktur Eksplorasi
+                                            &amp; Pengembangan</p>
+                                    </div>
+                                    <div
+                                        class="group text-center rounded-[24px] px-4 py-4 transition-transform duration-300 hover:-translate-y-1">
+                                        <div
+                                            class="mx-auto mb-5 h-40 w-40 rounded-[999px] bg-[radial-gradient(circle_at_30%_30%,#ffffff_0%,#f2f0e6_42%,#d7d8d3_100%)] shadow-[0_14px_30px_rgba(0,38,34,0.10)] flex items-center justify-center overflow-hidden border border-white/70 transition-all duration-400 group-hover:shadow-[0_18px_36px_rgba(0,38,34,0.14)]">
+                                            <img alt="Andi Joko Nugroho"
+                                                class="h-full w-full rounded-[999px] object-cover transition-transform duration-400 group-hover:scale-[1.04]"
+                                                src="../asset/profile3.jpg" />
+                                        </div>
+                                        <h3
+                                            class="font-headline text-lg md:text-xl font-extrabold text-on-surface transition-colors duration-300 group-hover:text-[#143C38]">
+                                            Andi Joko Nugroho</h3>
+                                        <p class="mt-2 text-base md:text-lg text-on-surface-variant">Direktur Operasi
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="group text-center rounded-[24px] px-4 py-4 transition-transform duration-300 hover:-translate-y-1">
+                                        <div
+                                            class="mx-auto mb-5 h-40 w-40 rounded-[999px] bg-[radial-gradient(circle_at_30%_30%,#ffffff_0%,#f2f0e6_42%,#d7d8d3_100%)] shadow-[0_14px_30px_rgba(0,38,34,0.10)] flex items-center justify-center overflow-hidden border border-white/70 transition-all duration-400 group-hover:shadow-[0_18px_36px_rgba(0,38,34,0.14)]">
+                                            <img alt="Yurizki Rio"
+                                                class="h-full w-full rounded-[999px] object-cover transition-transform duration-400 group-hover:scale-[1.04]"
+                                                src="../asset/profile4.jpg" />
+                                        </div>
+                                        <h3
+                                            class="font-headline text-lg md:text-xl font-extrabold text-on-surface transition-colors duration-300 group-hover:text-[#143C38]">
+                                            Yurizki Rio</h3>
+                                        <p class="mt-2 text-base md:text-lg text-on-surface-variant">Direktur Keuangan
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h2
+                                    class="font-headline text-2xl md:text-3xl font-extrabold tracking-tight text-primary mb-8">
+                                    Komisaris</h2>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-x-8 gap-y-12">
+                                    <div
+                                        class="group text-center rounded-[24px] px-4 py-4 transition-transform duration-300 hover:-translate-y-1">
+                                        <div
+                                            class="mx-auto mb-5 h-40 w-40 rounded-[999px] bg-[radial-gradient(circle_at_30%_30%,#ffffff_0%,#f2f0e6_42%,#d7d8d3_100%)] shadow-[0_14px_30px_rgba(0,38,34,0.10)] flex items-center justify-center overflow-hidden border border-white/70 transition-all duration-400 group-hover:shadow-[0_18px_36px_rgba(0,38,34,0.14)]">
+                                            <img alt="Gigih Udi Atmo"
+                                                class="h-full w-full rounded-[999px] object-cover transition-transform duration-400 group-hover:scale-[1.04]"
+                                                src="../asset/profile5.jpg" />
+                                        </div>
+                                        <h3
+                                            class="font-headline text-lg md:text-xl font-extrabold text-on-surface transition-colors duration-300 group-hover:text-[#143C38]">
+                                            Gigih Udi Atmo</h3>
+                                        <p class="mt-2 text-base md:text-lg text-on-surface-variant">Komisaris Utama</p>
+                                    </div>
+                                    <div
+                                        class="group text-center rounded-[24px] px-4 py-4 transition-transform duration-300 hover:-translate-y-1">
+                                        <div
+                                            class="mx-auto mb-5 h-40 w-40 rounded-[999px] bg-[radial-gradient(circle_at_30%_30%,#ffffff_0%,#f2f0e6_42%,#d7d8d3_100%)] shadow-[0_14px_30px_rgba(0,38,34,0.10)] flex items-center justify-center overflow-hidden border border-white/70 transition-all duration-400 group-hover:shadow-[0_18px_36px_rgba(0,38,34,0.14)]">
+                                            <img alt="John Anis"
+                                                class="h-full w-full rounded-[999px] object-cover transition-transform duration-400 group-hover:scale-[1.04]"
+                                                src="../asset/profile6.jpg" />
+                                        </div>
+                                        <h3
+                                            class="font-headline text-lg md:text-xl font-extrabold text-on-surface transition-colors duration-300 group-hover:text-[#143C38]">
+                                            John Anis</h3>
+                                        <p class="mt-2 text-base md:text-lg text-on-surface-variant">Komisaris</p>
+                                    </div>
+                                    <div
+                                        class="group text-center rounded-[24px] px-4 py-4 transition-transform duration-300 hover:-translate-y-1">
+                                        <div
+                                            class="mx-auto mb-5 h-40 w-40 rounded-[999px] bg-[radial-gradient(circle_at_30%_30%,#ffffff_0%,#f2f0e6_42%,#d7d8d3_100%)] shadow-[0_14px_30px_rgba(0,38,34,0.10)] flex items-center justify-center overflow-hidden border border-white/70 transition-all duration-400 group-hover:shadow-[0_18px_36px_rgba(0,38,34,0.14)]">
+                                            <span
+                                                class="font-headline text-4xl font-extrabold text-primary transition-transform duration-400 group-hover:scale-[1.04]">AZ</span>
+                                        </div>
+                                        <h3
+                                            class="font-headline text-lg md:text-xl font-extrabold text-on-surface transition-colors duration-300 group-hover:text-[#143C38]">
+                                            Abdulla Zayed</h3>
+                                        <p class="mt-2 text-base md:text-lg text-on-surface-variant">Komisaris</p>
+                                    </div>
+                                    <div
+                                        class="group text-center rounded-[24px] px-4 py-4 transition-transform duration-300 hover:-translate-y-1">
+                                        <div
+                                            class="mx-auto mb-5 h-40 w-40 rounded-[999px] bg-[radial-gradient(circle_at_30%_30%,#ffffff_0%,#f2f0e6_42%,#d7d8d3_100%)] shadow-[0_14px_30px_rgba(0,38,34,0.10)] flex items-center justify-center overflow-hidden border border-white/70 transition-all duration-400 group-hover:shadow-[0_18px_36px_rgba(0,38,34,0.14)]">
+                                            <span
+                                                class="font-headline text-4xl font-extrabold text-primary transition-transform duration-400 group-hover:scale-[1.04]">AM</span>
+                                        </div>
+                                        <h3
+                                            class="font-headline text-lg md:text-xl font-extrabold text-on-surface transition-colors duration-300 group-hover:text-[#143C38]">
+                                            Abdul Musawir Yahya</h3>
+                                        <p class="mt-2 text-base md:text-lg text-on-surface-variant">Komisaris
+                                            Independen</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <div id="footer-container"></div>
+    <script src="../includes/about-sidebar.js"></script>
+    <script src="../includes/footer.js"></script>
+</body>
+
+</html>

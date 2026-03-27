@@ -1,211 +1,292 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>History | PT Agrinas Pangan Nusantara</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "surface": "#fbfaf0",
-              "inverse-on-surface": "#f2f1e8",
-              "inverse-surface": "#30312b",
-              "inverse-primary": "#a6cfc8",
-              "on-surface": "#1b1c17",
-              "surface-container-lowest": "#ffffff",
-              "tertiary": "#1a2222",
-              "on-primary-fixed-variant": "#274d49",
-              "on-secondary-container": "#765900",
-              "primary-fixed-dim": "#a6cfc8",
-              "on-surface-variant": "#414847",
-              "error": "#ba1a1a",
-              "on-tertiary-fixed": "#151d1d",
-              "on-primary": "#ffffff",
-              "background": "#fbfaf0",
-              "secondary-fixed": "#ffdf99",
-              "on-secondary": "#ffffff",
-              "tertiary-container": "#2f3737",
-              "on-secondary-fixed": "#251a00",
-              "surface-container": "#efeee5",
-              "surface-bright": "#fbfaf0",
-              "secondary-fixed-dim": "#ecc156",
-              "primary-container": "#143c38",
-              "on-tertiary-container": "#98a0a0",
-              "on-primary-container": "#7fa6a1",
-              "on-error-container": "#93000a",
-              "error-container": "#ffdad6",
-              "secondary": "#775a00",
-              "outline-variant": "#c0c8c6",
-              "on-background": "#1b1c17",
-              "tertiary-fixed-dim": "#c0c8c8",
-              "surface-container-highest": "#e4e3da",
-              "primary": "#002622",
-              "on-primary-fixed": "#00201d",
-              "on-tertiary-fixed-variant": "#404848",
-              "on-tertiary": "#ffffff",
-              "surface-variant": "#e4e3da",
-              "primary-fixed": "#c1ebe4",
-              "on-secondary-fixed-variant": "#5a4300",
-              "tertiary-fixed": "#dce4e4",
-              "surface-dim": "#dbdad2",
-              "outline": "#717977",
-              "secondary-container": "#ffd264",
-              "on-error": "#ffffff",
-              "surface-container-low": "#f5f4eb",
-              "surface-tint": "#3f6560",
-              "surface-container-high": "#e9e8e0"
-            },
-            fontFamily: {
-              "headline": ["Manrope"],
-              "body": ["Inter"],
-              "label": ["Inter"]
-            },
-            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>History | PT Agrinas Pangan Nusantara</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#fbfaf0",
+            "inverse-on-surface": "#f2f1e8",
+            "inverse-surface": "#30312b",
+            "inverse-primary": "#a6cfc8",
+            "on-surface": "#1b1c17",
+            "surface-container-lowest": "#ffffff",
+            "tertiary": "#1a2222",
+            "on-primary-fixed-variant": "#274d49",
+            "on-secondary-container": "#765900",
+            "primary-fixed-dim": "#a6cfc8",
+            "on-surface-variant": "#414847",
+            "error": "#ba1a1a",
+            "on-tertiary-fixed": "#151d1d",
+            "on-primary": "#ffffff",
+            "background": "#fbfaf0",
+            "secondary-fixed": "#ffdf99",
+            "on-secondary": "#ffffff",
+            "tertiary-container": "#2f3737",
+            "on-secondary-fixed": "#251a00",
+            "surface-container": "#efeee5",
+            "surface-bright": "#fbfaf0",
+            "secondary-fixed-dim": "#ecc156",
+            "primary-container": "#143c38",
+            "on-tertiary-container": "#98a0a0",
+            "on-primary-container": "#7fa6a1",
+            "on-error-container": "#93000a",
+            "error-container": "#ffdad6",
+            "secondary": "#775a00",
+            "outline-variant": "#c0c8c6",
+            "on-background": "#1b1c17",
+            "tertiary-fixed-dim": "#c0c8c8",
+            "surface-container-highest": "#e4e3da",
+            "primary": "#002622",
+            "on-primary-fixed": "#00201d",
+            "on-tertiary-fixed-variant": "#404848",
+            "on-tertiary": "#ffffff",
+            "surface-variant": "#e4e3da",
+            "primary-fixed": "#c1ebe4",
+            "on-secondary-fixed-variant": "#5a4300",
+            "tertiary-fixed": "#dce4e4",
+            "surface-dim": "#dbdad2",
+            "outline": "#717977",
+            "secondary-container": "#ffd264",
+            "on-error": "#ffffff",
+            "surface-container-low": "#f5f4eb",
+            "surface-tint": "#3f6560",
+            "surface-container-high": "#e9e8e0"
           },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
         },
-      }
-    </script>
-<style>
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      }
-      .glass-nav {
-        background-color: rgba(251, 250, 240, 0.8);
-        backdrop-filter: blur(20px);
-      }
-      .timeline-gradient {
-        background: linear-gradient(180deg, transparent 0%, #775a00 15%, #775a00 85%, transparent 100%);
-      }
-    </style>
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .glass-nav {
+      background-color: rgba(251, 250, 240, 0.8);
+      backdrop-filter: blur(20px);
+    }
+
+    .timeline-gradient {
+      background: linear-gradient(180deg, transparent 0%, #775a00 15%, #775a00 85%, transparent 100%);
+    }
+  </style>
 </head>
-<body class="bg-[#EEEDE4] text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
-<div id="navbar-container"></div>
-<script src="../includes/navbar.js?v=2"></script>
-<main>
-<!-- Hero Section -->
-<section class="bg-surface py-20 md:py-32 overflow-hidden">
-<div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-<div class="md:col-span-7 z-20">
-<span class="font-label text-secondary uppercase tracking-[0.3em] font-bold text-xs md:text-sm mb-6 block">The Earth's Architect</span>
-<h1 class="font-headline text-5xl md:text-7xl text-primary font-extrabold tracking-tight mb-8 leading-[1.1]">
-                        A Legacy of <span class="text-[#274d49]">Growth</span> &amp; Innovation.
-                    </h1>
-<p class="text-on-surface-variant text-lg md:text-xl max-w-xl leading-relaxed mb-10">
-                        For over two decades, PT Agrinas Pangan Nusantara has stood at the intersection of traditional wisdom and future-forward machinery. Our history is a testament to the belief that the soil we cultivate and the energy we harness are the dual pillars of human progress.
-                    </p>
-</div>
-<div class="md:col-span-5 relative">
-<div class="relative group">
-<img alt="Modern Sustainable Precision Farming Landscape" class="w-full aspect-square object-cover rounded-xl shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmSO3r4ZKsfuVAmmoaw_kPdwH97fkP85C5UqE64IlVpmF5vb6AdJFxewpM6LiQmzEGEH8cqcxYX_SeaZwsZzTIBbrlFnKE5drtG9DvdwG7t3z4tr0HxjgjSDKcPgdHoGt7PmrycDEAW1LmixliHQ2sBrZuLnDuK5PC8dFmSIGXsorUV3u1wA0uqikAseGO4d9W0nAsrDFXLhWnWMSbOF1cekECokrMxqBgMmCtiefXCjShN2J3XuyS89TKERzR1bXdqq0_uaLxEHOA"/>
-<div class="absolute -bottom-6 -left-6 bg-[#ffce5d] p-8 md:p-10 shadow-xl rounded-lg border border-black/5">
-<div class="font-headline text-3xl md:text-4xl font-extrabold text-primary mb-1">25+</div>
-<div class="font-label text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#5a4300]">Years of Excellence</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<div class="max-w-screen-2xl mx-auto px-8 flex flex-col md:flex-row gap-12 py-12">
-<!-- SideNav / Sticky Sub-navigation -->
-<aside class="md:w-64 shrink-0" id="about-sidebar-container"></aside>
-<!-- Main Content: History Timeline -->
-<div class="flex-1 bg-[#EEEDE4] p-8 md:p-16 lg:p-24">
-<div class="max-w-3xl mx-auto">
-<header class="mb-20">
-<span class="font-label text-secondary uppercase tracking-widest text-xs font-bold block mb-2">Chronicle of Growth</span>
-<h2 class="font-headline text-4xl font-bold text-on-surface mb-6">Cultivating a sustainable future for the region.</h2>
-<p class="text-on-surface-variant text-lg leading-relaxed">From our humble beginnings as a local agricultural cooperative, we have evolved into a regional leader in food security. Our history is a journey of scaling traditional wisdom with modern industrial precision to nourish millions.</p>
-</header>
-<!-- Timeline UI -->
-<div class="relative">
-<!-- Vertical Line -->
-<div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-px timeline-gradient transform md:-translate-x-1/2"></div>
-<!-- 1998: Founding -->
-<div class="relative mb-24 flex flex-col md:flex-row items-center md:justify-between group">
-<div class="md:w-[45%] mb-8 md:mb-0 text-left md:text-right order-2 md:order-1">
-<span class="font-headline text-5xl md:text-6xl font-extrabold text-outline-variant/30 transition-colors group-hover:text-secondary/20 select-none block md:absolute md:-top-4 md:right-[55%] pointer-events-none">1998</span>
-<h3 class="font-headline text-2xl font-bold text-primary mb-3">Foundation in Food Supply</h3>
-<p class="text-on-surface-variant text-sm md:text-base leading-relaxed">Established as a local agricultural cooperative focused on regional food supply, dedicated to empowering local farmers and stabilizing community nutrition.</p>
-</div>
-<div class="absolute left-[-4px] md:left-1/2 w-2 h-2 rounded-full bg-secondary z-10 md:-translate-x-1/2 ring-8 ring-[#EEEDE4]"></div>
-<div class="md:w-[45%] order-3">
-<img alt="Traditional Farming Roots" class="rounded-xl grayscale hover:grayscale-0 transition-all duration-500 shadow-sm object-cover h-64 w-full" data-alt="Traditional rice planting in a flooded field, morning mist" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlxxuTgw8PSaxhOC0xiniz-uE4YBv5ngCBpv3zvAwZo2QbmLKGhUjPhDqNui8ehWYQW40HxslHbCwf0igvq-8zpwVzWEhBZx-TwS_qF3LC5YVQo3H-iPUlTvfe5m0bK4USYjlFiHpdWT5X6wZc8uC7jk1ZTyV0CEBbkf0PALLk3S4FhcNEl4bbZ-3Bx96W1tCyumD_jBrxwJmIQA87FBtrG2G-BF3J1znv9bQTSKUtn7Kmu1FTt7bd0Ln0ROKVukRivkqokJBqCIIV"/>
-</div>
-</div>
-<!-- 2005: Expansion -->
-<div class="relative mb-24 flex flex-col md:flex-row items-center md:justify-between group">
-<div class="md:w-[45%] order-3 md:order-1">
-<img alt="Modern Grain Logistics" class="rounded-xl grayscale hover:grayscale-0 transition-all duration-500 shadow-sm object-cover h-64 w-full" data-alt="Modern high-capacity grain silos for crop storage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlQNQnxkMBZesqfQEl16XDR1O3FznkUuTs17eCzzaha4qjDQYuhMeWDs2VRoYk-0UTMfQOXpfzsiKz4XtwfCmlKHC1L5xQ2mqFvnaKgl3SUC4-cDSYZgygEdwuC2WJ2fvZ1wWWeYUdKGd-CP-AXy0wYp1ejPBRA8Fu3OLXAfuKDzIoQmjIdveGTxoHGfL6ePh_FqBnEVHNtWL7yXDclv6jqGI959nMFUrWB84OpxHO4O-228q8Jl0Ay2EeoJKgP7TxeI0AAjoz8LY-"/>
-</div>
-<div class="absolute left-[-4px] md:left-1/2 w-2 h-2 rounded-full bg-secondary z-10 md:-translate-x-1/2 ring-8 ring-[#EEEDE4]"></div>
-<div class="md:w-[45%] mt-8 md:mt-0 order-2">
-<span class="font-headline text-5xl md:text-6xl font-extrabold text-outline-variant/30 transition-colors group-hover:text-secondary/20 select-none block md:absolute md:-top-4 md:left-[55%] pointer-events-none">2005</span>
-<h3 class="font-headline text-2xl font-bold text-primary mb-3">Scaling Infrastructure</h3>
-<p class="text-on-surface-variant text-sm md:text-base leading-relaxed">Transformation through the acquisition of a major logistics hub, enabling the efficient distribution of crops from 50,000 hectares of farmland across the province.</p>
-</div>
-</div>
-<!-- 2014: Energy Integration -->
-<div class="relative mb-24 flex flex-col md:flex-row items-center md:justify-between group">
-<div class="md:w-[45%] mb-8 md:mb-0 text-left md:text-right order-2 md:order-1">
-<span class="font-headline text-5xl md:text-6xl font-extrabold text-outline-variant/30 transition-colors group-hover:text-secondary/20 select-none block md:absolute md:-top-4 md:right-[55%] pointer-events-none">2014</span>
-<h3 class="font-headline text-2xl font-bold text-primary mb-3">Agricultural Energy Synergy</h3>
-<p class="text-on-surface-variant text-sm md:text-base leading-relaxed">Integrating renewable energy through our Biomass-to-Power program, specifically designed to provide sustainable energy for rural agricultural processing communities.</p>
-</div>
-<div class="absolute left-[-4px] md:left-1/2 w-2 h-2 rounded-full bg-secondary z-10 md:-translate-x-1/2 ring-8 ring-[#EEEDE4]"></div>
-<div class="md:w-[45%] order-3">
-<img alt="Biomass Energy" class="rounded-xl grayscale hover:grayscale-0 transition-all duration-500 shadow-sm object-cover h-64 w-full" data-alt="Processing of agricultural waste into energy pellets" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFbIBlJoG0CSS10mD7yt8gBAtVT5gNX7z1tOTU9Nd40Ce8TcYvxZsih_7oU7PBS3FWD11dTZtnVJyGH_TB0-OyNXRrcExsqO-8SwymnOUYUCbohAW2064RreWADdy9LwCIBcbTfpcV_mDZlsl8L5kyx0wOXmegy6mP6N7XQuD8K_Fy2SdwblAdxVSOtoMrLSrS6amSLg7hzq1DxvzzUrd6pNsAbf2qcScNXG9op3-nOAK2x1AeSD3_zoVgxgv9lAV5wLkA7MRiK9HM"/>
-</div>
-</div>
-<!-- 2022: Global Reach -->
-<div class="relative flex flex-col md:flex-row items-center md:justify-between group">
-<div class="md:w-[45%] order-3 md:order-1">
-<img alt="Regional Food Security" class="rounded-xl grayscale hover:grayscale-0 transition-all duration-500 shadow-sm object-cover h-64 w-full" data-alt="Logistics vessels in a modern port representing regional trade" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEcYhv_tZRNFV3P52YvRy_nCVY4lGk7qZ0kCU1ISbzLTgKsA7wIHgTpeMsev4ne1hLTYYk28KVCsvyAjqisVLBAIQ-A1hzs6GPkr167a5GbQvxrxjDkdGtkUT_IG26F_lXXXmwn73cxKiqVb8LaVR41lCwoAlPMq4OPTkA-HJW3jn1n-PcQsRhMoCM89hUsxL44kkgoAk2EfEnmCmRqnzogZOEbIDWoHmnBXY_JgY6-DDa3wrzbluRGytFIK85l8TclgtxQ62zGnzV"/>
-</div>
-<div class="absolute left-[-4px] md:left-1/2 w-2 h-2 rounded-full bg-secondary z-10 md:-translate-x-1/2 ring-8 ring-[#EEEDE4]"></div>
-<div class="md:w-[45%] mt-8 md:mt-0 order-2">
-<span class="font-headline text-5xl md:text-6xl font-extrabold text-outline-variant/30 transition-colors group-hover:text-secondary/20 select-none block md:absolute md:-top-4 md:left-[55%] pointer-events-none">2022</span>
-<h3 class="font-headline text-2xl font-bold text-primary mb-3">Leading Regional Food Security</h3>
-<p class="text-on-surface-variant text-sm md:text-base leading-relaxed">Official expansion into the South-East Asian market, establishing Agrinas as a pivotal leader in the regional framework for sustainable food security and agricultural resilience.</p>
-</div>
-</div>
-</div>
-<!-- Narrative Conclusion -->
-<div class="mt-32 p-12 bg-surface-container-low rounded-xl border-l-4 border-secondary shadow-sm">
-<h4 class="font-headline text-2xl font-bold text-primary mb-4">Continuing the Legacy</h4>
-<p class="text-on-surface-variant leading-relaxed mb-6">Today, PT Agrinas Pangan Nusantara stands as a beacon of progress in the agricultural sector. We continue to bridge the gap between traditional farming and modern food security needs, architecting a sustainable future for the earth and its people.</p>
-<button class="font-label text-secondary font-bold uppercase tracking-widest text-sm flex items-center gap-2 group">
-                            Read Our Vision
-                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-</div>
-<!-- Section: Partners -->
-<section class="bg-surface-container-highest py-24">
-<div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
-<div class="md:col-span-1">
-<span class="font-label text-secondary uppercase tracking-widest text-xs font-bold block mb-4">Collaborations</span>
-<h2 class="font-headline text-3xl font-bold text-on-surface leading-tight">Partnering with Global Agricultural Leaders</h2>
-</div>
-<div class="md:col-span-2 grid grid-cols-2 lg:grid-cols-4 gap-8 opacity-40">
-<div class="h-12 bg-on-surface-variant/20 rounded-md"></div>
-<div class="h-12 bg-on-surface-variant/20 rounded-md"></div>
-<div class="h-12 bg-on-surface-variant/20 rounded-md"></div>
-<div class="h-12 bg-on-surface-variant/20 rounded-md"></div>
-</div>
-</div>
-</section>
-</main>
-<div id="footer-container"></div>
-<script src="../includes/about-sidebar.js"></script>
-<script src="../includes/footer.js"></script>
-</body></html>
+
+<body
+  class="bg-[#EEEDE4] text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+  <div id="navbar-container"></div>
+  <script src="../includes/navbar.js?v=2"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const path = window.location.pathname;
+      const segments = path.split('/').filter(Boolean);
+      const knownRoots = ['about', 'product', 'news-gallery', 'public-documents', 'contact', 'index.html'];
+      const rootIndex = segments.findIndex((segment) => knownRoots.includes(segment));
+      const prefixSegments = rootIndex === -1 ? [] : segments.slice(0, rootIndex);
+      const sitePrefix = prefixSegments.length ? `/${prefixSegments.join('/')}/` : '/';
+      const navLinks = document.querySelectorAll('#navbar-container nav > a');
+
+      if (navLinks.length >= 5) {
+        navLinks[0].href = sitePrefix;
+        navLinks[1].href = `${sitePrefix}product/`;
+        navLinks[2].href = `${sitePrefix}news-gallery/`;
+        navLinks[3].href = `${sitePrefix}public-documents/`;
+        navLinks[4].href = `${sitePrefix}contact/`;
+      }
+    });
+  </script>
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-surface py-20 md:py-32 overflow-hidden">
+      <div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-7 z-20">
+          <span class="font-label text-secondary uppercase tracking-[0.3em] font-bold text-xs md:text-sm mb-6 block">The
+            Earth's Architect</span>
+          <h1 class="font-headline text-5xl md:text-7xl text-primary font-extrabold tracking-tight mb-8 leading-[1.1]">
+            A Legacy of <span class="text-[#274d49]">Growth</span> &amp; Innovation.
+          </h1>
+          <p class="text-on-surface-variant text-lg md:text-xl max-w-xl leading-relaxed mb-10">
+            For over two decades, PT Agrinas Pangan Nusantara has stood at the intersection of traditional wisdom and
+            future-forward machinery. Our history is a testament to the belief that the soil we cultivate and the energy
+            we harness are the dual pillars of human progress.
+          </p>
+        </div>
+        <div class="md:col-span-5 relative">
+          <div class="relative group">
+            <img alt="Modern Sustainable Precision Farming Landscape"
+              class="w-full aspect-square object-cover rounded-xl shadow-2xl"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmSO3r4ZKsfuVAmmoaw_kPdwH97fkP85C5UqE64IlVpmF5vb6AdJFxewpM6LiQmzEGEH8cqcxYX_SeaZwsZzTIBbrlFnKE5drtG9DvdwG7t3z4tr0HxjgjSDKcPgdHoGt7PmrycDEAW1LmixliHQ2sBrZuLnDuK5PC8dFmSIGXsorUV3u1wA0uqikAseGO4d9W0nAsrDFXLhWnWMSbOF1cekECokrMxqBgMmCtiefXCjShN2J3XuyS89TKERzR1bXdqq0_uaLxEHOA" />
+            <div class="absolute -bottom-6 -left-6 bg-[#ffce5d] p-8 md:p-10 shadow-xl rounded-lg border border-black/5">
+              <div class="font-headline text-3xl md:text-4xl font-extrabold text-primary mb-1">25+</div>
+              <div class="font-label text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#5a4300]">Years
+                of Excellence</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="max-w-screen-2xl mx-auto px-8 flex flex-col md:flex-row gap-12 py-12">
+      <!-- SideNav / Sticky Sub-navigation -->
+      <aside class="md:w-64 shrink-0" id="about-sidebar-container"></aside>
+      <!-- Main Content: History Timeline -->
+      <div class="flex-1 bg-[#EEEDE4] p-8 md:p-16 lg:p-24">
+        <div class="max-w-3xl mx-auto">
+          <header class="mb-20">
+            <span class="font-label text-secondary uppercase tracking-widest text-xs font-bold block mb-2">Chronicle of
+              Growth</span>
+            <h2 class="font-headline text-4xl font-bold text-on-surface mb-6">Cultivating a sustainable future for the
+              region.</h2>
+            <p class="text-on-surface-variant text-lg leading-relaxed">From our humble beginnings as a local
+              agricultural cooperative, we have evolved into a regional leader in food security. Our history is a
+              journey of scaling traditional wisdom with modern industrial precision to nourish millions.</p>
+          </header>
+          <!-- Timeline UI -->
+          <div class="relative">
+            <!-- Vertical Line -->
+            <div
+              class="absolute left-0 md:left-1/2 top-0 bottom-0 w-px timeline-gradient transform md:-translate-x-1/2">
+            </div>
+            <!-- 1998: Founding -->
+            <div class="relative mb-24 flex flex-col md:flex-row items-center md:justify-between group">
+              <div class="md:w-[45%] mb-8 md:mb-0 text-left md:text-right order-2 md:order-1">
+                <span
+                  class="font-headline text-5xl md:text-6xl font-extrabold text-outline-variant/30 transition-colors group-hover:text-secondary/20 select-none block md:absolute md:-top-4 md:right-[55%] pointer-events-none">1998</span>
+                <h3 class="font-headline text-2xl font-bold text-primary mb-3">Foundation in Food Supply</h3>
+                <p class="text-on-surface-variant text-sm md:text-base leading-relaxed">Established as a local
+                  agricultural cooperative focused on regional food supply, dedicated to empowering local farmers and
+                  stabilizing community nutrition.</p>
+              </div>
+              <div
+                class="absolute left-[-4px] md:left-1/2 w-2 h-2 rounded-full bg-secondary z-10 md:-translate-x-1/2 ring-8 ring-[#EEEDE4]">
+              </div>
+              <div class="md:w-[45%] order-3">
+                <img alt="Traditional Farming Roots"
+                  class="rounded-xl grayscale hover:grayscale-0 transition-all duration-500 shadow-sm object-cover h-64 w-full"
+                  data-alt="Traditional rice planting in a flooded field, morning mist"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlxxuTgw8PSaxhOC0xiniz-uE4YBv5ngCBpv3zvAwZo2QbmLKGhUjPhDqNui8ehWYQW40HxslHbCwf0igvq-8zpwVzWEhBZx-TwS_qF3LC5YVQo3H-iPUlTvfe5m0bK4USYjlFiHpdWT5X6wZc8uC7jk1ZTyV0CEBbkf0PALLk3S4FhcNEl4bbZ-3Bx96W1tCyumD_jBrxwJmIQA87FBtrG2G-BF3J1znv9bQTSKUtn7Kmu1FTt7bd0Ln0ROKVukRivkqokJBqCIIV" />
+              </div>
+            </div>
+            <!-- 2005: Expansion -->
+            <div class="relative mb-24 flex flex-col md:flex-row items-center md:justify-between group">
+              <div class="md:w-[45%] order-3 md:order-1">
+                <img alt="Modern Grain Logistics"
+                  class="rounded-xl grayscale hover:grayscale-0 transition-all duration-500 shadow-sm object-cover h-64 w-full"
+                  data-alt="Modern high-capacity grain silos for crop storage"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlQNQnxkMBZesqfQEl16XDR1O3FznkUuTs17eCzzaha4qjDQYuhMeWDs2VRoYk-0UTMfQOXpfzsiKz4XtwfCmlKHC1L5xQ2mqFvnaKgl3SUC4-cDSYZgygEdwuC2WJ2fvZ1wWWeYUdKGd-CP-AXy0wYp1ejPBRA8Fu3OLXAfuKDzIoQmjIdveGTxoHGfL6ePh_FqBnEVHNtWL7yXDclv6jqGI959nMFUrWB84OpxHO4O-228q8Jl0Ay2EeoJKgP7TxeI0AAjoz8LY-" />
+              </div>
+              <div
+                class="absolute left-[-4px] md:left-1/2 w-2 h-2 rounded-full bg-secondary z-10 md:-translate-x-1/2 ring-8 ring-[#EEEDE4]">
+              </div>
+              <div class="md:w-[45%] mt-8 md:mt-0 order-2">
+                <span
+                  class="font-headline text-5xl md:text-6xl font-extrabold text-outline-variant/30 transition-colors group-hover:text-secondary/20 select-none block md:absolute md:-top-4 md:left-[55%] pointer-events-none">2005</span>
+                <h3 class="font-headline text-2xl font-bold text-primary mb-3">Scaling Infrastructure</h3>
+                <p class="text-on-surface-variant text-sm md:text-base leading-relaxed">Transformation through the
+                  acquisition of a major logistics hub, enabling the efficient distribution of crops from 50,000
+                  hectares of farmland across the province.</p>
+              </div>
+            </div>
+            <!-- 2014: Energy Integration -->
+            <div class="relative mb-24 flex flex-col md:flex-row items-center md:justify-between group">
+              <div class="md:w-[45%] mb-8 md:mb-0 text-left md:text-right order-2 md:order-1">
+                <span
+                  class="font-headline text-5xl md:text-6xl font-extrabold text-outline-variant/30 transition-colors group-hover:text-secondary/20 select-none block md:absolute md:-top-4 md:right-[55%] pointer-events-none">2014</span>
+                <h3 class="font-headline text-2xl font-bold text-primary mb-3">Agricultural Energy Synergy</h3>
+                <p class="text-on-surface-variant text-sm md:text-base leading-relaxed">Integrating renewable energy
+                  through our Biomass-to-Power program, specifically designed to provide sustainable energy for rural
+                  agricultural processing communities.</p>
+              </div>
+              <div
+                class="absolute left-[-4px] md:left-1/2 w-2 h-2 rounded-full bg-secondary z-10 md:-translate-x-1/2 ring-8 ring-[#EEEDE4]">
+              </div>
+              <div class="md:w-[45%] order-3">
+                <img alt="Biomass Energy"
+                  class="rounded-xl grayscale hover:grayscale-0 transition-all duration-500 shadow-sm object-cover h-64 w-full"
+                  data-alt="Processing of agricultural waste into energy pellets"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFbIBlJoG0CSS10mD7yt8gBAtVT5gNX7z1tOTU9Nd40Ce8TcYvxZsih_7oU7PBS3FWD11dTZtnVJyGH_TB0-OyNXRrcExsqO-8SwymnOUYUCbohAW2064RreWADdy9LwCIBcbTfpcV_mDZlsl8L5kyx0wOXmegy6mP6N7XQuD8K_Fy2SdwblAdxVSOtoMrLSrS6amSLg7hzq1DxvzzUrd6pNsAbf2qcScNXG9op3-nOAK2x1AeSD3_zoVgxgv9lAV5wLkA7MRiK9HM" />
+              </div>
+            </div>
+            <!-- 2022: Global Reach -->
+            <div class="relative flex flex-col md:flex-row items-center md:justify-between group">
+              <div class="md:w-[45%] order-3 md:order-1">
+                <img alt="Regional Food Security"
+                  class="rounded-xl grayscale hover:grayscale-0 transition-all duration-500 shadow-sm object-cover h-64 w-full"
+                  data-alt="Logistics vessels in a modern port representing regional trade"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEcYhv_tZRNFV3P52YvRy_nCVY4lGk7qZ0kCU1ISbzLTgKsA7wIHgTpeMsev4ne1hLTYYk28KVCsvyAjqisVLBAIQ-A1hzs6GPkr167a5GbQvxrxjDkdGtkUT_IG26F_lXXXmwn73cxKiqVb8LaVR41lCwoAlPMq4OPTkA-HJW3jn1n-PcQsRhMoCM89hUsxL44kkgoAk2EfEnmCmRqnzogZOEbIDWoHmnBXY_JgY6-DDa3wrzbluRGytFIK85l8TclgtxQ62zGnzV" />
+              </div>
+              <div
+                class="absolute left-[-4px] md:left-1/2 w-2 h-2 rounded-full bg-secondary z-10 md:-translate-x-1/2 ring-8 ring-[#EEEDE4]">
+              </div>
+              <div class="md:w-[45%] mt-8 md:mt-0 order-2">
+                <span
+                  class="font-headline text-5xl md:text-6xl font-extrabold text-outline-variant/30 transition-colors group-hover:text-secondary/20 select-none block md:absolute md:-top-4 md:left-[55%] pointer-events-none">2022</span>
+                <h3 class="font-headline text-2xl font-bold text-primary mb-3">Leading Regional Food Security</h3>
+                <p class="text-on-surface-variant text-sm md:text-base leading-relaxed">Official expansion into the
+                  South-East Asian market, establishing Agrinas as a pivotal leader in the regional framework for
+                  sustainable food security and agricultural resilience.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Narrative Conclusion -->
+          <div class="mt-32 p-12 bg-surface-container-low rounded-xl border-l-4 border-secondary shadow-sm">
+            <h4 class="font-headline text-2xl font-bold text-primary mb-4">Continuing the Legacy</h4>
+            <p class="text-on-surface-variant leading-relaxed mb-6">Today, PT Agrinas Pangan Nusantara stands as a
+              beacon of progress in the agricultural sector. We continue to bridge the gap between traditional farming
+              and modern food security needs, architecting a sustainable future for the earth and its people.</p>
+            <button
+              class="font-label text-secondary font-bold uppercase tracking-widest text-sm flex items-center gap-2 group">
+              Read Our Vision
+              <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                data-icon="arrow_forward">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section: Partners -->
+    <section class="bg-surface-container-highest py-24">
+      <div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+        <div class="md:col-span-1">
+          <span
+            class="font-label text-secondary uppercase tracking-widest text-xs font-bold block mb-4">Collaborations</span>
+          <h2 class="font-headline text-3xl font-bold text-on-surface leading-tight">Partnering with Global Agricultural
+            Leaders</h2>
+        </div>
+        <div class="md:col-span-2 grid grid-cols-2 lg:grid-cols-4 gap-8 opacity-40">
+          <div class="h-12 bg-on-surface-variant/20 rounded-md"></div>
+          <div class="h-12 bg-on-surface-variant/20 rounded-md"></div>
+          <div class="h-12 bg-on-surface-variant/20 rounded-md"></div>
+          <div class="h-12 bg-on-surface-variant/20 rounded-md"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer-container"></div>
+  <script src="../includes/about-sidebar.js"></script>
+  <script src="../includes/footer.js"></script>
+</body>
+
+</html>
