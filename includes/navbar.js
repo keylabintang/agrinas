@@ -1,29 +1,26 @@
+function getSitePrefix() {
+    const path = window.location.pathname;
+    const segments = path.split('/').filter(Boolean);
+    const knownRoots = ['about', 'product', 'news-gallery', 'public-documents', 'contact', 'index.html'];
+    const rootIndex = segments.findIndex((segment) => knownRoots.includes(segment));
+    const prefixSegments = rootIndex === -1 ? [] : segments.slice(0, rootIndex);
+
+    return prefixSegments.length ? `/${prefixSegments.join('/')}/` : '/';
+}
+
 // Generate navbar with correct routing
 function generateNavbar() {
     const path = window.location.pathname;
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-
+    const sitePrefix = getSitePrefix();
     const isAboutSection = path.includes('/about/');
-    const isSubSectionPage =
-        isAboutSection ||
-        path.includes('/product/') ||
-        path.includes('/news-gallery/') ||
-        path.includes('/public-documents/') ||
-        path.includes('/contact/');
 
-    let basePath = './';
-    let upPath = './';
-    let aboutPath = './about/';
-
-    if (isAboutSection) {
-        basePath = '../';
-        upPath = '../';
-        aboutPath = './';
-    } else if (isSubSectionPage) {
-        basePath = '../';
-        upPath = '../';
-        aboutPath = '../about/';
-    }
+    const upPath = sitePrefix;
+    const aboutPath = isAboutSection ? `${sitePrefix}about/` : `${sitePrefix}about/`;
+    const productPath = `${sitePrefix}product/`;
+    const newsPath = `${sitePrefix}news-gallery/`;
+    const publicDocumentsPath = `${sitePrefix}public-documents/`;
+    const contactPath = `${sitePrefix}contact/`;
     
     // Determine active page for About dropdown
     const aboutPages = ['company-profile.html', 'history.html', 'vision-mission.html', 'organizational-structure.html', 'company-structure.html'];
@@ -69,10 +66,10 @@ function generateNavbar() {
                 </div>
             </div>
         </div>
-        <a class="${getNavLinkClass(isProductPage)}" href="${basePath}product/">Product</a>
-        <a class="${getNavLinkClass(isNewsPage)}" href="${basePath}news-gallery/">News &amp; Gallery</a>
-        <a class="${getNavLinkClass(isPublicDocumentsPage)}" href="${basePath}public-documents/">Public Document</a>
-        <a class="${getNavLinkClass(isContactPage)}" href="${basePath}contact/">Contact Us</a>
+        <a class="${getNavLinkClass(isProductPage)}" href="${productPath}">Product</a>
+        <a class="${getNavLinkClass(isNewsPage)}" href="${newsPath}">News &amp; Gallery</a>
+        <a class="${getNavLinkClass(isPublicDocumentsPage)}" href="${publicDocumentsPath}">Public Document</a>
+        <a class="${getNavLinkClass(isContactPage)}" href="${contactPath}">Contact Us</a>
     </nav>
     <div class="flex items-center space-x-6">
         <div class="flex items-center gap-2 text-xs font-bold text-primary">
